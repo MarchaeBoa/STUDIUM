@@ -612,13 +612,12 @@ button:focus-visible, .btn:focus-visible, a:focus-visible {
 .spinner {
   width: 20px; height: 20px; border: 2px solid var(--n200);
   border-top-color: var(--blue); border-radius: 50%;
-  animation: spin .6s linear infinite;
+  animation: spin .6s linear infinite; display: inline-block;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 .btn.loading { pointer-events: none; opacity: .7; }
-.btn.loading .spinner { display: inline-block; }
 
-/* ── Smooth scroll ─────────────────────────────────────── */
+/* ── Smooth scroll & reduced motion ────────────────────── */
 html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

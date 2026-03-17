@@ -15,28 +15,28 @@
   <div id="t-dash">
     <div class="pg-hdr flex jb ai">
       <div><h1 class="pg-title">Dashboard Administrativo</h1><p class="pg-sub">Visão geral da plataforma em tempo real.</p></div>
-      <button class="btn btn-primary btn-sm" onclick="toast('Relatório exportado!','success')">📥 Exportar relatório</button>
+      <button class="btn btn-primary btn-sm" onclick="toast('Relatório exportado!','success')">Exportar relatório</button>
     </div>
 
     <!-- KPIs -->
     <div class="grid-4 mb20">
       <div class="card card-sm">
         <div class="flex ai g12">
-          <div class="adm-icon" style="background:var(--blue-l)">👥</div>
+          <div class="adm-icon" style="background:var(--blue-l)"></div>
           <div><div style="font-size:22px;font-weight:800">48.231</div><div class="tsm tmuted">Usuários cadastrados</div></div>
         </div>
         <div class="tsm tgreen fw6 mt8">↑ +1.240 esta semana</div>
       </div>
       <div class="card card-sm">
         <div class="flex ai g12">
-          <div class="adm-icon" style="background:var(--green-l)">💰</div>
+          <div class="adm-icon" style="background:var(--green-l)"></div>
           <div><div style="font-size:22px;font-weight:800">R$ 142.800</div><div class="tsm tmuted">MRR atual</div></div>
         </div>
         <div class="tsm tgreen fw6 mt8">↑ +8,4% vs mês anterior</div>
       </div>
       <div class="card card-sm">
         <div class="flex ai g12">
-          <div class="adm-icon" style="background:var(--red-l)">📉</div>
+          <div class="adm-icon" style="background:var(--red-l)"></div>
           <div><div style="font-size:22px;font-weight:800">3,2%</div><div class="tsm tmuted">Churn mensal</div></div>
         </div>
         <div class="tsm tgreen fw6 mt8">↓ -0,4pp vs mês anterior</div>
@@ -60,7 +60,7 @@
     <div class="grid-2 mb20">
       <!-- Chart -->
       <div class="card">
-        <div class="flex jb ai mb16"><h3>📈 Novos usuários — últimos 7 dias</h3><span class="badge b-blue">+1.240 total</span></div>
+        <div class="flex jb ai mb16"><h3>Novos usuários — últimos 7 dias</h3><span class="badge b-blue">+1.240 total</span></div>
         <div id="adm-chart"></div>
         <div class="flex g8 mt12" style="flex-wrap:wrap">
           <span class="badge b-gray">Seg: 148</span><span class="badge b-gray">Ter: 172</span>
@@ -70,20 +70,20 @@
       </div>
       <!-- Plan distribution -->
       <div class="card">
-        <h3 class="mb16">💳 Distribuição de planos</h3>
+        <h3 class="mb16"> Distribuição de planos</h3>
         <div class="mbar-row"><span class="mbar-lbl">Gratuito</span><div class="mbar-track"><div class="mbar-fill" style="width:62%;background:var(--n300)"></div></div><span class="mbar-pct">62%</span></div>
         <div class="mbar-row"><span class="mbar-lbl">Idiomas</span><div class="mbar-track"><div class="mbar-fill" style="width:8%;background:var(--green)"></div></div><span class="mbar-pct">8%</span></div>
         <div class="mbar-row"><span class="mbar-lbl">Concurso+</span><div class="mbar-track"><div class="mbar-fill" style="width:12%;background:var(--amber)"></div></div><span class="mbar-pct">12%</span></div>
         <div class="mbar-row"><span class="mbar-lbl">Premium</span><div class="mbar-track"><div class="mbar-fill" style="width:14%;background:var(--blue)"></div></div><span class="mbar-pct">14%</span></div>
         <div class="mbar-row"><span class="mbar-lbl">Completo</span><div class="mbar-track"><div class="mbar-fill" style="width:4%;background:var(--purple)"></div></div><span class="mbar-pct">4%</span></div>
-        <div class="alert al-blue mt16">💡 Usuários no plano Gratuito com &gt;30 dias: candidatos a campanha de upgrade.</div>
+        <div class="alert al-blue mt16">Usuários no plano Gratuito com &gt;30 dias: candidatos a campanha de upgrade.</div>
       </div>
     </div>
 
     <!-- Tickets summary -->
     <div class="grid-2">
       <div class="card">
-        <div class="flex jb ai mb16"><h3>🎫 Tickets em aberto</h3><span class="badge b-red">3 abertos</span></div>
+        <div class="flex jb ai mb16"><h3>Tickets em aberto</h3><span class="badge b-red">3 abertos</span></div>
         <div class="tbl-wrap"><table>
           <thead><tr><th>ID</th><th>Assunto</th><th>Plano</th><th>Tempo</th><th>Prioridade</th></tr></thead>
           <tbody>
@@ -94,12 +94,12 @@
         </table></div>
       </div>
       <div class="card">
-        <h3 class="mb16">🤖 Performance do agente IA</h3>
+        <h3 class="mb16">Performance do agente IA</h3>
         <div class="mbar-row"><span class="mbar-lbl">Resolução auto</span><div class="mbar-track"><div class="mbar-fill" style="width:83%;background:var(--green)"></div></div><span class="mbar-pct">83%</span></div>
         <div class="mbar-row"><span class="mbar-lbl">Escalados humano</span><div class="mbar-track"><div class="mbar-fill" style="width:17%;background:var(--amber)"></div></div><span class="mbar-pct">17%</span></div>
         <div class="mbar-row"><span class="mbar-lbl">CSAT médio</span><div class="mbar-track"><div class="mbar-fill" style="width:88%;background:var(--blue)"></div></div><span class="mbar-pct">4,4/5</span></div>
         <div class="mbar-row"><span class="mbar-lbl">Tempo médio resp.</span><div class="mbar-track"><div class="mbar-fill" style="width:96%;background:var(--green)"></div></div><span class="mbar-pct">3,2s</span></div>
-        <div class="alert al-green mt16">✅ CSAT acima de 4,0 — nenhum alerta ativo.</div>
+        <div class="alert al-green mt16">CSAT acima de 4,0 — nenhum alerta ativo.</div>
       </div>
     </div>
   </div>
@@ -109,13 +109,13 @@
     <div class="pg-hdr flex jb ai">
       <div><h1 class="pg-title">Gerenciamento de Usuários</h1><p class="pg-sub">48.231 usuários cadastrados</p></div>
       <div class="flex g8">
-        <button class="btn btn-secondary btn-sm" onclick="toast('CSV exportado!','success')">📥 Exportar CSV</button>
-        <button class="btn btn-primary btn-sm" onclick="toast('Filtros aplicados!','success')">🔍 Filtrar</button>
+        <button class="btn btn-secondary btn-sm" onclick="toast('CSV exportado!','success')">Exportar CSV</button>
+        <button class="btn btn-primary btn-sm" onclick="toast('Filtros aplicados!','success')"> Filtrar</button>
       </div>
     </div>
     <div class="card mb20">
       <div class="flex g12" style="flex-wrap:wrap">
-        <input class="inp" type="search" placeholder="🔍 Buscar por nome ou e-mail..." style="width:280px">
+        <input class="inp" type="search" placeholder=" Buscar por nome ou e-mail..." style="width:280px">
         <select class="inp" style="width:140px"><option>Todos os planos</option><option>Gratuito</option><option>Premium</option><option>Completo</option></select>
         <select class="inp" style="width:160px"><option>Todos os status</option><option selected>Email verificado</option><option>Não verificado</option></select>
       </div>
@@ -191,7 +191,7 @@
       <div class="card card-sm tc"><div style="font-size:22px;font-weight:800">83%</div><div class="tsm tmuted">Resolução auto IA</div></div>
     </div>
     <div class="card mb20">
-      <div class="flex jb ai mb16"><h3>🎫 Fila de tickets (prioridade × plano × tempo)</h3><button class="btn btn-secondary btn-sm" onclick="toast('Fila atualizada!','default')">↻ Atualizar</button></div>
+      <div class="flex jb ai mb16"><h3>Fila de tickets (prioridade × plano × tempo)</h3><button class="btn btn-secondary btn-sm" onclick="toast('Fila atualizada!','default')">↻ Atualizar</button></div>
       <div class="tbl-wrap"><table>
         <thead><tr><th>ID</th><th>Usuário</th><th>Plano</th><th>Assunto</th><th>Categoria</th><th>Tempo aberto</th><th>SLA</th><th>Ação</th></tr></thead>
         <tbody>
@@ -202,7 +202,7 @@
       </table></div>
     </div>
     <div class="card">
-      <div class="flex jb ai mb16"><h3>📚 Base de conhecimento — Artigos recentes</h3><button class="btn btn-primary btn-sm" onclick="toast('Novo artigo criado! Indexado no Elasticsearch.','success')">+ Novo artigo</button></div>
+      <div class="flex jb ai mb16"><h3>Base de conhecimento — Artigos recentes</h3><button class="btn btn-primary btn-sm" onclick="toast('Novo artigo criado! Indexado no Elasticsearch.','success')">+ Novo artigo</button></div>
       <div class="tbl-wrap"><table>
         <thead><tr><th>Título</th><th>Categoria</th><th>Visualizações</th><th>Última atualização</th><th></th></tr></thead>
         <tbody>
@@ -225,14 +225,14 @@
     </div>
     <div class="grid-2 mb20">
       <div class="card">
-        <h3 class="mb16">📊 MRR por plano</h3>
+        <h3 class="mb16">MRR por plano</h3>
         <div class="mbar-row"><span class="mbar-lbl">Completo (4%)</span><div class="mbar-track"><div class="mbar-fill" style="width:18%;background:var(--purple)"></div></div><span class="mbar-pct">R$ 25k</span></div>
         <div class="mbar-row"><span class="mbar-lbl">Premium (14%)</span><div class="mbar-track"><div class="mbar-fill" style="width:55%;background:var(--blue)"></div></div><span class="mbar-pct">R$ 78k</span></div>
         <div class="mbar-row"><span class="mbar-lbl">Concurso+ (12%)</span><div class="mbar-track"><div class="mbar-fill" style="width:24%;background:var(--amber)"></div></div><span class="mbar-pct">R$ 34k</span></div>
         <div class="mbar-row"><span class="mbar-lbl">Idiomas (8%)</span><div class="mbar-track"><div class="mbar-fill" style="width:8%;background:var(--green)"></div></div><span class="mbar-pct">R$ 11k</span></div>
       </div>
       <div class="card">
-        <h3 class="mb16">💳 Últimas transações</h3>
+        <h3 class="mb16"> Últimas transações</h3>
         <div class="tbl-wrap"><table>
           <thead><tr><th>Usuário</th><th>Plano</th><th>Valor</th><th>Status</th></tr></thead>
           <tbody>
@@ -252,7 +252,7 @@
       <div><h1 class="pg-title">Logs de Autenticação</h1><p class="pg-sub">Todos os eventos de auth registrados no ClickHouse.</p></div>
       <div class="flex g8">
         <select class="inp" style="width:160px"><option>Todos os eventos</option><option>Login bem-sucedido</option><option>Tentativas falhas</option><option>OTP verificado</option><option>Bloqueios</option></select>
-        <button class="btn btn-secondary btn-sm" onclick="toast('CSV exportado!','success')">📥 Exportar</button>
+        <button class="btn btn-secondary btn-sm" onclick="toast('CSV exportado!','success')">Exportar</button>
       </div>
     </div>
     <div class="grid-4 mb20">
@@ -261,7 +261,7 @@
       <div class="card card-sm tc"><div style="font-size:20px;font-weight:800;color:var(--red)">3</div><div class="tsm tmuted">IPs bloqueados</div></div>
       <div class="card card-sm tc"><div style="font-size:20px;font-weight:800;color:var(--blue)">1.240</div><div class="tsm tmuted">OTPs verificados</div></div>
     </div>
-    <div class="alert al-red mb20">🚨 <strong>IP 192.168.1.142</strong> realizou 12 tentativas de login em 5 minutos. Bloqueio automático ativado. <button class="btn btn-danger btn-sm" style="margin-left:10px" onclick="toast('IP mantido na lista de bloqueio.','success')">Manter bloqueio</button></div>
+    <div class="alert al-red mb20"><strong>IP 192.168.1.142</strong> realizou 12 tentativas de login em 5 minutos. Bloqueio automático ativado. <button class="btn btn-danger btn-sm" style="margin-left:10px" onclick="toast('IP mantido na lista de bloqueio.','success')">Manter bloqueio</button></div>
     <div class="card">
       <div class="tbl-wrap"><table>
         <thead><tr><th>Evento</th><th>Usuário</th><th>IP</th><th>Dispositivo</th><th>Localização</th><th>Data/Hora</th><th>Status</th></tr></thead>
@@ -271,7 +271,7 @@
           <tr><td>Login (senha errada)</td><td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d4a4b1b0a6bb94bba1a0b8bbbbbffab7bbb9">[email&#160;protected]</a></td><td>200.x.x.82</td><td>Firefox · Mac</td><td>Curitiba, PR</td><td>Hoje 12h55</td><td><span class="badge b-amber">⚠ Falhou</span></td></tr>
           <tr><td>Reset de senha</td><td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="50313e3110383f243d31393c7e333f3d">[email&#160;protected]</a></td><td>201.x.x.11</td><td>Chrome · Android</td><td>Belo Horizonte, MG</td><td>Hoje 11h40</td><td><span class="badge b-blue">→ Solicitado</span></td></tr>
           <tr><td>Login</td><td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="54353a35143c3b2039353d387a373b39">[email&#160;protected]</a></td><td>201.x.x.11</td><td>Chrome · Android</td><td>Belo Horizonte, MG</td><td>Hoje 11h20</td><td><span class="badge b-green">✓ Sucesso</span></td></tr>
-          <tr><td>Bloqueio por tentativas</td><td>—</td><td style="color:var(--red);font-weight:600">192.168.1.142</td><td>Python Requests</td><td>Localização desconhecida</td><td>Hoje 10h08</td><td><span class="badge b-red">🚨 Bloqueado</span></td></tr>
+          <tr><td>Bloqueio por tentativas</td><td>—</td><td style="color:var(--red);font-weight:600">192.168.1.142</td><td>Python Requests</td><td>Localização desconhecida</td><td>Hoje 10h08</td><td><span class="badge b-red">Bloqueado</span></td></tr>
           <tr><td>OTP inválido (3x)</td><td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dcb0a9bfbdaf9cbbb1bdb5b0f2bfb3b1">[email&#160;protected]</a></td><td>177.x.x.99</td><td>Chrome · Windows</td><td>Brasília, DF</td><td>Hoje 09h33</td><td><span class="badge b-amber">⚠ 3 tentativas</span></td></tr>
           <tr><td>Cadastro</td><td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="82e1e3f0edeeebece3c2e5efe3ebeeace1edef">[email&#160;protected]</a></td><td>187.x.x.55</td><td>Safari · iPhone</td><td>Porto Alegre, RS</td><td>Hoje 08h14</td><td><span class="badge b-green">✓ Criado</span></td></tr>
         </tbody>
@@ -539,7 +539,7 @@ document.addEventListener('click', function (e) {
       if (b.dataset.correct === 'true') b.classList.add('correct');
     });
   }
-  toast(correct ? '✅ Correto! +10 XP' : '❌ Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
+  toast(correct ? 'Correto! +10 XP' : 'Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
 });
 
 /* ── Weekly Chart ───────────────────────────────────────── */
@@ -665,7 +665,7 @@ window.renderQ = function (idx) {
         }
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -679,7 +679,7 @@ window.renderQ = function (idx) {
         if (!correct) c.querySelectorAll('.q-option')[q.answer]?.classList.add('correct');
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -704,11 +704,11 @@ function renderCespe(q) {
     </div>
     <p class="q-text">${q.text}</p>
     <div style="display:flex;gap:10px">
-      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">✅ Certo</button>
-      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">❌ Errado</button>
+      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">Certo</button>
+      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">Errado</button>
     </div>
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -736,7 +736,7 @@ function renderMultiple(q) {
     <p class="q-text">${q.text}</p>
     ${opts}
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -801,8 +801,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? '👋 Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : '👋 Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -873,7 +873,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg('👋 Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

@@ -185,7 +185,7 @@ function initPasswordToggles() {
       if (input) {
         const isPassword = input.type === 'password';
         input.type = isPassword ? 'text' : 'password';
-        btn.textContent = isPassword ? '🙈' : '👁️';
+        btn.textContent = isPassword ? '' : '';
         btn.setAttribute('aria-label', isPassword ? 'Ocultar senha' : 'Mostrar senha');
       }
     });

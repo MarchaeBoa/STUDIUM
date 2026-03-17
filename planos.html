@@ -5,7 +5,7 @@
 <body>
 <header class="pub-nav">
   <div class="container pub-nav-in">
-    <a href="index.html" class="pub-logo"><div class="logo-icon">⚡</div>Studium</a>
+    <a href="index.html" class="pub-logo"><div class="logo-icon">S</div>Studium</a>
     <nav class="pub-links"><a href="concursos.html">Concursos</a><a href="planos.html">Planos</a><a href="suporte.html">Ajuda</a></nav>
     <div class="pub-actions"><a href="login.html" class="btn btn-ghost">Entrar</a><a href="cadastro.html" class="btn btn-primary">Começar grátis</a></div>
   </div>
@@ -96,7 +96,7 @@
     <p class="tc tsm tmuted mt24">Todos os planos incluem 14 dias de trial grátis · Sem cartão de crédito · Cancele quando quiser</p>
   </div>
 </main>
-<footer class="pub-footer"><div class="container pub-footer-in"><div class="pub-logo"><div class="logo-icon">⚡</div>Studium</div><nav class="footer-links"><a href="#">Privacidade</a><a href="#">Termos</a><a href="suporte.html">Ajuda</a></nav><p class="tsm tmuted">© 2025 Studium</p></div></footer>
+<footer class="pub-footer"><div class="container pub-footer-in"><div class="pub-logo"><div class="logo-icon">S</div>Studium</div><nav class="footer-links"><a href="#">Privacidade</a><a href="#">Termos</a><a href="suporte.html">Ajuda</a></nav><p class="tsm tmuted">© 2025 Studium</p></div></footer>
 <script>
 /* ============================================================
    STUDIUM — app.js  (motor de toda a interatividade)
@@ -353,7 +353,7 @@ document.addEventListener('click', function (e) {
       if (b.dataset.correct === 'true') b.classList.add('correct');
     });
   }
-  toast(correct ? '✅ Correto! +10 XP' : '❌ Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
+  toast(correct ? 'Correto! +10 XP' : 'Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
 });
 
 /* ── Weekly Chart ───────────────────────────────────────── */
@@ -479,7 +479,7 @@ window.renderQ = function (idx) {
         }
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -493,7 +493,7 @@ window.renderQ = function (idx) {
         if (!correct) c.querySelectorAll('.q-option')[q.answer]?.classList.add('correct');
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -518,11 +518,11 @@ function renderCespe(q) {
     </div>
     <p class="q-text">${q.text}</p>
     <div style="display:flex;gap:10px">
-      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">✅ Certo</button>
-      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">❌ Errado</button>
+      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">Certo</button>
+      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">Errado</button>
     </div>
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -550,7 +550,7 @@ function renderMultiple(q) {
     <p class="q-text">${q.text}</p>
     ${opts}
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -615,8 +615,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? '👋 Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : '👋 Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -687,7 +687,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg('👋 Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

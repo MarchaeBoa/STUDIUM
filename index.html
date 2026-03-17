@@ -41,10 +41,34 @@
       <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px"><circle cx="7" cy="7" r="7" fill="#059669" opacity=".3"/><path d="M4 7l2 2 4-4" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Sem cartão</span>
       <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px"><circle cx="7" cy="7" r="7" fill="#059669" opacity=".3"/><path d="M4 7l2 2 4-4" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Cancele quando quiser</span>
     </div>
-    <div class="hero-images">
-      <div class="hero-img-card"><img src="images/study-desk-dark.svg" alt="Estudante focado na mesa de estudos com laptop"></div>
-      <div class="hero-img-card"><img src="images/study-cozy.svg" alt="Ambiente de estudos aconchegante com livros e anotações"></div>
-      <div class="hero-img-card"><img src="images/study-notes.svg" alt="Caderno de estudos com anotações de química e biologia"></div>
+    <div class="hero-demo">
+      <div class="hero-demo-card">
+        <div class="demo-header">
+          <div class="demo-dots"><span></span><span></span><span></span></div>
+          <span class="demo-title">IA Tutora Studium</span>
+          <span class="demo-badge-live"><span class="demo-live-dot"></span> Online</span>
+        </div>
+        <div class="demo-body" id="demo-body">
+          <div class="demo-msg demo-msg-ai">
+            <div class="demo-avatar">S</div>
+            <div class="demo-bubble">Oi! Sou sua IA Tutora. Pergunte qualquer coisa sobre seus estudos.</div>
+          </div>
+        </div>
+        <div class="demo-prompts" id="demo-prompts">
+          <button class="demo-prompt" data-q="Explique a Lei de Ohm de forma simples" data-a="A Lei de Ohm diz que a &lt;strong&gt;corrente elétrica (I)&lt;/strong&gt; que passa por um condutor é diretamente proporcional à &lt;strong&gt;tensão (V)&lt;/strong&gt; e inversamente proporcional à &lt;strong&gt;resistência (R)&lt;/strong&gt;.&lt;br&gt;&lt;br&gt;A fórmula é: &lt;strong&gt;V = I &times; R&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Pense assim: a tensão é como a pressão da água, a corrente é o fluxo, e a resistência é o diâmetro do cano. Quanto mais pressão e menos resistência, mais água flui.">Explique a Lei de Ohm</button>
+          <button class="demo-prompt" data-q="Qual a diferença entre juros simples e compostos?" data-a="Nos &lt;strong&gt;juros simples&lt;/strong&gt;, o rendimento é calculado sempre sobre o valor inicial. Exemplo: R$ 1.000 a 10% ao mês rende R$ 100/mês.&lt;br&gt;&lt;br&gt;Nos &lt;strong&gt;juros compostos&lt;/strong&gt;, o rendimento é calculado sobre o valor acumulado (juros sobre juros). O mesmo R$ 1.000 renderia R$ 100 no 1&ordm; mês, R$ 110 no 2&ordm;, R$ 121 no 3&ordm;...&lt;br&gt;&lt;br&gt;Por isso os juros compostos crescem mais rápido com o tempo.">Juros simples vs compostos</button>
+          <button class="demo-prompt" data-q="Resuma o art. 5 da Constituição Federal" data-a="O &lt;strong&gt;Art. 5&ordm; da CF/88&lt;/strong&gt; garante os direitos fundamentais de todos no Brasil:&lt;br&gt;&lt;br&gt;&bull; &lt;strong&gt;Igualdade&lt;/strong&gt; perante a lei&lt;br&gt;&bull; &lt;strong&gt;Liberdade&lt;/strong&gt; de expressão, crença e reunião&lt;br&gt;&bull; &lt;strong&gt;Inviolabilidade&lt;/strong&gt; do domicílio e da correspondência&lt;br&gt;&bull; Direito à &lt;strong&gt;propriedade&lt;/strong&gt; (com função social)&lt;br&gt;&bull; &lt;strong&gt;Habeas corpus&lt;/strong&gt;, mandado de segurança e outros remédios constitucionais&lt;br&gt;&lt;br&gt;São 78 incisos que formam a base dos direitos individuais e coletivos.">Art. 5 da Constituição</button>
+        </div>
+        <div class="demo-input-row">
+          <input type="text" class="demo-input" id="demo-input" placeholder="Faça uma pergunta..." readonly>
+          <button class="demo-send" aria-label="Enviar">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 2L7 9M14 2l-4.5 12L7 9M14 2L2 6.5 7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="demo-cta">
+          <a href="cadastro.html" class="btn btn-primary btn-full">Experimente grátis a IA Tutora →</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -286,6 +310,61 @@
   init();
   requestAnimationFrame(draw);
   window.addEventListener('resize', resize);
+})();
+
+/* ── Hero demo interaction ───────────────────────────── */
+(function () {
+  const body = document.getElementById('demo-body');
+  const prompts = document.getElementById('demo-prompts');
+  if (!body || !prompts) return;
+
+  let busy = false;
+
+  prompts.addEventListener('click', function (e) {
+    const btn = e.target.closest('.demo-prompt');
+    if (!btn || busy) return;
+    busy = true;
+
+    const q = btn.dataset.q;
+    const a = btn.dataset.a;
+
+    // Add user message
+    const userMsg = document.createElement('div');
+    userMsg.className = 'demo-msg demo-msg-user';
+    userMsg.innerHTML = '<div class="demo-avatar">EU</div><div class="demo-bubble">' + escapeText(q) + '</div>';
+    body.appendChild(userMsg);
+    body.scrollTop = body.scrollHeight;
+
+    // Hide prompts
+    prompts.style.display = 'none';
+
+    // Show typing indicator
+    const typing = document.createElement('div');
+    typing.className = 'demo-msg demo-msg-ai demo-typing';
+    typing.innerHTML = '<div class="demo-avatar">S</div><div class="demo-bubble"></div>';
+    body.appendChild(typing);
+    body.scrollTop = body.scrollHeight;
+
+    // Reveal answer after delay
+    setTimeout(function () {
+      typing.remove();
+      const aiMsg = document.createElement('div');
+      aiMsg.className = 'demo-msg demo-msg-ai';
+      aiMsg.innerHTML = '<div class="demo-avatar">S</div><div class="demo-bubble">' + a + '</div>';
+      body.appendChild(aiMsg);
+      body.scrollTop = body.scrollHeight;
+      busy = false;
+
+      // Show prompts again after a moment
+      setTimeout(function () {
+        prompts.style.display = 'flex';
+      }, 600);
+    }, 1200 + Math.random() * 600);
+  });
+
+  function escapeText(t) {
+    return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
 })();
 
 /* ── Scroll-reveal animation ──────────────────────────── */

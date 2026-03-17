@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <style>
+      .wave-dark { fill: #047857; }
+      .wave-mid  { fill: #059669; }
+      .wave-light{ fill: #34d399; }
+      .stroke-el { fill: none; stroke: #065f46; stroke-width: 2; }
+      .dot       { fill: #065f46; }
+      .dot-light { fill: #059669; }
+    </style>
+  </defs>
+
+  <!-- ═══ TOP-LEFT WAVE BLOB ═══ -->
+  <path class="wave-dark" opacity=".12"
+    d="M0,0 L320,0 C280,30 260,80 300,130 C340,180 280,220 220,200
+       C160,180 140,240 80,260 C20,280 0,220 0,220Z"/>
+  <path class="wave-mid" opacity=".10"
+    d="M0,0 L250,0 C230,40 200,90 240,140 C270,180 200,200 160,190
+       C100,170 80,220 40,230 C10,238 0,180 0,180Z"/>
+  <path class="wave-light" opacity=".07"
+    d="M0,0 L180,0 C170,30 150,80 170,110 C195,150 140,170 100,160
+       C60,150 40,180 10,190 C0,193 0,140 0,140Z"/>
+
+  <!-- ═══ BOTTOM-RIGHT WAVE BLOB ═══ -->
+  <path class="wave-dark" opacity=".12"
+    d="M1920,1080 L1600,1080 C1640,1050 1660,1000 1620,950
+       C1580,900 1640,860 1700,880 C1760,900 1780,840 1840,820
+       C1900,800 1920,860 1920,860Z"/>
+  <path class="wave-mid" opacity=".10"
+    d="M1920,1080 L1670,1080 C1690,1040 1720,990 1680,940
+       C1650,900 1720,880 1760,890 C1820,910 1840,860 1880,850
+       C1910,842 1920,900 1920,900Z"/>
+  <path class="wave-light" opacity=".07"
+    d="M1920,1080 L1740,1080 C1750,1050 1770,1000 1750,970
+       C1725,930 1780,910 1820,920 C1860,930 1880,900 1910,890
+       C1920,887 1920,940 1920,940Z"/>
+
+  <!-- ═══ TOP-RIGHT SCATTERED ELEMENTS ═══ -->
+  <!-- Dot grid -->
+  <g opacity=".10">
+    <circle class="dot" cx="1340" cy="120" r="3"/>
+    <circle class="dot" cx="1365" cy="120" r="3"/>
+    <circle class="dot" cx="1390" cy="120" r="3"/>
+    <circle class="dot" cx="1415" cy="120" r="3"/>
+    <circle class="dot" cx="1440" cy="120" r="3"/>
+    <circle class="dot" cx="1465" cy="120" r="3"/>
+    <circle class="dot" cx="1490" cy="120" r="3"/>
+    <circle class="dot" cx="1340" cy="145" r="3"/>
+    <circle class="dot" cx="1365" cy="145" r="3"/>
+    <circle class="dot" cx="1390" cy="145" r="3"/>
+    <circle class="dot" cx="1415" cy="145" r="3"/>
+    <circle class="dot" cx="1440" cy="145" r="3"/>
+    <circle class="dot" cx="1465" cy="145" r="3"/>
+    <circle class="dot" cx="1490" cy="145" r="3"/>
+    <circle class="dot" cx="1340" cy="170" r="3"/>
+    <circle class="dot" cx="1365" cy="170" r="3"/>
+    <circle class="dot" cx="1390" cy="170" r="3"/>
+    <circle class="dot" cx="1415" cy="170" r="3"/>
+    <circle class="dot" cx="1440" cy="170" r="3"/>
+    <circle class="dot" cx="1465" cy="170" r="3"/>
+    <circle class="dot" cx="1490" cy="170" r="3"/>
+  </g>
+
+  <!-- Rounded rectangle outlines -->
+  <rect class="stroke-el" opacity=".08" x="1520" y="80" width="45" height="90" rx="22"/>
+  <rect class="stroke-el" opacity=".08" x="1620" y="50" width="80" height="30" rx="15"/>
+
+  <!-- Semi-circle / arc -->
+  <path class="stroke-el" opacity=".07" d="M1200,160 A40,40 0 0,1 1280,160"/>
+
+  <!-- Small filled circles -->
+  <circle class="dot-light" opacity=".09" cx="1560" cy="200" r="5"/>
+  <circle class="dot" opacity=".12" cx="1300" cy="80" r="8"/>
+
+  <!-- ═══ BOTTOM-LEFT SCATTERED ELEMENTS ═══ -->
+  <!-- X marks -->
+  <g opacity=".10" stroke="#065f46" stroke-width="3" stroke-linecap="round">
+    <line x1="60" y1="870" x2="78" y2="888"/>
+    <line x1="78" y1="870" x2="60" y2="888"/>
+    <line x1="100" y1="900" x2="118" y2="918"/>
+    <line x1="118" y1="900" x2="100" y2="918"/>
+  </g>
+
+  <!-- Dot grid bottom-left -->
+  <g opacity=".08">
+    <circle class="dot" cx="80" cy="950" r="3"/>
+    <circle class="dot" cx="105" cy="950" r="3"/>
+    <circle class="dot" cx="130" cy="950" r="3"/>
+    <circle class="dot" cx="80" cy="975" r="3"/>
+    <circle class="dot" cx="105" cy="975" r="3"/>
+    <circle class="dot" cx="130" cy="975" r="3"/>
+    <circle class="dot" cx="80" cy="1000" r="3"/>
+    <circle class="dot" cx="105" cy="1000" r="3"/>
+    <circle class="dot" cx="130" cy="1000" r="3"/>
+  </g>
+
+  <!-- Rounded rect outline bottom-left -->
+  <rect class="stroke-el" opacity=".07" x="180" y="920" width="45" height="90" rx="22"/>
+
+  <!-- Semi-circle bottom-left -->
+  <path class="stroke-el" opacity=".07" d="M250,850 A30,30 0 0,0 310,850"/>
+
+  <!-- Large filled circle -->
+  <circle class="dot" opacity=".12" cx="160" cy="840" r="14"/>
+  <circle class="dot-light" opacity=".06" cx="320" cy="960" r="6"/>
+
+  <!-- ═══ MIDDLE SCATTERED (sparse) ═══ -->
+  <circle class="dot" opacity=".04" cx="700" cy="400" r="4"/>
+  <circle class="dot-light" opacity=".04" cx="1100" cy="600" r="6"/>
+  <circle class="dot" opacity=".03" cx="500" cy="700" r="3"/>
+  <circle class="dot-light" opacity=".05" cx="1400" cy="500" r="4"/>
+  <circle class="dot" opacity=".03" cx="900" cy="250" r="5"/>
+
+  <!-- Small X in middle -->
+  <g opacity=".04" stroke="#065f46" stroke-width="2" stroke-linecap="round">
+    <line x1="850" y1="680" x2="862" y2="692"/>
+    <line x1="862" y1="680" x2="850" y2="692"/>
+  </g>
+
+  <!-- Small arc middle-right -->
+  <path class="stroke-el" opacity=".04" d="M1300,750 A20,20 0 0,1 1340,750"/>
+</svg>

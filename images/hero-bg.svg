@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 810" preserveAspectRatio="xMidYMid slice">
+  <rect width="1440" height="810" fill="#e8ecf1"/>
+
+  <!-- Top-left wavy shapes -->
+  <path d="M0 0 L300 0 C280 20, 320 60, 250 80 C180 100, 220 140, 160 160 C100 180, 130 220, 60 240 C30 250, 10 260, 0 280 Z" fill="#1a3a5c"/>
+  <path d="M0 0 L220 0 C200 30, 240 70, 180 100 C120 130, 160 170, 90 200 C40 220, 20 230, 0 240 Z" fill="#2d5a8e"/>
+  <path d="M0 0 L160 0 C140 25, 170 60, 120 90 C70 120, 100 160, 40 180 C15 190, 5 200, 0 210 Z" fill="#4a7ab5"/>
+  <path d="M0 0 L100 0 C90 20, 110 50, 70 70 C30 90, 50 120, 10 140 L0 150 Z" fill="#6a9ed4"/>
+
+  <!-- Bottom-right wavy shapes -->
+  <path d="M1440 810 L1140 810 C1160 790, 1120 750, 1190 730 C1260 710, 1220 670, 1280 650 C1340 630, 1310 590, 1380 570 C1410 560, 1430 550, 1440 530 Z" fill="#1a3a5c"/>
+  <path d="M1440 810 L1220 810 C1240 780, 1200 740, 1260 710 C1320 680, 1280 640, 1350 610 C1400 590, 1420 580, 1440 570 Z" fill="#2d5a8e"/>
+  <path d="M1440 810 L1280 810 C1300 785, 1270 750, 1320 720 C1370 690, 1340 650, 1400 630 C1425 620, 1435 610, 1440 600 Z" fill="#4a7ab5"/>
+  <path d="M1440 810 L1340 810 C1350 790, 1330 760, 1370 740 C1410 720, 1390 690, 1430 670 L1440 660 Z" fill="#6a9ed4"/>
+
+  <!-- Circles -->
+  <circle cx="120" cy="320" r="18" fill="#1a3a5c"/>
+  <circle cx="200" cy="200" r="8" fill="#2d5a8e"/>
+  <circle cx="80" cy="180" r="5" fill="#4a7ab5"/>
+  <circle cx="350" cy="100" r="6" fill="#2d5a8e"/>
+  <circle cx="1320" cy="500" r="16" fill="#1a3a5c"/>
+  <circle cx="1200" cy="680" r="7" fill="#2d5a8e"/>
+  <circle cx="1380" cy="620" r="5" fill="#4a7ab5"/>
+  <circle cx="1050" cy="720" r="5" fill="#2d5a8e"/>
+  <circle cx="700" cy="200" r="4" fill="#6a9ed4"/>
+  <circle cx="900" cy="650" r="5" fill="#4a7ab5"/>
+
+  <!-- X marks (bottom-left) -->
+  <g stroke="#1a3a5c" stroke-width="3" stroke-linecap="round">
+    <line x1="55" y1="620" x2="70" y2="635"/>
+    <line x1="70" y1="620" x2="55" y2="635"/>
+  </g>
+  <g stroke="#1a3a5c" stroke-width="3" stroke-linecap="round">
+    <line x1="85" y1="640" x2="100" y2="655"/>
+    <line x1="100" y1="640" x2="85" y2="655"/>
+  </g>
+
+  <!-- Dot grids (bottom-left) -->
+  <g fill="#1a3a5c">
+    <circle cx="50" cy="700" r="2.5"/><circle cx="62" cy="700" r="2.5"/><circle cx="74" cy="700" r="2.5"/>
+    <circle cx="50" cy="712" r="2.5"/><circle cx="62" cy="712" r="2.5"/><circle cx="74" cy="712" r="2.5"/>
+    <circle cx="50" cy="724" r="2.5"/><circle cx="62" cy="724" r="2.5"/><circle cx="74" cy="724" r="2.5"/>
+  </g>
+
+  <!-- Dot grids (top-right) -->
+  <g fill="#1a3a5c">
+    <circle cx="1020" cy="100" r="2.5"/><circle cx="1032" cy="100" r="2.5"/><circle cx="1044" cy="100" r="2.5"/><circle cx="1056" cy="100" r="2.5"/><circle cx="1068" cy="100" r="2.5"/><circle cx="1080" cy="100" r="2.5"/><circle cx="1092" cy="100" r="2.5"/><circle cx="1104" cy="100" r="2.5"/>
+    <circle cx="1020" cy="112" r="2.5"/><circle cx="1032" cy="112" r="2.5"/><circle cx="1044" cy="112" r="2.5"/><circle cx="1056" cy="112" r="2.5"/><circle cx="1068" cy="112" r="2.5"/><circle cx="1080" cy="112" r="2.5"/><circle cx="1092" cy="112" r="2.5"/><circle cx="1104" cy="112" r="2.5"/>
+    <circle cx="1020" cy="124" r="2.5"/><circle cx="1032" cy="124" r="2.5"/><circle cx="1044" cy="124" r="2.5"/><circle cx="1056" cy="124" r="2.5"/><circle cx="1068" cy="124" r="2.5"/><circle cx="1080" cy="124" r="2.5"/><circle cx="1092" cy="124" r="2.5"/><circle cx="1104" cy="124" r="2.5"/>
+  </g>
+
+  <!-- Rounded rectangles (outlines) -->
+  <rect x="870" y="50" width="35" height="80" rx="17" ry="17" fill="none" stroke="#1a3a5c" stroke-width="2"/>
+  <rect x="1300" y="90" width="70" height="30" rx="15" ry="15" fill="none" stroke="#1a3a5c" stroke-width="2"/>
+
+  <!-- Half-circle (bottom-left) -->
+  <path d="M140 680 A25 25 0 0 1 190 680" fill="none" stroke="#1a3a5c" stroke-width="2.5"/>
+
+  <!-- Rounded pill shape outline (bottom-left) -->
+  <rect x="100" y="720" width="30" height="60" rx="15" ry="15" fill="none" stroke="#1a3a5c" stroke-width="2"/>
+</svg>

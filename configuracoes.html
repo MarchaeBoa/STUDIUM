@@ -9,10 +9,10 @@
 <header class="topbar" role="banner"></header>
 <main class="main" id="main-content" role="main" data-tab-scope>
   <div class="tabs">
-    <button class="tab-btn active" data-tab="cfg-conta">👤 Conta</button>
-    <button class="tab-btn" data-tab="cfg-seg">🔒 Segurança</button>
-    <button class="tab-btn" data-tab="cfg-com">📧 Comunicações</button>
-    <button class="tab-btn" data-tab="cfg-ass">💳 Assinatura</button>
+    <button class="tab-btn active" data-tab="cfg-conta"> Conta</button>
+    <button class="tab-btn" data-tab="cfg-seg"> Segurança</button>
+    <button class="tab-btn" data-tab="cfg-com">Comunicações</button>
+    <button class="tab-btn" data-tab="cfg-ass"> Assinatura</button>
   </div>
 
   <div id="cfg-conta" class="tab-pane active">
@@ -45,14 +45,14 @@
   <div id="cfg-seg" class="tab-pane">
     <div class="grid-2">
       <div class="card">
-        <h3 class="mb16">📱 Sessões ativas</h3>
-        <div class="sess-row"><span style="font-size:20px">💻</span><div style="flex:1"><div class="tsm fw6">Chrome · Windows <span class="badge b-green" style="margin-left:6px">Este dispositivo</span></div><div class="txs tmuted">São Paulo, SP · Agora</div></div></div>
-        <div class="sess-row"><span style="font-size:20px">📱</span><div style="flex:1"><div class="tsm fw6">Safari · iPhone 15</div><div class="txs tmuted">São Paulo, SP · 3h atrás</div></div><button class="btn btn-danger btn-sm" onclick="toast('Sessão encerrada!','success')">Revogar</button></div>
-        <div class="sess-row"><span style="font-size:20px">📱</span><div style="flex:1"><div class="tsm fw6">App Android · Samsung</div><div class="txs tmuted">São Paulo, SP · Ontem</div></div><button class="btn btn-danger btn-sm" onclick="toast('Sessão encerrada!','success')">Revogar</button></div>
+        <h3 class="mb16">Sessões ativas</h3>
+        <div class="sess-row"><span style="font-size:20px"></span><div style="flex:1"><div class="tsm fw6">Chrome · Windows <span class="badge b-green" style="margin-left:6px">Este dispositivo</span></div><div class="txs tmuted">São Paulo, SP · Agora</div></div></div>
+        <div class="sess-row"><span style="font-size:20px"></span><div style="flex:1"><div class="tsm fw6">Safari · iPhone 15</div><div class="txs tmuted">São Paulo, SP · 3h atrás</div></div><button class="btn btn-danger btn-sm" onclick="toast('Sessão encerrada!','success')">Revogar</button></div>
+        <div class="sess-row"><span style="font-size:20px"></span><div style="flex:1"><div class="tsm fw6">App Android · Samsung</div><div class="txs tmuted">São Paulo, SP · Ontem</div></div><button class="btn btn-danger btn-sm" onclick="toast('Sessão encerrada!','success')">Revogar</button></div>
         <button class="btn btn-danger btn-full mt16" onclick="toast('Todas as sessões encerradas!','success')">Encerrar todas as sessões</button>
       </div>
       <div class="card">
-        <h3 class="mb16">🕒 Histórico de acessos</h3>
+        <h3 class="mb16">Histórico de acessos</h3>
         <div style="display:flex;flex-direction:column;gap:10px">
           <div class="flex ai g10"><div style="width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0"></div><div><div class="tsm fw6">Login realizado</div><div class="txs tmuted">Chrome · SP · Hoje 14h32</div></div></div>
           <div class="flex ai g10"><div style="width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0"></div><div><div class="tsm fw6">Login via Google OAuth</div><div class="txs tmuted">Safari · iPhone · Hoje 11h07</div></div></div>
@@ -66,13 +66,13 @@
 
   <div id="cfg-com" class="tab-pane">
     <div class="card" style="max-width:580px">
-      <h3 class="mb4">📧 E-mails transacionais</h3>
+      <h3 class="mb4">E-mails transacionais</h3>
       <p class="tsm tmuted mb16">Obrigatórios — necessários para segurança da conta. Não podem ser desativados.</p>
       <div class="tog-row"><div><div class="tsm fw6">Verificação de e-mail (OTP)</div><div class="txs tmuted">Código para confirmar sua identidade</div></div><div class="tog on" style="opacity:.5"></div></div>
       <div class="tog-row"><div><div class="tsm fw6">Alertas de segurança</div><div class="txs tmuted">Novo login, alteração de senha</div></div><div class="tog on" style="opacity:.5"></div></div>
       <div class="tog-row"><div><div class="tsm fw6">Faturas e cobranças</div><div class="txs tmuted">Confirmação de pagamento</div></div><div class="tog on" style="opacity:.5"></div></div>
       <hr class="hr">
-      <h3 class="mb4">📬 E-mails de engajamento</h3>
+      <h3 class="mb4">E-mails de engajamento</h3>
       <p class="tsm tmuted mb16">Ative ou desative cada tipo individualmente.</p>
       <div class="tog-row"><div><div class="tsm fw6">Resumo semanal de progresso</div><div class="txs tmuted">Todo domingo às 18h</div></div><div class="tog on"></div></div>
       <div class="tog-row"><div><div class="tsm fw6">Alertas de prazo de concurso</div><div class="txs tmuted">48h e 24h antes do encerramento</div></div><div class="tog on"></div></div>
@@ -94,8 +94,8 @@
         <div class="flex jb tsm"><span class="tmuted">Próxima renovação</span><span class="fw6">14 Ago 2025</span></div>
       </div>
       <div class="flex g12 mb20">
-        <a href="planos.html" class="btn btn-primary">⬆️ Fazer upgrade</a>
-        <button class="btn btn-secondary" onclick="toast('Plano pausado por 30 dias.','success')">⏸ Pausar</button>
+        <a href="planos.html" class="btn btn-primary">Fazer upgrade</a>
+        <button class="btn btn-secondary" onclick="toast('Plano pausado por 30 dias.','success')">Pausar</button>
         <button class="btn btn-danger" onclick="if(confirm('Tem certeza que deseja cancelar?')) toast('Assinatura cancelada.','error')">Cancelar</button>
       </div>
       <hr class="hr">
@@ -368,7 +368,7 @@ document.addEventListener('click', function (e) {
       if (b.dataset.correct === 'true') b.classList.add('correct');
     });
   }
-  toast(correct ? '✅ Correto! +10 XP' : '❌ Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
+  toast(correct ? 'Correto! +10 XP' : 'Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
 });
 
 /* ── Weekly Chart ───────────────────────────────────────── */
@@ -494,7 +494,7 @@ window.renderQ = function (idx) {
         }
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -508,7 +508,7 @@ window.renderQ = function (idx) {
         if (!correct) c.querySelectorAll('.q-option')[q.answer]?.classList.add('correct');
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -533,11 +533,11 @@ function renderCespe(q) {
     </div>
     <p class="q-text">${q.text}</p>
     <div style="display:flex;gap:10px">
-      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">✅ Certo</button>
-      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">❌ Errado</button>
+      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">Certo</button>
+      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">Errado</button>
     </div>
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -565,7 +565,7 @@ function renderMultiple(q) {
     <p class="q-text">${q.text}</p>
     ${opts}
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -630,8 +630,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? '👋 Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : '👋 Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -702,7 +702,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg('👋 Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

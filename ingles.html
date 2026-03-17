@@ -12,19 +12,19 @@
     <div class="grid-4 mb20">
       <div class="card card-sm"><div style="font-size:20px;font-weight:800">A2</div><div class="tsm tmuted">Nível atual</div></div>
       <div class="card card-sm"><div style="font-size:20px;font-weight:800">17/20</div><div class="tsm tmuted">Lições concluídas</div><div class="prog mt8"><div class="prog-fill prog-green" style="width:85%"></div></div></div>
-      <div class="card card-sm"><div style="font-size:20px;font-weight:800">🔥 7</div><div class="tsm tmuted">Dias de streak</div></div>
+      <div class="card card-sm"><div style="font-size:20px;font-weight:800">7</div><div class="tsm tmuted">Dias de streak</div></div>
       <div class="card card-sm"><div style="font-size:20px;font-weight:800;color:var(--blue)">840 XP</div><div class="tsm tmuted">XP de idiomas</div></div>
     </div>
     <!-- Level selector -->
     <div class="grid-4 mb20">
       <div class="card" style="border:2px solid var(--n200);border-radius:var(--rl);padding:16px;cursor:pointer" onclick="toast('Nível A1 já concluído!')"><div style="font-size:22px;font-weight:800;color:var(--blue)">A1</div><div class="tsm">Básico</div><div class="badge b-green mt8">✓ Concluído</div></div>
       <div class="card" style="border:2px solid var(--blue);border-radius:var(--rl);padding:16px;background:var(--blue-l)"><div style="font-size:22px;font-weight:800;color:var(--blue)">A2</div><div class="tsm">Elementar</div><div class="badge b-blue mt8">Em andamento</div></div>
-      <div class="card" style="border:2px solid var(--n200);border-radius:var(--rl);padding:16px;opacity:.7"><div style="font-size:22px;font-weight:800;color:var(--n400)">B1</div><div class="tsm">Intermediário</div><div class="badge b-gray mt8">🔒 Bloqueado</div></div>
-      <div class="card" style="border:2px solid var(--n200);border-radius:var(--rl);padding:16px;opacity:.7"><div style="font-size:22px;font-weight:800;color:var(--n400)">B2+</div><div class="tsm">Avançado</div><div class="badge b-gray mt8">🔒 Bloqueado</div></div>
+      <div class="card" style="border:2px solid var(--n200);border-radius:var(--rl);padding:16px;opacity:.7"><div style="font-size:22px;font-weight:800;color:var(--n400)">B1</div><div class="tsm">Intermediário</div><div class="badge b-gray mt8"> Bloqueado</div></div>
+      <div class="card" style="border:2px solid var(--n200);border-radius:var(--rl);padding:16px;opacity:.7"><div style="font-size:22px;font-weight:800;color:var(--n400)">B2+</div><div class="tsm">Avançado</div><div class="badge b-gray mt8"> Bloqueado</div></div>
     </div>
     <!-- Units -->
     <div class="card">
-      <h3 class="mb16">📚 Unidades — Nível A2</h3>
+      <h3 class="mb16">Unidades — Nível A2</h3>
       <div style="display:flex;flex-direction:column;gap:8px">
         <div class="flex ai g12" style="padding:12px;border:1px solid var(--n200);border-radius:var(--r)">
           <div style="width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;flex-shrink:0">✓</div>
@@ -39,7 +39,7 @@
         <div class="flex ai g12" style="padding:12px;border:1px solid var(--n200);border-radius:var(--r);opacity:.5">
           <div style="width:34px;height:34px;border-radius:50%;background:var(--n200);color:var(--n500);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0">5</div>
           <div style="flex:1"><div style="font-weight:600">Unidade 5 — Talking about the future</div><div class="tsm tmuted">Conclua a unidade 4 para desbloquear</div></div>
-          <span class="badge b-gray">🔒</span>
+          <span class="badge b-gray"></span>
         </div>
       </div>
     </div>
@@ -326,7 +326,7 @@ document.addEventListener('click', function (e) {
       if (b.dataset.correct === 'true') b.classList.add('correct');
     });
   }
-  toast(correct ? '✅ Correto! +10 XP' : '❌ Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
+  toast(correct ? 'Correto! +10 XP' : 'Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
 });
 
 /* ── Weekly Chart ───────────────────────────────────────── */
@@ -452,7 +452,7 @@ window.renderQ = function (idx) {
         }
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -466,7 +466,7 @@ window.renderQ = function (idx) {
         if (!correct) c.querySelectorAll('.q-option')[q.answer]?.classList.add('correct');
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -491,11 +491,11 @@ function renderCespe(q) {
     </div>
     <p class="q-text">${q.text}</p>
     <div style="display:flex;gap:10px">
-      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">✅ Certo</button>
-      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">❌ Errado</button>
+      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">Certo</button>
+      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">Errado</button>
     </div>
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -523,7 +523,7 @@ function renderMultiple(q) {
     <p class="q-text">${q.text}</p>
     ${opts}
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -588,8 +588,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? '👋 Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : '👋 Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -660,7 +660,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg('👋 Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

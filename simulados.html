@@ -12,7 +12,7 @@
     <div class="pg-hdr"><h1 class="pg-title">Simulados</h1><p class="pg-sub">Pratique com provas completas por banca e edital.</p></div>
     <div class="grid-3 mb24">
       <div class="card" style="border-top:4px solid var(--blue)">
-        <div style="font-size:28px;margin-bottom:10px">📋</div>
+        <div style="font-size:28px;margin-bottom:10px"></div>
         <h3 class="mb8">ENEM Completo</h3>
         <p class="tsm tmuted mb16">180 questões · 4 áreas · 5h30min</p>
         <div class="mbar-row" style="padding:4px 0"><span class="mbar-lbl" style="width:80px">Linguagens</span><div class="mbar-track"><div class="mbar-fill" style="width:72%;background:var(--blue)"></div></div><span class="mbar-pct">72%</span></div>
@@ -20,21 +20,21 @@
         <button class="btn btn-primary btn-full" onclick="startSim()">Iniciar simulado →</button>
       </div>
       <div class="card" style="border-top:4px solid var(--amber)">
-        <div style="font-size:28px;margin-bottom:10px">⚖️</div>
+        <div style="font-size:28px;margin-bottom:10px"></div>
         <h3 class="mb8">CESPE / CEBRASPE</h3>
         <p class="tsm tmuted mb16">Certo ou Errado · 30–60 questões</p>
         <div class="flex g8 mb16"><span class="badge b-amber">Modelo CESPE</span><span class="badge b-gray">+30 anos</span></div>
         <button class="btn btn-primary btn-full" onclick="startSim()">Iniciar simulado →</button>
       </div>
       <div class="card" style="border-top:4px solid var(--green)">
-        <div style="font-size:28px;margin-bottom:10px">🎯</div>
+        <div style="font-size:28px;margin-bottom:10px"></div>
         <h3 class="mb8">Personalizado</h3>
         <p class="tsm tmuted mb16">Você escolhe matérias, quantidade e tempo</p>
         <button class="btn btn-secondary btn-full" onclick="document.getElementById('custom-modal').style.display='flex'">Configurar →</button>
       </div>
     </div>
     <div class="card">
-      <div class="flex jb ai mb16"><h3>📊 Histórico de simulados</h3><span class="badge b-gray">12 realizados</span></div>
+      <div class="flex jb ai mb16"><h3>Histórico de simulados</h3><span class="badge b-gray">12 realizados</span></div>
       <div class="tbl-wrap"><table>
         <thead><tr><th>Simulado</th><th>Nota / %</th><th>Tempo</th><th>Data</th><th></th></tr></thead>
         <tbody>
@@ -345,7 +345,7 @@ document.addEventListener('click', function (e) {
       if (b.dataset.correct === 'true') b.classList.add('correct');
     });
   }
-  toast(correct ? '✅ Correto! +10 XP' : '❌ Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
+  toast(correct ? 'Correto! +10 XP' : 'Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
 });
 
 /* ── Weekly Chart ───────────────────────────────────────── */
@@ -471,7 +471,7 @@ window.renderQ = function (idx) {
         }
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -485,7 +485,7 @@ window.renderQ = function (idx) {
         if (!correct) c.querySelectorAll('.q-option')[q.answer]?.classList.add('correct');
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -510,11 +510,11 @@ function renderCespe(q) {
     </div>
     <p class="q-text">${q.text}</p>
     <div style="display:flex;gap:10px">
-      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">✅ Certo</button>
-      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">❌ Errado</button>
+      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">Certo</button>
+      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">Errado</button>
     </div>
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -542,7 +542,7 @@ function renderMultiple(q) {
     <p class="q-text">${q.text}</p>
     ${opts}
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -607,8 +607,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? '👋 Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : '👋 Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -679,7 +679,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg('👋 Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

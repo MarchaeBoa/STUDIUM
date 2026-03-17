@@ -8,16 +8,16 @@
 <aside class="sidebar" aria-label="Navegação principal"></aside>
 <header class="topbar" role="banner"></header>
 <main class="main" id="main-content" role="main">
-  <div class="alert al-blue mb20">🎯 Espanhol é exigido em <strong>70% dos concursos federais</strong> de alto salário. Começar agora é estratégico.</div>
+  <div class="alert al-blue mb20">Espanhol é exigido em <strong>70% dos concursos federais</strong> de alto salário. Começar agora é estratégico.</div>
   <div class="grid-4 mb20">
     <div class="card card-sm"><div style="font-size:20px;font-weight:800">A1</div><div class="tsm tmuted">Nível atual</div></div>
     <div class="card card-sm"><div style="font-size:20px;font-weight:800">3/10</div><div class="tsm tmuted">Lições A1</div><div class="prog mt8"><div class="prog-fill prog-amber" style="width:30%"></div></div></div>
-    <div class="card card-sm"><div style="font-size:20px;font-weight:800">🔥 3</div><div class="tsm tmuted">Dias de streak</div></div>
+    <div class="card card-sm"><div style="font-size:20px;font-weight:800">3</div><div class="tsm tmuted">Dias de streak</div></div>
     <div class="card card-sm"><div style="font-size:20px;font-weight:800;color:var(--amber)">180 XP</div><div class="tsm tmuted">XP de espanhol</div></div>
   </div>
   <div class="card" style="max-width:600px">
     <div class="flex ai g8 mb20">
-      <span style="font-size:24px">🇪🇸</span>
+      <span style="font-size:24px"></span>
       <div><h3>Unidade 3 — Saludos y despedidas</h3><p class="tsm tmuted">Saudações e despedidas em espanhol</p></div>
     </div>
     <span class="badge b-amber mb16" style="display:inline-flex">Vocabulário</span>
@@ -31,7 +31,7 @@
     </div>
     <div class="flex jb mt20">
       <button class="btn btn-secondary">← Anterior</button>
-      <button class="btn btn-primary" onclick="toast('¡Muy bien! +10 XP 🎉','success')">Próxima →</button>
+      <button class="btn btn-primary" onclick="toast('¡Muy bien! +10 XP ','success')">Próxima →</button>
     </div>
   </div>
 </main>
@@ -292,7 +292,7 @@ document.addEventListener('click', function (e) {
       if (b.dataset.correct === 'true') b.classList.add('correct');
     });
   }
-  toast(correct ? '✅ Correto! +10 XP' : '❌ Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
+  toast(correct ? 'Correto! +10 XP' : 'Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
 });
 
 /* ── Weekly Chart ───────────────────────────────────────── */
@@ -418,7 +418,7 @@ window.renderQ = function (idx) {
         }
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -432,7 +432,7 @@ window.renderQ = function (idx) {
         if (!correct) c.querySelectorAll('.q-option')[q.answer]?.classList.add('correct');
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -457,11 +457,11 @@ function renderCespe(q) {
     </div>
     <p class="q-text">${q.text}</p>
     <div style="display:flex;gap:10px">
-      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">✅ Certo</button>
-      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">❌ Errado</button>
+      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">Certo</button>
+      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">Errado</button>
     </div>
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -489,7 +489,7 @@ function renderMultiple(q) {
     <p class="q-text">${q.text}</p>
     ${opts}
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -554,8 +554,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? '👋 Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : '👋 Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -626,7 +626,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg('👋 Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

@@ -12,29 +12,29 @@ function renderSidebar(activePage) {
 
   const navItems = [
     { section: 'Principal', items: [
-      { href: 'dashboard.html', icon: '🏠', label: 'Dashboard' },
-      { href: 'plano-estudos.html', icon: '📅', label: 'Cronograma' },
-      { href: 'questoes.html', icon: '❓', label: 'Questões' },
-      { href: 'simulados.html', icon: '📝', label: 'Simulados' },
+      { href: 'dashboard.html', icon: '', label: 'Dashboard' },
+      { href: 'plano-estudos.html', icon: '', label: 'Cronograma' },
+      { href: 'questoes.html', icon: '', label: 'Questões' },
+      { href: 'simulados.html', icon: '', label: 'Simulados' },
     ]},
     { section: 'Módulos', items: [
-      { href: 'concursos.html', icon: '🏆', label: 'Concursos' },
-      { href: 'ia-tutora.html', icon: '🧠', label: 'IA Tutora' },
-      { href: 'ingles.html', icon: '🇺🇸', label: 'Inglês' },
-      { href: 'espanhol.html', icon: '🇪🇸', label: 'Espanhol' },
+      { href: 'concursos.html', icon: '', label: 'Concursos' },
+      { href: 'ia-tutora.html', icon: '', label: 'IA Tutora' },
+      { href: 'ingles.html', icon: '', label: 'Inglês' },
+      { href: 'espanhol.html', icon: '', label: 'Espanhol' },
     ]},
     { section: 'Conta', items: [
-      { href: 'suporte.html', icon: '💬', label: 'Suporte', badge: '1' },
-      { href: 'perfil.html', icon: '👤', label: 'Perfil' },
-      { href: 'configuracoes.html', icon: '⚙️', label: 'Configurações' },
-      { href: 'planos.html', icon: '💳', label: 'Planos' },
+      { href: 'suporte.html', icon: '', label: 'Suporte', badge: '1' },
+      { href: 'perfil.html', icon: '', label: 'Perfil' },
+      { href: 'configuracoes.html', icon: '', label: 'Configurações' },
+      { href: 'planos.html', icon: '', label: 'Planos' },
     ]},
   ];
 
   let html = `
     <div class="sb-hdr">
       <a href="index.html" class="sb-logo" aria-label="Studium - Página inicial">
-        <div class="logo-icon" aria-hidden="true">⚡</div>Studium
+        <div class="logo-icon" aria-hidden="true">S</div>Studium
       </a>
     </div>`;
 
@@ -75,12 +75,12 @@ function renderTopbar(title) {
     </div>
     <div class="tb-r">
       <div class="search-bar" role="search">
-        <span aria-hidden="true">🔍</span>
+        <span aria-hidden="true"></span>
         <label for="global-search" class="hidden">Buscar</label>
         <input type="search" id="global-search" placeholder="Buscar questões, concursos..." aria-label="Buscar questões, concursos">
       </div>
       <button class="notif-btn" onclick="toast('Você tem 2 notificações.')" aria-label="Notificações - 2 novas">
-        🔔<span class="notif-dot" aria-hidden="true"></span>
+        <span class="notif-dot" aria-hidden="true"></span>
       </button>
       <a href="perfil.html" aria-label="Perfil"><div class="av av-sm" aria-hidden="true">RO</div></a>
     </div>`;

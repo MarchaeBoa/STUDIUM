@@ -17,11 +17,11 @@
       <div><label class="lbl">Banca</label><select class="inp" style="width:120px"><option>Todas</option><option>CESPE</option><option>FCC</option><option>FGV</option></select></div>
       <div><label class="lbl">Escolaridade</label><select class="inp" style="width:140px"><option>Todas</option><option>Nível Médio</option><option selected>Superior</option></select></div>
       <div><label class="lbl">Salário mín.</label><select class="inp" style="width:130px"><option>Qualquer</option><option>R$ 5.000+</option><option selected>R$ 10.000+</option></select></div>
-      <div style="align-self:flex-end"><button class="btn btn-primary" onclick="toast('Filtros aplicados!','success')">🔍 Filtrar</button></div>
+      <div style="align-self:flex-end"><button class="btn btn-primary" onclick="toast('Filtros aplicados!','success')"> Filtrar</button></div>
     </div>
   </div>
 
-  <div class="alert al-amber mb20">⏰ <strong>Polícia Federal</strong> — inscrições encerram em <strong>3 dias</strong>! <a href="#" style="color:var(--amber);text-decoration:underline" onclick="toast('Trilha gerada! Veja no Cronograma.','success')">Gerar trilha de estudos →</a></div>
+  <div class="alert al-amber mb20"><strong>Polícia Federal</strong> — inscrições encerram em <strong>3 dias</strong>! <a href="#" style="color:var(--amber);text-decoration:underline" onclick="toast('Trilha gerada! Veja no Cronograma.','success')">Gerar trilha de estudos →</a></div>
 
   <div class="card">
     <div class="tbl-wrap"><table>
@@ -34,7 +34,7 @@
           <td style="color:var(--red);font-weight:600">3 dias</td>
           <td><span class="badge b-green">Aberto</span></td>
           <td style="white-space:nowrap">
-            <button class="btn btn-primary btn-sm" onclick="toast('Trilha gerada! Veja no Cronograma.','success')">📋 Trilha</button>
+            <button class="btn btn-primary btn-sm" onclick="toast('Trilha gerada! Veja no Cronograma.','success')">Trilha</button>
             <button class="save-btn btn btn-ghost btn-sm">☆ Salvar</button>
           </td>
         </tr>
@@ -44,7 +44,7 @@
           <td class="tgreen fw7">R$ 4.795</td><td>20/07</td>
           <td><span class="badge b-green">Aberto</span></td>
           <td style="white-space:nowrap">
-            <button class="btn btn-primary btn-sm" onclick="toast('Trilha gerada!','success')">📋 Trilha</button>
+            <button class="btn btn-primary btn-sm" onclick="toast('Trilha gerada!','success')">Trilha</button>
             <button class="save-btn btn btn-ghost btn-sm">☆ Salvar</button>
           </td>
         </tr>
@@ -54,7 +54,7 @@
           <td class="tgreen fw7">R$ 7.786</td><td>30/08</td>
           <td><span class="badge b-green">Aberto</span></td>
           <td style="white-space:nowrap">
-            <button class="btn btn-primary btn-sm" onclick="toast('Trilha gerada!','success')">📋 Trilha</button>
+            <button class="btn btn-primary btn-sm" onclick="toast('Trilha gerada!','success')">Trilha</button>
             <button class="save-btn btn btn-ghost btn-sm">☆ Salvar</button>
           </td>
         </tr>
@@ -64,7 +64,7 @@
           <td class="tgreen fw7">R$ 21.029</td><td>10/09</td>
           <td><span class="badge b-amber">Em breve</span></td>
           <td style="white-space:nowrap">
-            <button class="btn btn-secondary btn-sm" onclick="toast('Você receberá um alerta quando abrir!','success')">🔔 Alertar</button>
+            <button class="btn btn-secondary btn-sm" onclick="toast('Você receberá um alerta quando abrir!','success')"> Alertar</button>
             <button class="save-btn btn btn-ghost btn-sm">☆ Salvar</button>
           </td>
         </tr>
@@ -74,7 +74,7 @@
           <td class="tgreen fw7">R$ 13.994</td><td>25/07</td>
           <td><span class="badge b-green">Aberto</span></td>
           <td style="white-space:nowrap">
-            <button class="btn btn-primary btn-sm" onclick="toast('Trilha gerada!','success')">📋 Trilha</button>
+            <button class="btn btn-primary btn-sm" onclick="toast('Trilha gerada!','success')">Trilha</button>
             <button class="save-btn btn btn-ghost btn-sm">☆ Salvar</button>
           </td>
         </tr>
@@ -339,7 +339,7 @@ document.addEventListener('click', function (e) {
       if (b.dataset.correct === 'true') b.classList.add('correct');
     });
   }
-  toast(correct ? '✅ Correto! +10 XP' : '❌ Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
+  toast(correct ? 'Correto! +10 XP' : 'Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
 });
 
 /* ── Weekly Chart ───────────────────────────────────────── */
@@ -465,7 +465,7 @@ window.renderQ = function (idx) {
         }
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -479,7 +479,7 @@ window.renderQ = function (idx) {
         if (!correct) c.querySelectorAll('.q-option')[q.answer]?.classList.add('correct');
         const expEl = c.querySelector('.q-explanation');
         if (expEl) expEl.style.display = 'block';
-        toast(correct ? '✅ Correto! +50 XP' : '❌ Errado!', correct ? 'success' : 'error');
+        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
       });
     });
 
@@ -504,11 +504,11 @@ function renderCespe(q) {
     </div>
     <p class="q-text">${q.text}</p>
     <div style="display:flex;gap:10px">
-      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">✅ Certo</button>
-      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">❌ Errado</button>
+      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">Certo</button>
+      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">Errado</button>
     </div>
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -536,7 +536,7 @@ function renderMultiple(q) {
     <p class="q-text">${q.text}</p>
     ${opts}
     <div class="q-explanation" style="display:none">
-      <strong>💡 Comentário:</strong> ${q.explanation}
+      <strong>Comentário:</strong> ${q.explanation}
     </div>
     <div class="flex jb mt16">
       <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
@@ -601,8 +601,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? '👋 Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : '👋 Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -673,7 +673,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg('👋 Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

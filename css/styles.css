@@ -355,7 +355,7 @@ tbody tr:last-child td { border-bottom: none; }
 }
 .auth-brand {
   flex: 1;
-  background: linear-gradient(135deg, rgba(15,26,20,.85), rgba(13,40,24,.8)), url('../images/study-cozy.svg') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(15,26,20,.85), rgba(13,40,24,.8)), url('../images/study-cozy.jpg') center/cover no-repeat;
   display: flex; align-items: center; justify-content: center; padding: 56px;
   position: relative; overflow: hidden;
 }

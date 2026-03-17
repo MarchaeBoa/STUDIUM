@@ -11,10 +11,10 @@
   <!-- Suggestions -->
   <div style="padding:10px 18px;background:#fff;border-bottom:1px solid var(--n200);display:flex;gap:8px;flex-wrap:wrap">
     <button class="btn btn-secondary btn-sm" onclick="sendSug('Explique Direito Constitucional Art. 5º')">Explicar conteúdo</button>
-    <button class="btn btn-secondary btn-sm" onclick="sendSug('Crie um resumo sobre Porcentagem e Juros')"> Criar resumo</button>
+    <button class="btn btn-secondary btn-sm" onclick="sendSug('Crie um resumo sobre Porcentagem e Juros')">Criar resumo</button>
     <button class="btn btn-secondary btn-sm" onclick="sendSug('Gere 5 flashcards sobre Raciocínio Lógico')">Gerar flashcards</button>
     <button class="btn btn-secondary btn-sm" onclick="sendSug('Analise meus pontos fracos e dê sugestões')">Analisar desempenho</button>
-    <button class="btn btn-secondary btn-sm" onclick="sendSug('Crie um plano de revisão para os próximos 7 dias')"> Plano de revisão</button>
+    <button class="btn btn-secondary btn-sm" onclick="sendSug('Crie um plano de revisão para os próximos 7 dias')">Plano de revisao</button>
   </div>
   <div class="chat-msgs" id="ai-msgs"></div>
   <form class="chat-bar" id="ai-form">
@@ -541,8 +541,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? 'Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : 'Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -613,7 +613,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg('Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

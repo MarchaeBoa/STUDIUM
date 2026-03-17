@@ -9,10 +9,10 @@
 <header class="topbar" role="banner"></header>
 <main class="main" id="main-content" role="main" data-tab-scope>
   <div class="tabs">
-    <button class="tab-btn active" data-tab="cfg-conta"> Conta</button>
-    <button class="tab-btn" data-tab="cfg-seg"> Segurança</button>
+    <button class="tab-btn active" data-tab="cfg-conta">Conta</button>
+    <button class="tab-btn" data-tab="cfg-seg">Seguranca</button>
     <button class="tab-btn" data-tab="cfg-com">Comunicações</button>
-    <button class="tab-btn" data-tab="cfg-ass"> Assinatura</button>
+    <button class="tab-btn" data-tab="cfg-ass">Assinatura</button>
   </div>
 
   <div id="cfg-conta" class="tab-pane active">
@@ -46,9 +46,9 @@
     <div class="grid-2">
       <div class="card">
         <h3 class="mb16">Sessões ativas</h3>
-        <div class="sess-row"><span style="font-size:20px"></span><div style="flex:1"><div class="tsm fw6">Chrome · Windows <span class="badge b-green" style="margin-left:6px">Este dispositivo</span></div><div class="txs tmuted">São Paulo, SP · Agora</div></div></div>
-        <div class="sess-row"><span style="font-size:20px"></span><div style="flex:1"><div class="tsm fw6">Safari · iPhone 15</div><div class="txs tmuted">São Paulo, SP · 3h atrás</div></div><button class="btn btn-danger btn-sm" onclick="toast('Sessão encerrada!','success')">Revogar</button></div>
-        <div class="sess-row"><span style="font-size:20px"></span><div style="flex:1"><div class="tsm fw6">App Android · Samsung</div><div class="txs tmuted">São Paulo, SP · Ontem</div></div><button class="btn btn-danger btn-sm" onclick="toast('Sessão encerrada!','success')">Revogar</button></div>
+        <div class="sess-row"><div style="flex:1"><div class="tsm fw6">Chrome · Windows <span class="badge b-green" style="margin-left:6px">Este dispositivo</span></div><div class="txs tmuted">São Paulo, SP · Agora</div></div></div>
+        <div class="sess-row"><div style="flex:1"><div class="tsm fw6">Safari · iPhone 15</div><div class="txs tmuted">São Paulo, SP · 3h atrás</div></div><button class="btn btn-danger btn-sm" onclick="toast('Sessão encerrada!','success')">Revogar</button></div>
+        <div class="sess-row"><div style="flex:1"><div class="tsm fw6">App Android · Samsung</div><div class="txs tmuted">São Paulo, SP · Ontem</div></div><button class="btn btn-danger btn-sm" onclick="toast('Sessão encerrada!','success')">Revogar</button></div>
         <button class="btn btn-danger btn-full mt16" onclick="toast('Todas as sessões encerradas!','success')">Encerrar todas as sessões</button>
       </div>
       <div class="card">
@@ -630,8 +630,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? 'Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : 'Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -702,7 +702,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg('Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

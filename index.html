@@ -24,7 +24,7 @@
 </header>
 <section class="hero">
   <div class="container">
-    <div class="hero-badge">S IA Tutora disponível 24 horas por dia</div>
+    <div class="hero-badge">IA Tutora disponível 24 horas por dia</div>
     <h1>Estude com inteligência.<br><span>Conquiste seu futuro.</span></h1>
     <p class="hero-sub">ENEM, vestibulares, concursos públicos e idiomas — tudo em um só lugar com IA, simulados adaptativos e plano de estudos personalizado.</p>
     <div class="hero-ctas">
@@ -55,10 +55,10 @@
   <div class="container">
     <div class="feat-hdr"><h2>Tudo que você precisa em um só lugar</h2><p>Módulos integrados e adaptados ao seu objetivo específico.</p></div>
     <div class="grid-4">
-      <a href="concursos.html" class="card card-h" style="display:block"><div class="feat-icon" style="background:var(--amber-l)"></div><h3 style="margin-bottom:6px">Concursos Públicos</h3><p class="tsm tmuted">Trilha por edital, alertas de prazo e simulados por banca.</p></a>
-      <a href="questoes.html" class="card card-h" style="display:block"><div class="feat-icon" style="background:var(--blue-l)"></div><h3 style="margin-bottom:6px">ENEM e Vestibulares</h3><p class="tsm tmuted">Simulado completo e correção de redação por IA.</p></a>
-      <a href="ia-tutora.html" class="card card-h" style="display:block"><div class="feat-icon" style="background:var(--purple-l)"></div><h3 style="margin-bottom:6px">IA Tutora</h3><p class="tsm tmuted">Explica, cria resumos, gera flashcards e analisa pontos fracos.</p></a>
-      <a href="ingles.html" class="card card-h" style="display:block"><div class="feat-icon" style="background:var(--green-l)"></div><h3 style="margin-bottom:6px">Idiomas</h3><p class="tsm tmuted">Inglês e espanhol do A1 ao C2 com revisão espaçada.</p></a>
+      <a href="concursos.html" class="card card-h" style="display:block"><div class="feat-icon" style="background:var(--amber-l)"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h3 style="margin-bottom:6px">Concursos Públicos</h3><p class="tsm tmuted">Trilha por edital, alertas de prazo e simulados por banca.</p></a>
+      <a href="questoes.html" class="card card-h" style="display:block"><div class="feat-icon" style="background:var(--blue-l)"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div><h3 style="margin-bottom:6px">ENEM e Vestibulares</h3><p class="tsm tmuted">Simulado completo e correção de redação por IA.</p></a>
+      <a href="ia-tutora.html" class="card card-h" style="display:block"><div class="feat-icon" style="background:var(--purple-l)"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div><h3 style="margin-bottom:6px">IA Tutora</h3><p class="tsm tmuted">Explica, cria resumos, gera flashcards e analisa pontos fracos.</p></a>
+      <a href="ingles.html" class="card card-h" style="display:block"><div class="feat-icon" style="background:var(--green-l)"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h3 style="margin-bottom:6px">Idiomas</h3><p class="tsm tmuted">Inglês e espanhol do A1 ao C2 com revisão espaçada.</p></a>
     </div>
   </div>
 </section>
@@ -739,8 +739,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? 'Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : 'Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -811,7 +811,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg('Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

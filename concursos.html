@@ -17,7 +17,7 @@
       <div><label class="lbl">Banca</label><select class="inp" style="width:120px"><option>Todas</option><option>CESPE</option><option>FCC</option><option>FGV</option></select></div>
       <div><label class="lbl">Escolaridade</label><select class="inp" style="width:140px"><option>Todas</option><option>Nível Médio</option><option selected>Superior</option></select></div>
       <div><label class="lbl">Salário mín.</label><select class="inp" style="width:130px"><option>Qualquer</option><option>R$ 5.000+</option><option selected>R$ 10.000+</option></select></div>
-      <div style="align-self:flex-end"><button class="btn btn-primary" onclick="toast('Filtros aplicados!','success')"> Filtrar</button></div>
+      <div style="align-self:flex-end"><button class="btn btn-primary" onclick="toast('Filtros aplicados!','success')">Filtrar</button></div>
     </div>
   </div>
 
@@ -64,7 +64,7 @@
           <td class="tgreen fw7">R$ 21.029</td><td>10/09</td>
           <td><span class="badge b-amber">Em breve</span></td>
           <td style="white-space:nowrap">
-            <button class="btn btn-secondary btn-sm" onclick="toast('Você receberá um alerta quando abrir!','success')"> Alertar</button>
+            <button class="btn btn-secondary btn-sm" onclick="toast('Você receberá um alerta quando abrir!','success')">Alertar</button>
             <button class="save-btn btn btn-ghost btn-sm">☆ Salvar</button>
           </td>
         </tr>
@@ -601,8 +601,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? 'Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : 'Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -673,7 +673,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg('Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

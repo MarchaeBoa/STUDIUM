@@ -63,7 +63,7 @@
         <div class="sblock sb-dir">Dir. Administrativo<br><span style="font-size:9px">Intro · 45min</span></div>
       </div>
       <div class="day-col"><div class="day-hdr">Dom 13</div>
-        <div style="text-align:center;padding:16px;color:var(--n400);font-size:12px">Descanso </div>
+        <div style="text-align:center;padding:16px;color:var(--n400);font-size:12px">Descanso</div>
       </div>
     </div>
   </div>
@@ -72,9 +72,9 @@
   <div class="card">
     <h3 class="mb16">Hoje em detalhes — Quinta-feira, 10 de julho</h3>
     <div style="display:flex;flex-direction:column;gap:10px">
-      <div style="display:flex;align-items:center;gap:14px;padding:13px;background:var(--green-l);border-radius:10px"><span style="font-size:22px"></span><div style="flex:1"><div style="font-weight:600;font-size:13px">Inglês A2 — Lição 4: Present Perfect</div><div class="tsm tmuted">25 minutos · Concluído</div></div><span class="badge b-green">+30 XP</span></div>
-      <div style="display:flex;align-items:center;gap:14px;padding:13px;background:var(--blue-l);border-radius:10px;border:2px solid var(--blue-m)"><span style="font-size:22px"></span><div style="flex:1"><div style="font-weight:600;font-size:13px">Matemática — Frações e operações</div><div class="tsm tmuted">45 minutos · 20 questões CESPE</div></div><a href="questoes.html" class="btn btn-primary btn-sm">Iniciar agora</a></div>
-      <div style="display:flex;align-items:center;gap:14px;padding:13px;border-radius:10px;border:1px solid var(--n200)"><span style="font-size:22px"></span><div style="flex:1"><div style="font-weight:600;font-size:13px">Dir. Constitucional — Art. 5º</div><div class="tsm tmuted">50 minutos · Pendente</div></div><span class="badge b-gray">Pendente</span></div>
+      <div style="display:flex;align-items:center;gap:14px;padding:13px;background:var(--green-l);border-radius:10px"><div style="flex:1"><div style="font-weight:600;font-size:13px">Inglês A2 — Lição 4: Present Perfect</div><div class="tsm tmuted">25 minutos · Concluído</div></div><span class="badge b-green">+30 XP</span></div>
+      <div style="display:flex;align-items:center;gap:14px;padding:13px;background:var(--blue-l);border-radius:10px;border:2px solid var(--blue-m)"><div style="flex:1"><div style="font-weight:600;font-size:13px">Matemática — Frações e operações</div><div class="tsm tmuted">45 minutos · 20 questões CESPE</div></div><a href="questoes.html" class="btn btn-primary btn-sm">Iniciar agora</a></div>
+      <div style="display:flex;align-items:center;gap:14px;padding:13px;border-radius:10px;border:1px solid var(--n200)"><div style="flex:1"><div style="font-weight:600;font-size:13px">Dir. Constitucional — Art. 5º</div><div class="tsm tmuted">50 minutos · Pendente</div></div><span class="badge b-gray">Pendente</span></div>
     </div>
   </div>
 </main>
@@ -597,8 +597,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? 'Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : 'Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -669,7 +669,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg('Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

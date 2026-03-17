@@ -12,7 +12,7 @@
     <div class="pg-hdr"><h1 class="pg-title">Simulados</h1><p class="pg-sub">Pratique com provas completas por banca e edital.</p></div>
     <div class="grid-3 mb24">
       <div class="card" style="border-top:4px solid var(--blue)">
-        <div style="font-size:28px;margin-bottom:10px"></div>
+        
         <h3 class="mb8">ENEM Completo</h3>
         <p class="tsm tmuted mb16">180 questões · 4 áreas · 5h30min</p>
         <div class="mbar-row" style="padding:4px 0"><span class="mbar-lbl" style="width:80px">Linguagens</span><div class="mbar-track"><div class="mbar-fill" style="width:72%;background:var(--blue)"></div></div><span class="mbar-pct">72%</span></div>
@@ -20,14 +20,14 @@
         <button class="btn btn-primary btn-full" onclick="startSim()">Iniciar simulado →</button>
       </div>
       <div class="card" style="border-top:4px solid var(--amber)">
-        <div style="font-size:28px;margin-bottom:10px"></div>
+        
         <h3 class="mb8">CESPE / CEBRASPE</h3>
         <p class="tsm tmuted mb16">Certo ou Errado · 30–60 questões</p>
         <div class="flex g8 mb16"><span class="badge b-amber">Modelo CESPE</span><span class="badge b-gray">+30 anos</span></div>
         <button class="btn btn-primary btn-full" onclick="startSim()">Iniciar simulado →</button>
       </div>
       <div class="card" style="border-top:4px solid var(--green)">
-        <div style="font-size:28px;margin-bottom:10px"></div>
+        
         <h3 class="mb8">Personalizado</h3>
         <p class="tsm tmuted mb16">Você escolhe matérias, quantidade e tempo</p>
         <button class="btn btn-secondary btn-full" onclick="document.getElementById('custom-modal').style.display='flex'">Configurar →</button>
@@ -607,8 +607,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? 'Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : 'Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -679,7 +679,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg('Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

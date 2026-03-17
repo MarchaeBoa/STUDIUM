@@ -19,8 +19,8 @@
     <div class="grid-4 mb20">
       <div class="card" style="border:2px solid var(--n200);border-radius:var(--rl);padding:16px;cursor:pointer" onclick="toast('Nível A1 já concluído!')"><div style="font-size:22px;font-weight:800;color:var(--blue)">A1</div><div class="tsm">Básico</div><div class="badge b-green mt8">✓ Concluído</div></div>
       <div class="card" style="border:2px solid var(--blue);border-radius:var(--rl);padding:16px;background:var(--blue-l)"><div style="font-size:22px;font-weight:800;color:var(--blue)">A2</div><div class="tsm">Elementar</div><div class="badge b-blue mt8">Em andamento</div></div>
-      <div class="card" style="border:2px solid var(--n200);border-radius:var(--rl);padding:16px;opacity:.7"><div style="font-size:22px;font-weight:800;color:var(--n400)">B1</div><div class="tsm">Intermediário</div><div class="badge b-gray mt8"> Bloqueado</div></div>
-      <div class="card" style="border:2px solid var(--n200);border-radius:var(--rl);padding:16px;opacity:.7"><div style="font-size:22px;font-weight:800;color:var(--n400)">B2+</div><div class="tsm">Avançado</div><div class="badge b-gray mt8"> Bloqueado</div></div>
+      <div class="card" style="border:2px solid var(--n200);border-radius:var(--rl);padding:16px;opacity:.7"><div style="font-size:22px;font-weight:800;color:var(--n400)">B1</div><div class="tsm">Intermediário</div><div class="badge b-gray mt8">Bloqueado</div></div>
+      <div class="card" style="border:2px solid var(--n200);border-radius:var(--rl);padding:16px;opacity:.7"><div style="font-size:22px;font-weight:800;color:var(--n400)">B2+</div><div class="tsm">Avançado</div><div class="badge b-gray mt8">Bloqueado</div></div>
     </div>
     <!-- Units -->
     <div class="card">
@@ -39,7 +39,7 @@
         <div class="flex ai g12" style="padding:12px;border:1px solid var(--n200);border-radius:var(--r);opacity:.5">
           <div style="width:34px;height:34px;border-radius:50%;background:var(--n200);color:var(--n500);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0">5</div>
           <div style="flex:1"><div style="font-weight:600">Unidade 5 — Talking about the future</div><div class="tsm tmuted">Conclua a unidade 4 para desbloquear</div></div>
-          <span class="badge b-gray"></span>
+          <span class="badge b-gray">Bloqueado</span>
         </div>
       </div>
     </div>
@@ -588,8 +588,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? 'Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : 'Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -660,7 +660,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg('Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

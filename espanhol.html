@@ -17,7 +17,7 @@
   </div>
   <div class="card" style="max-width:600px">
     <div class="flex ai g8 mb20">
-      <span style="font-size:24px"></span>
+      
       <div><h3>Unidade 3 — Saludos y despedidas</h3><p class="tsm tmuted">Saudações e despedidas em espanhol</p></div>
     </div>
     <span class="badge b-amber mb16" style="display:inline-flex">Vocabulário</span>
@@ -31,7 +31,7 @@
     </div>
     <div class="flex jb mt20">
       <button class="btn btn-secondary">← Anterior</button>
-      <button class="btn btn-primary" onclick="toast('¡Muy bien! +10 XP ','success')">Próxima →</button>
+      <button class="btn btn-primary" onclick="toast('¡Muy bien! +10 XP','success')">Próxima →</button>
     </div>
   </div>
 </main>
@@ -554,8 +554,8 @@ window.addEventListener('DOMContentLoaded', function () {
     // Initial greeting
     const page = document.title;
     const greet = page.includes('Suporte')
-      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
+      ? 'Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
+      : 'Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
 
     addMsg(msgsEl, greet, 'ai');
 
@@ -626,7 +626,7 @@ window.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', () => panel.classList.toggle('open'));
 
   // Greeting
-  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
+  addSupMsg('Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
 
   form?.addEventListener('submit', async function (e) {
     e.preventDefault();

@@ -1448,6 +1448,177 @@ select:focus { border-color: #059669; outline: none; box-shadow: 0 0 0 3px rgba(
   .cta-strip h2 { font-size: 1.6rem; }
 }
 
+/* ── Biblioteca de Estudos ─────────────────────────────── */
+.bib-hero {
+  position: relative;
+  background: linear-gradient(135deg, rgba(5,150,105,.15) 0%, rgba(52,211,153,.05) 100%);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: var(--rxl);
+  padding: 48px 40px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.bib-hero-glow {
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(52,211,153,.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.bib-hero-content { position: relative; z-index: 1; max-width: 640px; }
+.bib-hero-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #fff 30%, #6EE7B7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.bib-hero-sub {
+  font-size: 14px;
+  color: rgba(255,255,255,.5);
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+/* Search */
+.bib-search-wrap { position: relative; z-index: 1; }
+.bib-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--rl);
+  padding: 14px 20px;
+  transition: border-color .2s, box-shadow .2s;
+}
+.bib-search:focus-within {
+  border-color: rgba(110,231,183,.3);
+  box-shadow: 0 0 0 3px rgba(110,231,183,.08);
+}
+.bib-search-icon { font-size: 16px; opacity: .4; flex-shrink: 0; }
+.bib-search-input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: rgba(255,255,255,.85);
+  font-size: 14px;
+}
+.bib-search-input::placeholder { color: rgba(255,255,255,.3); }
+
+/* Filters */
+.bib-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+.bib-filter {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 100px;
+  padding: 8px 18px;
+  font-size: 13px;
+  color: rgba(255,255,255,.5);
+  transition: all .2s;
+  white-space: nowrap;
+}
+.bib-filter:hover { color: rgba(255,255,255,.8); border-color: rgba(255,255,255,.15); }
+.bib-filter.active {
+  background: linear-gradient(135deg, rgba(5,150,105,.25), rgba(52,211,153,.15));
+  border-color: rgba(110,231,183,.3);
+  color: #6EE7B7;
+  font-weight: 600;
+}
+
+/* Sections */
+.bib-section {
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 1;
+}
+.bib-section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: rgba(255,255,255,.9);
+}
+
+/* Video cards */
+.bib-video-card { cursor: pointer; padding: 0; overflow: hidden; }
+.bib-thumb {
+  position: relative;
+  background: linear-gradient(135deg, rgba(5,150,105,.12) 0%, rgba(17,24,39,.6) 100%);
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bib-play {
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  backdrop-filter: blur(8px);
+  transition: all .25s;
+}
+.bib-video-card:hover .bib-play {
+  background: rgba(110,231,183,.2);
+  border-color: rgba(110,231,183,.4);
+  transform: scale(1.1);
+}
+.bib-duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0,0,0,.7);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255,255,255,.8);
+  backdrop-filter: blur(4px);
+}
+.bib-video-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,.85);
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+.bib-video-card > h3,
+.bib-video-card > p,
+.bib-video-card > .flex { padding: 0 16px; }
+.bib-video-card > h3 { padding-top: 14px; }
+.bib-video-card > .flex:last-child { padding-bottom: 14px; }
+.bib-video-card > p { padding-left: 16px; padding-right: 16px; }
+
+/* Exam link */
+.bib-exam-link {
+  border-left: 3px solid var(--blue);
+  transition: border-color .2s;
+}
+.bib-exam-link:hover { border-left-color: #6EE7B7; }
+
+@media (max-width: 640px) {
+  .bib-hero { padding: 32px 20px; }
+  .bib-hero-title { font-size: 1.4rem; }
+  .bib-filters { gap: 6px; }
+  .bib-filter { padding: 6px 14px; font-size: 12px; }
+  .bib-thumb { height: 120px; }
+}
+
 /* ── Loading spinner ───────────────────────────────────── */
 .spinner {
   width: 20px; height: 20px; border: 2px solid var(--n200);

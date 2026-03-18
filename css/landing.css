@@ -131,7 +131,7 @@ h1,h2,h3,h4{font-family:'Plus Jakarta Sans','Inter',sans-serif;color:#fff;letter
 .hero-actions{display:flex;gap:14px;margin-bottom:36px}
 .hero-proof{display:flex;align-items:center;gap:16px}
 .proof-avatars{display:flex}
-.proof-avatars span{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#fff;margin-right:-8px;border:2px solid var(--bg);position:relative}
+.proof-avatars img{width:32px;height:32px;border-radius:50%;object-fit:cover;margin-right:-8px;border:2px solid var(--bg);position:relative}
 .proof-text{display:flex;flex-direction:column;gap:2px}
 .proof-stars{display:flex;gap:1px}
 .proof-text>span{font-size:12.5px;color:var(--text3)}

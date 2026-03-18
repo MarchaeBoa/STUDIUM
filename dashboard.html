@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Dashboard - Studium, plataforma inteligente de estudos para concursos públicos."><title>Dashboard — Studium</title><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="css/styles.css">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Dashboard - Studium, plataforma inteligente de estudos para concursos públicos."><title>Dashboard — Studium</title><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/chat-widget.css">
 </head>
 <body>
 <canvas class="site-particles" aria-hidden="true"></canvas>
@@ -104,15 +104,6 @@
     </div>
   </div>
 </main>
-</div>
-<!-- Support Widget -->
-<div class="sup-widget">
-  <div class="sup-panel" id="sup-panel">
-    <div class="sup-hdr"><h4> Suporte Studium</h4><p>Online · resposta em &lt;5s · 24h</p></div>
-    <div class="sup-msgs" id="sup-msgs"></div>
-    <form class="sup-inp-row" id="sup-form"><input type="text" id="sup-inp" placeholder="Sua dúvida..."><button type="submit" class="btn btn-primary btn-sm">→</button></form>
-  </div>
-  <button class="sup-btn" id="sup-toggle"></button>
 </div>
 <script>
 /* ============================================================
@@ -751,4 +742,5 @@ window.addEventListener('DOMContentLoaded', function () {
 <script src="js/components.js"></script>
 <script>renderSidebar('dashboard.html'); renderTopbar('Dashboard');</script>
 <script src="js/site-bg.js"></script>
+<script src="js/chat-widget.js"></script>
 </body></html>

@@ -2,48 +2,79 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Studium - Estude com inteligência. Conquiste seu futuro. Plataforma completa para concursos públicos.">
+<meta name="description" content="Studium - Estude com inteligência. Conquiste seu futuro. Plataforma completa com IA para concursos, ENEM e idiomas.">
 <title>Studium — Estude com inteligência. Conquiste seu futuro.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
 <canvas class="site-particles" aria-hidden="true"></canvas>
+
+<!-- ══════════════════ NAV ══════════════════ -->
 <header class="pub-nav">
   <div class="container pub-nav-in">
     <a href="index.html" class="pub-logo"><img src="images/logo-mark.svg" class="logo-icon" alt="">Studium</a>
     <nav class="pub-links">
-      <a href="concursos.html">Concursos</a>
-      <a href="planos.html">Planos</a>
+      <a href="#features">Recursos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#planos">Planos</a>
       <a href="suporte.html">Ajuda</a>
-      <a href="admin.html" style="color:var(--amber)">Admin ↗</a>
     </nav>
     <div class="pub-actions">
       <a href="login.html" class="btn btn-ghost">Entrar</a>
-      <a href="cadastro.html" class="btn btn-primary">Começar grátis →</a>
+      <a href="cadastro.html" class="btn btn-primary">Começar grátis <span class="btn-arrow">→</span></a>
     </div>
+    <button class="mobile-menu-btn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
+
+<!-- ══════════════════ HERO ══════════════════ -->
 <section class="hero">
   <div class="hero-glow"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-orb hero-orb-3"></div>
   <canvas class="hero-particles" aria-hidden="true"></canvas>
   <div class="container">
-    <div class="hero-badge"><span class="hero-badge-dot"></span> IA Tutora disponível 24h</div>
-    <h1>Estude com inteligência.<br><span>Conquiste seu futuro.</span></h1>
-    <p class="hero-sub">ENEM, vestibulares, concursos públicos e idiomas — tudo em um só lugar com IA, simulados adaptativos e plano de estudos personalizado.</p>
-    <div class="hero-ctas">
-      <a href="cadastro.html" class="btn btn-primary btn-lg">Criar conta grátis →</a>
-      <a href="planos.html" class="btn btn-secondary btn-lg">Ver planos</a>
+    <div class="hero-content">
+      <div class="hero-badge animate-on-scroll" data-delay="0">
+        <span class="hero-badge-dot"></span>
+        <span>IA Tutora disponível 24h</span>
+        <span class="hero-badge-new">NOVO</span>
+      </div>
+      <h1 class="animate-on-scroll" data-delay="100">
+        Estude com inteligência.<br>
+        <span class="gradient-text">Conquiste seu futuro.</span>
+      </h1>
+      <p class="hero-sub animate-on-scroll" data-delay="200">
+        ENEM, vestibulares, concursos públicos e idiomas — tudo em um só lugar com IA, simulados adaptativos e plano de estudos personalizado.
+      </p>
+      <div class="hero-ctas animate-on-scroll" data-delay="300">
+        <a href="cadastro.html" class="btn btn-primary btn-lg btn-glow">
+          <span>Criar conta grátis</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#como-funciona" class="btn btn-secondary btn-lg btn-glass">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" fill="currentColor" opacity="0.8"/></svg>
+          <span>Veja como funciona</span>
+        </a>
+      </div>
+      <div class="hero-trust animate-on-scroll" data-delay="400">
+        <div class="trust-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#059669" opacity=".25"/><path d="M5 8l2.5 2.5L11 6" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>14 dias grátis</span></div>
+        <div class="trust-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#059669" opacity=".25"/><path d="M5 8l2.5 2.5L11 6" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Sem cartão de crédito</span></div>
+        <div class="trust-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#059669" opacity=".25"/><path d="M5 8l2.5 2.5L11 6" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cancele quando quiser</span></div>
+      </div>
     </div>
-    <div class="hero-trust">
-      <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px"><circle cx="7" cy="7" r="7" fill="#059669" opacity=".3"/><path d="M4 7l2 2 4-4" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 14 dias grátis</span>
-      <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px"><circle cx="7" cy="7" r="7" fill="#059669" opacity=".3"/><path d="M4 7l2 2 4-4" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Sem cartão</span>
-      <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px"><circle cx="7" cy="7" r="7" fill="#059669" opacity=".3"/><path d="M4 7l2 2 4-4" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Cancele quando quiser</span>
-    </div>
-    <div class="hero-demo">
+
+    <!-- Demo interativo da IA -->
+    <div class="hero-demo animate-on-scroll" data-delay="500">
       <div class="hero-demo-card">
         <div class="demo-header">
           <div class="demo-dots"><span></span><span></span><span></span></div>
@@ -57,9 +88,9 @@
           </div>
         </div>
         <div class="demo-prompts" id="demo-prompts">
-          <button class="demo-prompt" data-q="Explique a Lei de Ohm de forma simples" data-a="A Lei de Ohm diz que a &lt;strong&gt;corrente elétrica (I)&lt;/strong&gt; que passa por um condutor é diretamente proporcional à &lt;strong&gt;tensão (V)&lt;/strong&gt; e inversamente proporcional à &lt;strong&gt;resistência (R)&lt;/strong&gt;.&lt;br&gt;&lt;br&gt;A fórmula é: &lt;strong&gt;V = I &times; R&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Pense assim: a tensão é como a pressão da água, a corrente é o fluxo, e a resistência é o diâmetro do cano. Quanto mais pressão e menos resistência, mais água flui.">Explique a Lei de Ohm</button>
-          <button class="demo-prompt" data-q="Qual a diferença entre juros simples e compostos?" data-a="Nos &lt;strong&gt;juros simples&lt;/strong&gt;, o rendimento é calculado sempre sobre o valor inicial. Exemplo: R$ 1.000 a 10% ao mês rende R$ 100/mês.&lt;br&gt;&lt;br&gt;Nos &lt;strong&gt;juros compostos&lt;/strong&gt;, o rendimento é calculado sobre o valor acumulado (juros sobre juros). O mesmo R$ 1.000 renderia R$ 100 no 1&ordm; mês, R$ 110 no 2&ordm;, R$ 121 no 3&ordm;...&lt;br&gt;&lt;br&gt;Por isso os juros compostos crescem mais rápido com o tempo.">Juros simples vs compostos</button>
-          <button class="demo-prompt" data-q="Resuma o art. 5 da Constituição Federal" data-a="O &lt;strong&gt;Art. 5&ordm; da CF/88&lt;/strong&gt; garante os direitos fundamentais de todos no Brasil:&lt;br&gt;&lt;br&gt;&bull; &lt;strong&gt;Igualdade&lt;/strong&gt; perante a lei&lt;br&gt;&bull; &lt;strong&gt;Liberdade&lt;/strong&gt; de expressão, crença e reunião&lt;br&gt;&bull; &lt;strong&gt;Inviolabilidade&lt;/strong&gt; do domicílio e da correspondência&lt;br&gt;&bull; Direito à &lt;strong&gt;propriedade&lt;/strong&gt; (com função social)&lt;br&gt;&bull; &lt;strong&gt;Habeas corpus&lt;/strong&gt;, mandado de segurança e outros remédios constitucionais&lt;br&gt;&lt;br&gt;São 78 incisos que formam a base dos direitos individuais e coletivos.">Art. 5 da Constituição</button>
+          <button class="demo-prompt" data-q="Explique a Lei de Ohm de forma simples" data-a="A Lei de Ohm diz que a <strong>corrente elétrica (I)</strong> que passa por um condutor é diretamente proporcional à <strong>tensão (V)</strong> e inversamente proporcional à <strong>resistência (R)</strong>.<br><br>A fórmula é: <strong>V = I × R</strong><br><br>Pense assim: a tensão é como a pressão da água, a corrente é o fluxo, e a resistência é o diâmetro do cano.">Explique a Lei de Ohm</button>
+          <button class="demo-prompt" data-q="Qual a diferença entre juros simples e compostos?" data-a="Nos <strong>juros simples</strong>, o rendimento é calculado sempre sobre o valor inicial. Exemplo: R$ 1.000 a 10% ao mês rende R$ 100/mês.<br><br>Nos <strong>juros compostos</strong>, o rendimento é calculado sobre o valor acumulado (juros sobre juros). O mesmo R$ 1.000 renderia R$ 100 no 1º mês, R$ 110 no 2º, R$ 121 no 3º...<br><br>Por isso os juros compostos crescem mais rápido com o tempo.">Juros simples vs compostos</button>
+          <button class="demo-prompt" data-q="Resuma o art. 5 da Constituição Federal" data-a="O <strong>Art. 5º da CF/88</strong> garante os direitos fundamentais de todos no Brasil:<br><br>• <strong>Igualdade</strong> perante a lei<br>• <strong>Liberdade</strong> de expressão, crença e reunião<br>• <strong>Inviolabilidade</strong> do domicílio e da correspondência<br>• Direito à <strong>propriedade</strong> (com função social)<br>• <strong>Habeas corpus</strong> e outros remédios constitucionais<br><br>São 78 incisos que formam a base dos direitos individuais e coletivos.">Art. 5 da Constituição</button>
         </div>
         <div class="demo-input-row">
           <input type="text" class="demo-input" id="demo-input" placeholder="Faça uma pergunta..." readonly>
@@ -67,173 +98,285 @@
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 2L7 9M14 2l-4.5 12L7 9M14 2L2 6.5 7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
         </div>
-        <div class="demo-cta">
-          <a href="cadastro.html" class="btn btn-primary btn-full">Experimente grátis a IA Tutora →</a>
-        </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- ══════════════════ LOGOS / STATS ══════════════════ -->
 <section class="stats-strip">
   <div class="stats-strip-glow"></div>
   <div class="container">
     <dl>
-      <div>
-        <dd>500 mil<span class="stats-plus">+</span></dd>
+      <div class="animate-on-scroll" data-delay="0">
+        <dd class="counter" data-target="500000" data-suffix=" mil" data-display="500 mil">500 mil<span class="stats-plus">+</span></dd>
         <dt>questões no banco</dt>
       </div>
-      <div>
+      <div class="animate-on-scroll" data-delay="100">
         <dd>2.500<span class="stats-plus">+</span></dd>
         <dt>concursos cobertos</dt>
       </div>
-      <div>
+      <div class="animate-on-scroll" data-delay="200">
         <dd>A1 <span class="stats-accent">ao</span> C2</dd>
         <dt>inglês e espanhol</dt>
       </div>
-      <div>
+      <div class="animate-on-scroll" data-delay="300">
         <dd>24/7</dd>
         <dt>IA Tutora disponível</dt>
       </div>
     </dl>
   </div>
 </section>
-<section class="features">
+
+<!-- ══════════════════ FEATURES ══════════════════ -->
+<section class="features" id="features">
   <div class="container">
-    <div class="feat-hdr"><h2>Tudo que você precisa em um só lugar</h2><p>Módulos integrados e adaptados ao seu objetivo específico.</p></div>
-    <div class="grid-4">
-      <a href="concursos.html" class="card card-h feat-card">
-        <div class="feat-icon feat-icon-amber"><svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="#B45309" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="section-header animate-on-scroll">
+      <span class="section-tag">Recursos</span>
+      <h2>Tudo que você precisa em um só lugar</h2>
+      <p>Módulos integrados e adaptados ao seu objetivo específico.</p>
+    </div>
+    <div class="features-grid">
+      <a href="concursos.html" class="feature-card animate-on-scroll" data-delay="0">
+        <div class="feature-icon feature-icon-amber">
+          <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <h3>Concursos Públicos</h3>
         <p>Trilha por edital, alertas de prazo e simulados por banca.</p>
+        <span class="feature-link">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
-      <a href="questoes.html" class="card card-h feat-card">
-        <div class="feat-icon feat-icon-blue"><svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="#047857" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <a href="questoes.html" class="feature-card animate-on-scroll" data-delay="100">
+        <div class="feature-icon feature-icon-emerald">
+          <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <h3>ENEM e Vestibulares</h3>
         <p>Simulado completo e correção de redação por IA.</p>
+        <span class="feature-link">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
-      <a href="ia-tutora.html" class="card card-h feat-card">
-        <div class="feat-icon feat-icon-purple"><svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l.146.146A3.004 3.004 0 0118 18.75V21a.75.75 0 01-.75.75h-10.5A.75.75 0 016 21v-2.25a3 3 0 01.879-2.121l.146-.146z" stroke="#6D28D9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <a href="ia-tutora.html" class="feature-card feature-card-highlight animate-on-scroll" data-delay="200">
+        <div class="feature-card-glow"></div>
+        <div class="feature-badge">Mais popular</div>
+        <div class="feature-icon feature-icon-purple">
+          <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l.146.146A3.004 3.004 0 0118 18.75V21a.75.75 0 01-.75.75h-10.5A.75.75 0 016 21v-2.25a3 3 0 01.879-2.121l.146-.146z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <h3>IA Tutora</h3>
         <p>Explica, cria resumos, gera flashcards e analisa pontos fracos.</p>
+        <span class="feature-link">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
-      <a href="ingles.html" class="card card-h feat-card">
-        <div class="feat-icon feat-icon-green"><svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-2.247m0 0A8.966 8.966 0 013 12c0-1.97.633-3.792 1.708-5.27" stroke="#15803D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <a href="ingles.html" class="feature-card animate-on-scroll" data-delay="300">
+        <div class="feature-icon feature-icon-teal">
+          <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-2.247m0 0A8.966 8.966 0 013 12c0-1.97.633-3.792 1.708-5.27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <h3>Idiomas</h3>
         <p>Inglês e espanhol do A1 ao C2 com revisão espaçada.</p>
+        <span class="feature-link">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
     </div>
   </div>
 </section>
-<!-- Como funciona -->
-<section class="how-it-works">
+
+<!-- ══════════════════ COMO FUNCIONA ══════════════════ -->
+<section class="how-section" id="como-funciona">
   <div class="container">
-    <div class="feat-hdr"><h2>Como funciona</h2><p>Resultado real em três passos simples.</p></div>
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-number">01</div>
-        <h3>Resolva questões e aprenda na hora</h3>
-        <p>Digite uma questão de concurso e receba a resposta comentada instantaneamente — com explicação clara e objetiva.</p>
+    <div class="section-header animate-on-scroll">
+      <span class="section-tag">Como funciona</span>
+      <h2>Resultado real em três passos</h2>
+      <p>Do primeiro acesso à aprovação, a gente guia você.</p>
+    </div>
+    <div class="steps-timeline">
+      <div class="timeline-line"></div>
+      <div class="step-item animate-on-scroll" data-delay="0">
+        <div class="step-number-circle"><span>01</span></div>
+        <div class="step-content">
+          <h3>Resolva questões e aprenda na hora</h3>
+          <p>Digite uma questão de concurso e receba a resposta comentada instantaneamente — com explicação clara e objetiva.</p>
+        </div>
       </div>
-      <div class="step-card">
-        <div class="step-number">02</div>
-        <h3>Informe seu concurso e saiba o que estudar</h3>
-        <p>Diga qual é o seu objetivo e a plataforma monta um direcionamento personalizado com as matérias que mais importam.</p>
+      <div class="step-item animate-on-scroll" data-delay="150">
+        <div class="step-number-circle"><span>02</span></div>
+        <div class="step-content">
+          <h3>Informe seu concurso e saiba o que estudar</h3>
+          <p>Diga qual é o seu objetivo e a plataforma monta um direcionamento personalizado com as matérias que mais importam.</p>
+        </div>
       </div>
-      <div class="step-card">
-        <div class="step-number">03</div>
-        <h3>Acompanhe prazos e não perca nenhum edital</h3>
-        <p>Receba alertas sobre editais, inscrições e datas importantes — tudo organizado para você agir no momento certo.</p>
+      <div class="step-item animate-on-scroll" data-delay="300">
+        <div class="step-number-circle"><span>03</span></div>
+        <div class="step-content">
+          <h3>Acompanhe prazos e conquiste sua vaga</h3>
+          <p>Receba alertas sobre editais, inscrições e datas importantes — tudo organizado para você agir no momento certo.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Photo Showcase: Ambiente real de estudo -->
-<section class="photo-showcase">
+<!-- ══════════════════ SHOWCASE ══════════════════ -->
+<section class="showcase-section">
   <div class="container">
-    <div class="feat-hdr"><h2>Feito para quem estuda de verdade</h2><p>Nossos alunos transformam dedicação em aprovação todos os dias.</p></div>
-    <div class="showcase-grid" style="margin-bottom:56px">
-      <div class="showcase-img">
-        <img src="images/study-desk-dark.svg" alt="Mesa de estudos organizada com laptop mostrando plataforma de estudos">
+    <div class="showcase-row animate-on-scroll">
+      <div class="showcase-visual">
+        <div class="showcase-browser">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">studium.app/dashboard</div>
+        </div>
+        <img src="images/study-desk-dark.svg" alt="Dashboard Studium com plano de estudos personalizado">
+        <div class="showcase-float-card float-card-1">
+          <div class="float-card-icon" style="background:rgba(52,211,153,.15);color:#34D399">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="float-card-text">
+            <strong>+42%</strong>
+            <span>rendimento</span>
+          </div>
+        </div>
+        <div class="showcase-float-card float-card-2">
+          <div class="float-card-icon" style="background:rgba(124,58,237,.15);color:#A78BFA">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l.146.146A3 3 0 0118 18.75V21a.75.75 0 01-.75.75h-10.5A.75.75 0 016 21v-2.25a3 3 0 01.879-2.121l.146-.146z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="float-card-text">
+            <strong>IA ativa</strong>
+            <span>analisando</span>
+          </div>
+        </div>
       </div>
-      <div class="showcase-text">
-        <h3>Seu ambiente de estudos, potencializado pela tecnologia</h3>
+      <div class="showcase-info">
+        <span class="section-tag">Plataforma inteligente</span>
+        <h2>Seu ambiente de estudos, potencializado pela tecnologia</h2>
         <p>A plataforma Studium se adapta ao seu ritmo. Estude de madrugada ou ao meio-dia, no computador ou no celular. A IA Tutora acompanha cada sessão e ajusta o conteúdo ao seu nível.</p>
-        <div class="showcase-tags">
-          <span class="showcase-tag"> IA Tutora 24h</span>
-          <span class="showcase-tag">Progresso em tempo real</span>
-          <span class="showcase-tag">Multiplataforma</span>
+        <div class="showcase-features">
+          <div class="showcase-feat-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>IA Tutora 24h disponível</span>
+          </div>
+          <div class="showcase-feat-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Progresso em tempo real</span>
+          </div>
+          <div class="showcase-feat-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Multiplataforma</span>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="showcase-grid reverse">
-      <div class="showcase-img">
-        <img src="images/study-papers.svg" alt="Anotações de estudo com textos sublinhados e materiais acadêmicos">
-      </div>
-      <div class="showcase-text">
-        <h3>Conteúdo aprofundado para cada matéria</h3>
-        <p>De Direito Constitucional a Química Orgânica, de Português a Matemática Financeira. Questões comentadas, resumos inteligentes e flashcards gerados por IA para fixação eficiente.</p>
-        <div class="showcase-tags">
-          <span class="showcase-tag">500mil+ questões</span>
-          <span class="showcase-tag">Por banca e edital</span>
-          <span class="showcase-tag">Comentários detalhados</span>
-        </div>
+        <a href="cadastro.html" class="btn btn-primary btn-lg">Experimentar grátis →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Gallery Mosaic -->
-<section class="gallery-section">
+<!-- ══════════════════ PLANOS ══════════════════ -->
+<section class="pricing-section" id="planos">
   <div class="container">
-    <div class="feat-hdr"><h2>Onde a aprovação começa</h2><p>Cada hora de dedicação te aproxima do seu objetivo.</p></div>
-    <div class="gallery-mosaic">
-      <div class="gallery-item">
-        <img src="images/study-cozy.svg" alt="Ambiente de estudo aconchegante com livros e motivação">
-        <span class="gallery-caption">Ambiente perfeito para foco total</span>
+    <div class="section-header animate-on-scroll">
+      <span class="section-tag">Planos</span>
+      <h2>Invista no seu futuro</h2>
+      <p>Escolha o plano ideal e comece a estudar hoje mesmo.</p>
+    </div>
+    <div class="pricing-toggle animate-on-scroll">
+      <span class="toggle-label active" id="toggle-monthly">Mensal</span>
+      <button class="pricing-switch" id="pricing-switch" aria-label="Alternar plano">
+        <span class="pricing-switch-knob"></span>
+      </button>
+      <span class="toggle-label" id="toggle-annual">Anual <span class="toggle-save">-40%</span></span>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card animate-on-scroll" data-delay="0">
+        <div class="pricing-name">Gratuito</div>
+        <div class="pricing-price"><span class="price-value">R$ 0</span><span class="price-period">/mês</span></div>
+        <p class="pricing-desc">Para quem quer experimentar</p>
+        <ul class="pricing-features">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>10 questões por dia</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>IA Tutora limitada</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>1 simulado por semana</li>
+          <li class="disabled"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Plano de estudos</li>
+          <li class="disabled"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Correção de redação</li>
+        </ul>
+        <a href="cadastro.html" class="btn btn-secondary btn-full">Começar grátis</a>
       </div>
-      <div class="gallery-item">
-        <img src="images/study-desk-dark.svg" alt="Mesa de estudos com laptop">
-        <span class="gallery-caption">Tecnologia a favor dos estudos</span>
+      <div class="pricing-card pricing-card-popular animate-on-scroll" data-delay="100">
+        <div class="pricing-popular-badge">Mais escolhido</div>
+        <div class="pricing-name">Pro</div>
+        <div class="pricing-price">
+          <span class="price-value" data-monthly="49,90" data-annual="29,90">R$ 49,90</span>
+          <span class="price-period">/mês</span>
+        </div>
+        <p class="pricing-desc">Para quem quer ser aprovado</p>
+        <ul class="pricing-features">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Questões ilimitadas</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>IA Tutora ilimitada</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Simulados ilimitados</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Plano de estudos personalizado</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>3 correções de redação/mês</li>
+        </ul>
+        <a href="cadastro.html" class="btn btn-primary btn-full btn-glow">Assinar Pro →</a>
       </div>
-      <div class="gallery-item">
-        <img src="images/study-notes.svg" alt="Caderno com anotações de ciências">
-        <span class="gallery-caption">Anotações que fazem a diferença</span>
-      </div>
-      <div class="gallery-item">
-        <img src="images/study-papers.svg" alt="Materiais de estudo aprofundado">
-        <span class="gallery-caption">Estudo aprofundado e direcionado</span>
+      <div class="pricing-card animate-on-scroll" data-delay="200">
+        <div class="pricing-name">Completo</div>
+        <div class="pricing-price">
+          <span class="price-value" data-monthly="89,90" data-annual="53,90">R$ 89,90</span>
+          <span class="price-period">/mês</span>
+        </div>
+        <p class="pricing-desc">Aprovação garantida ou reembolso</p>
+        <ul class="pricing-features">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Tudo do Pro</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Redações ilimitadas</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Idiomas (Inglês + Espanhol)</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Mentoria com IA avançada</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Garantia de reembolso</li>
+        </ul>
+        <a href="cadastro.html" class="btn btn-secondary btn-full">Assinar Completo</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Testimonials -->
-<section class="testimonials">
+<!-- ══════════════════ TESTIMONIALS ══════════════════ -->
+<section class="testimonials-section">
   <div class="container">
-    <div class="feat-hdr"><h2>Quem usa, aprova (e é aprovado)</h2><p>Milhares de estudantes já conquistaram seus objetivos com o Studium.</p></div>
-    <div class="testimonial-grid">
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★★★★★</div>
+    <div class="section-header animate-on-scroll">
+      <span class="section-tag">Depoimentos</span>
+      <h2>Quem usa, aprova <span class="gradient-text">(e é aprovado)</span></h2>
+      <p>Milhares de estudantes já conquistaram seus objetivos com o Studium.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card animate-on-scroll" data-delay="0">
+        <div class="testimonial-rating">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
         <p class="testimonial-text">"A IA Tutora mudou completamente minha forma de estudar. Ela identificou meus pontos fracos em Direito e criou um plano personalizado. Fui aprovada no TJ-SP em 6 meses!"</p>
         <div class="testimonial-author">
-          <div class="testimonial-av">CM</div>
+          <div class="testimonial-av" style="background:linear-gradient(135deg,#059669,#34D399)">CM</div>
           <div><div class="testimonial-name">Carolina Mendes</div><div class="testimonial-role">Aprovada TJ-SP 2025</div></div>
         </div>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-card animate-on-scroll" data-delay="150">
+        <div class="testimonial-rating">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
         <p class="testimonial-text">"Os simulados por banca são idênticos às provas reais. A correção de redação por IA me ajudou a sair de 640 para 920 no ENEM. Melhor investimento que já fiz nos estudos."</p>
         <div class="testimonial-author">
-          <div class="testimonial-av">LR</div>
+          <div class="testimonial-av" style="background:linear-gradient(135deg,#7C3AED,#A78BFA)">LR</div>
           <div><div class="testimonial-name">Lucas Ribeiro</div><div class="testimonial-role">ENEM 920 pontos</div></div>
         </div>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-card animate-on-scroll" data-delay="300">
+        <div class="testimonial-rating">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
         <p class="testimonial-text">"Estudar idiomas pelo Studium é viciante. O sistema de revisão espaçada fez eu sair do A1 para o B2 em inglês em apenas 8 meses, estudando 30 minutos por dia."</p>
         <div class="testimonial-author">
-          <div class="testimonial-av">AF</div>
+          <div class="testimonial-av" style="background:linear-gradient(135deg,#D97706,#FCD34D)">AF</div>
           <div><div class="testimonial-name">Ana Ferreira</div><div class="testimonial-role">Inglês B2 em 8 meses</div></div>
         </div>
       </div>
@@ -241,797 +384,66 @@
   </div>
 </section>
 
-<!-- CTA final -->
-<div class="cta-strip">
+<!-- ══════════════════ CTA FINAL ══════════════════ -->
+<section class="cta-final">
+  <div class="cta-final-glow"></div>
   <div class="container">
-    <h2>Pronto para estudar com mais inteligência?</h2>
-    <p>Junte-se a milhares de alunos que já estão avançando.</p>
-    <a href="cadastro.html" class="btn btn-primary btn-lg">Começar agora — é grátis →</a>
+    <div class="cta-final-content animate-on-scroll">
+      <h2>Pronto para estudar com mais <span class="gradient-text">inteligência</span>?</h2>
+      <p>Junte-se a milhares de alunos que já estão conquistando seus objetivos.</p>
+      <div class="cta-final-actions">
+        <a href="cadastro.html" class="btn btn-primary btn-lg btn-glow">
+          <span>Começar agora — é grátis</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <p class="cta-final-note">Sem cartão de crédito. Cancele quando quiser.</p>
+    </div>
   </div>
-</div>
-<footer class="pub-footer">
-  <div class="container pub-footer-in">
-    <div class="pub-logo"><img src="images/logo-mark.svg" class="logo-icon" alt="">Studium</div>
-    <nav class="footer-links"><a href="#">Privacidade</a><a href="#">Termos</a><a href="suporte.html">Ajuda</a><a href="planos.html">Planos</a></nav>
-    <p class="tsm tmuted">© 2025 Studium. Todos os direitos reservados.</p>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="pub-logo"><img src="images/logo-mark.svg" class="logo-icon" alt="">Studium</a>
+        <p>A plataforma de estudos com IA mais completa do Brasil. Estude com inteligência, conquiste seu futuro.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produto</h4>
+        <a href="concursos.html">Concursos</a>
+        <a href="questoes.html">ENEM e Vestibulares</a>
+        <a href="ia-tutora.html">IA Tutora</a>
+        <a href="ingles.html">Idiomas</a>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <a href="#">Sobre</a>
+        <a href="planos.html">Planos</a>
+        <a href="suporte.html">Ajuda</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Studium. Todos os direitos reservados.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29.94 29.94 0 001 12a29.94 29.94 0 00.46 5.58 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29.94 29.94 0 0023 12a29.94 29.94 0 00-.46-5.58z" stroke="currentColor" stroke-width="1.5"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor"/></svg></a>
+      </div>
+    </div>
   </div>
 </footer>
-<script>
-/* ============================================================
-   STUDIUM — app.js  (motor de toda a interatividade)
-   ============================================================ */
 
-/* ── Nav scroll effect ─────────────────────────────────── */
-(function () {
-  const nav = document.querySelector('.pub-nav');
-  if (!nav) return;
-  window.addEventListener('scroll', function () {
-    nav.classList.toggle('scrolled', window.scrollY > 20);
-  });
-})();
-
-/* ── Hero floating particles ─────────────────────────── */
-(function () {
-  const canvas = document.querySelector('.hero-particles');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  let w, h, particles;
-  const COUNT = 30;
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReduced) return;
-
-  function resize() {
-    const hero = canvas.closest('.hero');
-    w = canvas.width = hero.offsetWidth;
-    h = canvas.height = hero.offsetHeight;
-  }
-
-  function init() {
-    resize();
-    particles = [];
-    for (let i = 0; i < COUNT; i++) {
-      particles.push({
-        x: Math.random() * w,
-        y: Math.random() * h,
-        r: Math.random() * 1.5 + 0.5,
-        dx: (Math.random() - 0.5) * 0.15,
-        dy: (Math.random() - 0.5) * 0.1 - 0.05,
-        o: Math.random() * 0.25 + 0.05,
-        phase: Math.random() * Math.PI * 2
-      });
-    }
-  }
-
-  function draw(t) {
-    ctx.clearRect(0, 0, w, h);
-    for (let i = 0; i < particles.length; i++) {
-      const p = particles[i];
-      p.x += p.dx;
-      p.y += p.dy;
-      const flicker = 0.5 + 0.5 * Math.sin(t * 0.0008 + p.phase);
-      const alpha = p.o * (0.6 + 0.4 * flicker);
-      if (p.x < -10) p.x = w + 10;
-      if (p.x > w + 10) p.x = -10;
-      if (p.y < -10) p.y = h + 10;
-      if (p.y > h + 10) p.y = -10;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(110,231,183,' + alpha + ')';
-      ctx.fill();
-    }
-    requestAnimationFrame(draw);
-  }
-
-  init();
-  requestAnimationFrame(draw);
-  window.addEventListener('resize', resize);
-})();
-
-/* ── Hero demo interaction ───────────────────────────── */
-(function () {
-  const body = document.getElementById('demo-body');
-  const prompts = document.getElementById('demo-prompts');
-  if (!body || !prompts) return;
-
-  let busy = false;
-
-  prompts.addEventListener('click', function (e) {
-    const btn = e.target.closest('.demo-prompt');
-    if (!btn || busy) return;
-    busy = true;
-
-    const q = btn.dataset.q;
-    const a = btn.dataset.a;
-
-    // Add user message
-    const userMsg = document.createElement('div');
-    userMsg.className = 'demo-msg demo-msg-user';
-    userMsg.innerHTML = '<div class="demo-avatar">EU</div><div class="demo-bubble">' + escapeText(q) + '</div>';
-    body.appendChild(userMsg);
-    body.scrollTop = body.scrollHeight;
-
-    // Hide prompts
-    prompts.style.display = 'none';
-
-    // Show typing indicator
-    const typing = document.createElement('div');
-    typing.className = 'demo-msg demo-msg-ai demo-typing';
-    typing.innerHTML = '<div class="demo-avatar">S</div><div class="demo-bubble"></div>';
-    body.appendChild(typing);
-    body.scrollTop = body.scrollHeight;
-
-    // Reveal answer after delay
-    setTimeout(function () {
-      typing.remove();
-      const aiMsg = document.createElement('div');
-      aiMsg.className = 'demo-msg demo-msg-ai';
-      aiMsg.innerHTML = '<div class="demo-avatar">S</div><div class="demo-bubble">' + a + '</div>';
-      body.appendChild(aiMsg);
-      body.scrollTop = body.scrollHeight;
-      busy = false;
-
-      // Show prompts again after a moment
-      setTimeout(function () {
-        prompts.style.display = 'flex';
-      }, 600);
-    }, 1200 + Math.random() * 600);
-  });
-
-  function escapeText(t) {
-    return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  }
-})();
-
-/* ── Scroll-reveal animation ──────────────────────────── */
-(function () {
-  const observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.showcase-grid, .testimonial-card, .gallery-item, .features .card-h').forEach(function (el) {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(24px)';
-      el.style.transition = 'opacity .6s ease, transform .6s ease';
-      observer.observe(el);
-    });
-  });
-})();
-
-/* ── Toast ─────────────────────────────────────────────── */
-(function () {
-  const cont = document.createElement('div');
-  cont.className = 'toast-container';
-  document.body.appendChild(cont);
-
-  window.toast = function (msg, type = 'default', duration = 3000) {
-    const el = document.createElement('div');
-    el.className = `toast toast-${type}`;
-    el.textContent = msg;
-    cont.appendChild(el);
-    setTimeout(() => el.remove(), duration);
-  };
-})();
-
-/* ── Sidebar toggle (mobile) ────────────────────────────── */
-window.toggleSidebar = function () {
-  const sb = document.querySelector('.sidebar');
-  if (sb) sb.classList.toggle('open');
-};
-
-/* ── Tabs ───────────────────────────────────────────────── */
-document.addEventListener('click', function (e) {
-  const btn = e.target.closest('.tab-btn');
-  if (!btn) return;
-  const scope = btn.closest('[data-tab-scope]') || document;
-  const targetId = btn.dataset.tab;
-  scope.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  scope.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
-  btn.classList.add('active');
-  const pane = scope.querySelector('#' + targetId);
-  if (pane) pane.classList.add('active');
-});
-
-/* Admin showTab helper */
-window.showTab = function (id) {
-  document.querySelectorAll('[id^="t-"]').forEach(p => p.classList.add('hidden'));
-  const el = document.getElementById(id);
-  if (el) el.classList.remove('hidden');
-  const titleMap = {
-    't-dash':    'Dashboard Administrativo',
-    't-users':   'Usuários',
-    't-support': 'Suporte',
-    't-billing': 'Receita',
-    't-logs':    'Logs de Autenticação'
-  };
-  const titleEl = document.getElementById('page-title');
-  if (titleEl && titleMap[id]) titleEl.textContent = titleMap[id];
-};
-
-/* ── Accordion ──────────────────────────────────────────── */
-document.addEventListener('click', function (e) {
-  const btn = e.target.closest('.acc-btn');
-  if (!btn) return;
-  const item = btn.closest('.acc-item');
-  if (item) item.classList.toggle('open');
-});
-
-/* ── Toggle switches ────────────────────────────────────── */
-document.addEventListener('click', function (e) {
-  const tog = e.target.closest('.tog');
-  if (!tog || tog.style.opacity === '0.5') return; // disabled
-  tog.classList.toggle('on');
-});
-
-/* ── Save buttons (concursos) ───────────────────────────── */
-document.addEventListener('click', function (e) {
-  const btn = e.target.closest('.save-btn');
-  if (!btn) return;
-  const saved = btn.classList.toggle('saved');
-  btn.textContent = saved ? '★ Salvo' : '☆ Salvar';
-  btn.style.color = saved ? 'var(--amber)' : '';
-  toast(saved ? 'Concurso salvo!' : 'Concurso removido.', saved ? 'success' : 'default');
-});
-
-/* ── Goal checkboxes ────────────────────────────────────── */
-document.addEventListener('click', function (e) {
-  const btn = e.target.closest('.goal-ck');
-  if (!btn) return;
-  btn.classList.toggle('done');
-  const txt = btn.nextElementSibling;
-  if (txt) txt.classList.toggle('done');
-  const xp = btn.parentElement.querySelector('.goal-xp');
-  if (btn.classList.contains('done')) {
-    toast('Meta concluída! ' + (xp ? xp.textContent : ''), 'success');
-  }
-});
-
-/* ── Password strength ──────────────────────────────────── */
-(function () {
-  const pw = document.getElementById('pw-strength');
-  const bar = document.getElementById('pw-bar');
-  if (!pw || !bar) return;
-
-  pw.addEventListener('input', function () {
-    const v = pw.value;
-    const rLen = document.getElementById('r-len');
-    const rLet = document.getElementById('r-let');
-    const rNum = document.getElementById('r-num');
-
-    const hasLen = v.length >= 8;
-    const hasLet = /[a-zA-Z]/.test(v);
-    const hasNum = /[0-9]/.test(v);
-
-    if (rLen) rLen.classList.toggle('ok', hasLen);
-    if (rLet) rLet.classList.toggle('ok', hasLet);
-    if (rNum) rNum.classList.toggle('ok', hasNum);
-
-    const score = [hasLen, hasLet, hasNum].filter(Boolean).length;
-    const pct   = [0, 33, 66, 100][score];
-    const color = ['', 'var(--red)', 'var(--amber)', 'var(--green)'][score];
-    bar.style.width = pct + '%';
-    bar.style.background = color;
-  });
-
-  // Eye toggle
-  document.querySelectorAll('.eye-btn').forEach(btn => {
-    btn.addEventListener('click', function () {
-      const inp = btn.closest('.inp-wrap')?.querySelector('input');
-      if (!inp) return;
-      inp.type = inp.type === 'password' ? 'text' : 'password';
-    });
-  });
-})();
-
-/* ── OTP inputs ─────────────────────────────────────────── */
-(function () {
-  const otpInputs = document.querySelectorAll('.otp-inp');
-  if (!otpInputs.length) return;
-
-  otpInputs.forEach((inp, i) => {
-    inp.addEventListener('input', function () {
-      inp.classList.toggle('filled', inp.value.length > 0);
-      if (inp.value && i < otpInputs.length - 1) otpInputs[i + 1].focus();
-      checkOtp();
-    });
-    inp.addEventListener('keydown', function (e) {
-      if (e.key === 'Backspace' && !inp.value && i > 0) otpInputs[i - 1].focus();
-    });
-    inp.addEventListener('paste', function (e) {
-      e.preventDefault();
-      const text = (e.clipboardData || window.clipboardData).getData('text').replace(/\D/g, '');
-      text.split('').forEach((ch, j) => {
-        if (otpInputs[i + j]) {
-          otpInputs[i + j].value = ch;
-          otpInputs[i + j].classList.add('filled');
-        }
-      });
-      checkOtp();
-    });
-  });
-
-  function checkOtp() {
-    const code = Array.from(otpInputs).map(x => x.value).join('');
-    if (code.length === 6) {
-      if (code === '123456') {
-        toast('E-mail verificado! Redirecionando...', 'success');
-        setTimeout(() => location.href = 'dashboard.html', 1200);
-      } else {
-        toast('Código incorreto. Tente novamente.', 'error');
-        otpInputs.forEach(x => { x.value = ''; x.classList.remove('filled'); });
-        otpInputs[0].focus();
-      }
-    }
-  }
-
-  // Timer
-  let seconds = 599;
-  const timerEl = document.getElementById('otp-timer');
-  const interval = setInterval(() => {
-    seconds--;
-    if (seconds <= 0) { clearInterval(interval); if (timerEl) timerEl.textContent = '00:00'; return; }
-    const m = String(Math.floor(seconds / 60)).padStart(2, '0');
-    const s = String(seconds % 60).padStart(2, '0');
-    if (timerEl) timerEl.textContent = m + ':' + s;
-  }, 1000);
-
-  // Resend button
-  const resendBtn = document.getElementById('resend-btn');
-  if (resendBtn) {
-    let cooldown = 0;
-    resendBtn.addEventListener('click', function () {
-      if (cooldown > 0) { toast(`Aguarde ${cooldown}s para reenviar.`, 'warning'); return; }
-      toast('Código reenviado! Verifique sua caixa de entrada.', 'success');
-      cooldown = 60;
-      const cd = setInterval(() => {
-        cooldown--;
-        resendBtn.textContent = cooldown > 0 ? `Reenviar código (${cooldown}s)` : 'Reenviar código';
-        if (cooldown <= 0) clearInterval(cd);
-      }, 1000);
-    });
-  }
-})();
-
-/* ── Login form ─────────────────────────────────────────── */
-(function () {
-  const form = document.getElementById('login-form');
-  if (!form) return;
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const email = form.querySelector('[name=email]')?.value;
-    const pass  = form.querySelector('[name=password]')?.value;
-    if (!email || !pass) { toast('Preencha todos os campos.', 'error'); return; }
-    toast('Entrando...', 'default');
-    setTimeout(() => location.href = 'dashboard.html', 800);
-  });
-})();
-
-/* ── Register form ──────────────────────────────────────── */
-(function () {
-  const form = document.getElementById('reg-form');
-  if (!form) return;
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const name  = form.querySelector('[name=name]')?.value;
-    const email = form.querySelector('[name=email]')?.value;
-    const pass  = form.querySelector('[name=password]')?.value;
-    const ok    = form.querySelector('#consent')?.checked;
-    if (!name || !email || !pass) { toast('Preencha todos os campos.', 'error'); return; }
-    if (!ok) { toast('Aceite os Termos de Uso para continuar.', 'warning'); return; }
-    toast('Conta criada! Verificando e-mail...', 'success');
-    setTimeout(() => location.href = 'verificar-email.html', 1000);
-  });
-})();
-
-/* ── Forgot password form ───────────────────────────────── */
-(function () {
-  const form = document.getElementById('forgot-form');
-  if (!form) return;
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const email = form.querySelector('[name=email]')?.value;
-    if (!email) { toast('Informe seu e-mail.', 'error'); return; }
-    toast('Link enviado! Verifique sua caixa de entrada.', 'success');
-    form.querySelector('button').disabled = true;
-  });
-})();
-
-/* ── Language choice buttons ────────────────────────────── */
-document.addEventListener('click', function (e) {
-  const btn = e.target.closest('.lang-choice');
-  if (!btn) return;
-  const container = btn.closest('div');
-  container.querySelectorAll('.lang-choice').forEach(b => b.classList.remove('correct', 'wrong'));
-  const correct = btn.dataset.correct === 'true';
-  btn.classList.add(correct ? 'correct' : 'wrong');
-  if (!correct) {
-    container.querySelectorAll('.lang-choice').forEach(b => {
-      if (b.dataset.correct === 'true') b.classList.add('correct');
-    });
-  }
-  toast(correct ? 'Correto! +10 XP' : 'Errado! A resposta correta está destacada.', correct ? 'success' : 'error');
-});
-
-/* ── Weekly Chart ───────────────────────────────────────── */
-(function () {
-  const el = document.getElementById('weekly-chart');
-  if (!el) return;
-
-  const days  = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'];
-  const hours = [1.5, 2.0, 1.8, 2.5, 0, 0, 0];
-  const today = 3; // Thursday index
-  const max   = Math.max(...hours, 0.1);
-
-  days.forEach((d, i) => {
-    const wrap = document.createElement('div');
-    wrap.className = 'wc-bar-wrap';
-
-    const val = document.createElement('div');
-    val.className = 'wc-val';
-    val.textContent = hours[i] ? hours[i] + 'h' : '';
-
-    const bar = document.createElement('div');
-    bar.className = 'wc-bar' + (i === today ? ' today' : '');
-    bar.style.height = hours[i] ? Math.round((hours[i] / max) * 90) + 'px' : '4px';
-    bar.title = d + ': ' + (hours[i] ? hours[i] + 'h' : 'Sem estudo');
-
-    const lbl = document.createElement('div');
-    lbl.className = 'wc-lbl';
-    lbl.textContent = d;
-
-    wrap.appendChild(val);
-    wrap.appendChild(bar);
-    wrap.appendChild(lbl);
-    el.appendChild(wrap);
-  });
-})();
-
-/* ── Heatmap ────────────────────────────────────────────── */
-(function () {
-  const el = document.getElementById('heatmap');
-  if (!el) return;
-
-  const WEEKS = 52;
-  const grid  = document.createElement('div');
-  grid.className = 'hm-grid';
-
-  for (let w = 0; w < WEEKS; w++) {
-    const col = document.createElement('div');
-    col.className = 'hm-col';
-    for (let d = 0; d < 7; d++) {
-      const cell = document.createElement('div');
-      const r    = Math.random();
-      const lvl  = w > 48 ? '' : r < 0.3 ? '' : r < 0.55 ? 'l1' : r < 0.72 ? 'l2' : r < 0.87 ? 'l3' : 'l4';
-      cell.className = 'hm-cell' + (lvl ? ' ' + lvl : '');
-      cell.title     = lvl ? '1–4 horas de estudo' : 'Sem estudo';
-      col.appendChild(cell);
-    }
-    grid.appendChild(col);
-  }
-  el.appendChild(grid);
-})();
-
-/* ── Questions bank ─────────────────────────────────────── */
-const QUESTIONS = [
-  {
-    id: 1,
-    banca: 'CESPE',
-    year: 2023,
-    subject: 'Português',
-    difficulty: 'Média',
-    text: 'Em relação à pontuação e à sintaxe da língua portuguesa, é correto afirmar que a vírgula é obrigatória para separar orações adjetivas de caráter explicativo.',
-    type: 'cespe',
-    answer: true,
-    explanation: 'Correto. As orações adjetivas explicativas, que acrescentam uma informação não essencial ao antecedente, devem ser separadas por vírgulas. Exemplo: "Os alunos, que estudaram bastante, foram aprovados."'
-  },
-  {
-    id: 2,
-    banca: 'FCC',
-    year: 2023,
-    subject: 'Matemática',
-    difficulty: 'Fácil',
-    text: 'Um capital de R$ 5.000,00 é aplicado a juros simples de 2% ao mês. Qual será o montante ao final de 6 meses?',
-    type: 'multiple',
-    options: ['R$ 5.500,00', 'R$ 5.600,00', 'R$ 5.650,00', 'R$ 5.700,00', 'R$ 6.000,00'],
-    answer: 1, // index of correct option (R$ 5.600,00)
-    explanation: 'J = C × i × t = 5000 × 0,02 × 6 = R$ 600,00. Montante = 5000 + 600 = R$ 5.600,00.'
-  },
-  {
-    id: 3,
-    banca: 'CESPE',
-    year: 2022,
-    subject: 'Dir. Constitucional',
-    difficulty: 'Difícil',
-    text: 'À luz da jurisprudência do STF acerca dos direitos fundamentais previstos no art. 5.º da Constituição Federal, é correto afirmar que o princípio da inviolabilidade do domicílio admite exceção durante o período diurno mediante ordem judicial.',
-    type: 'cespe',
-    answer: true,
-    explanation: 'Correto. A CF/88 prevê que a casa é asilo inviolável do indivíduo, mas admite exceção com ordem judicial (diurna), flagrante delito, desastre ou para prestar socorro.'
-  }
-];
-
-window.renderQ = function (idx) {
-  const containers = document.querySelectorAll('#question-container');
-  if (!containers.length) return;
-
-  const q = QUESTIONS[idx % QUESTIONS.length];
-
-  const html = q.type === 'cespe' ? renderCespe(q) : renderMultiple(q);
-
-  containers.forEach(c => {
-    c.innerHTML = html;
-
-    // CESPE buttons
-    c.querySelectorAll('.cespe-btn').forEach(btn => {
-      btn.addEventListener('click', function () {
-        c.querySelectorAll('.cespe-btn').forEach(b => b.classList.remove('selected'));
-        btn.classList.add('selected');
-        const userAnswer = btn.dataset.value === 'true';
-        const correct    = userAnswer === q.answer;
-        btn.classList.add(correct ? 'correct' : 'wrong');
-        if (!correct) {
-          c.querySelectorAll('.cespe-btn').forEach(b => {
-            if (b.dataset.value === String(q.answer)) b.classList.add('correct');
-          });
-        }
-        const expEl = c.querySelector('.q-explanation');
-        if (expEl) expEl.style.display = 'block';
-        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
-      });
-    });
-
-    // Multiple choice
-    c.querySelectorAll('.q-option').forEach((opt, i) => {
-      opt.addEventListener('click', function () {
-        c.querySelectorAll('.q-option').forEach(o => o.classList.remove('selected', 'correct', 'wrong'));
-        opt.classList.add('selected');
-        const correct = i === q.answer;
-        opt.classList.add(correct ? 'correct' : 'wrong');
-        if (!correct) c.querySelectorAll('.q-option')[q.answer]?.classList.add('correct');
-        const expEl = c.querySelector('.q-explanation');
-        if (expEl) expEl.style.display = 'block';
-        toast(correct ? 'Correto! +50 XP' : 'Errado!', correct ? 'success' : 'error');
-      });
-    });
-
-    // Next button
-    c.querySelector('.q-next')?.addEventListener('click', function () {
-      window.curQ = ((window.curQ || 0) + 1) % QUESTIONS.length;
-      window.renderQ(window.curQ);
-    });
-  });
-};
-
-function renderCespe(q) {
-  return `
-  <div class="q-card">
-    <div class="q-header">
-      <div class="q-meta">
-        <span class="badge b-amber">${q.banca} · ${q.year}</span>
-        <span class="badge b-blue">${q.subject}</span>
-        <span class="badge b-gray">${q.difficulty}</span>
-        <span class="badge b-gray">Certo / Errado</span>
-      </div>
-    </div>
-    <p class="q-text">${q.text}</p>
-    <div style="display:flex;gap:10px">
-      <button class="cespe-btn btn btn-secondary" data-value="true" style="flex:1;font-size:14px;padding:12px">Certo</button>
-      <button class="cespe-btn btn btn-secondary" data-value="false" style="flex:1;font-size:14px;padding:12px">Errado</button>
-    </div>
-    <div class="q-explanation" style="display:none">
-      <strong>Comentário:</strong> ${q.explanation}
-    </div>
-    <div class="flex jb mt16">
-      <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
-      <button class="btn btn-primary btn-sm q-next">Próxima →</button>
-    </div>
-  </div>`;
-}
-
-function renderMultiple(q) {
-  const opts = q.options.map((o, i) => `
-    <div class="q-option" data-idx="${i}">
-      <span class="q-opt-letter">${String.fromCharCode(65 + i)}</span>
-      <span>${o}</span>
-    </div>`).join('');
-
-  return `
-  <div class="q-card">
-    <div class="q-header">
-      <div class="q-meta">
-        <span class="badge b-blue">${q.banca} · ${q.year}</span>
-        <span class="badge b-blue">${q.subject}</span>
-        <span class="badge b-gray">${q.difficulty}</span>
-      </div>
-    </div>
-    <p class="q-text">${q.text}</p>
-    ${opts}
-    <div class="q-explanation" style="display:none">
-      <strong>Comentário:</strong> ${q.explanation}
-    </div>
-    <div class="flex jb mt16">
-      <button class="btn btn-ghost btn-sm" onclick="toast('Questão marcada!','warning')">⚑ Marcar</button>
-      <button class="btn btn-primary btn-sm q-next">Próxima →</button>
-    </div>
-  </div>`;
-}
-
-// Auto-render on load
-window.addEventListener('DOMContentLoaded', function () {
-  window.curQ = 0;
-  if (document.getElementById('question-container')) renderQ(0);
-});
-
-/* ── Simulado timer ─────────────────────────────────────── */
-(function () {
-  const el = document.getElementById('sim-timer');
-  if (!el) return;
-  let total = 5 * 3600 + 30 * 60;
-  setInterval(() => {
-    if (total <= 0) return;
-    total--;
-    const h = String(Math.floor(total / 3600)).padStart(2, '0');
-    const m = String(Math.floor((total % 3600) / 60)).padStart(2, '0');
-    const s = String(total % 60).padStart(2, '0');
-    el.textContent = `${h}:${m}:${s}`;
-  }, 1000);
-})();
-
-/* ── Plan billing toggle ─────────────────────────────────── */
-(function () {
-  const mensal = document.getElementById('t-mensal');
-  const anual  = document.getElementById('t-anual');
-  if (!mensal || !anual) return;
-
-  const prices = {
-    mensal: ['R$ 0', 'R$ 19,90', 'R$ 29,90', 'R$ 39,90', 'R$ 59,90'],
-    anual:  ['R$ 0', 'R$ 13,27', 'R$ 19,93', 'R$ 26,60', 'R$ 39,93']
-  };
-
-  function setMode(mode) {
-    const vals = document.querySelectorAll('.plan-price-val');
-    prices[mode].forEach((p, i) => { if (vals[i]) vals[i].textContent = p; });
-    mensal.classList.toggle('btn-primary', mode === 'mensal');
-    mensal.classList.toggle('btn-ghost',   mode !== 'mensal');
-    anual.classList.toggle('btn-primary',  mode === 'anual');
-    anual.classList.toggle('btn-ghost',    mode !== 'anual');
-  }
-
-  mensal.addEventListener('click', () => setMode('mensal'));
-  anual.addEventListener('click',  () => setMode('anual'));
-})();
-
-/* ── AI Chat (IA Tutora + Suporte) ──────────────────────── */
-(function () {
-  const forms = document.querySelectorAll('#ai-form');
-  forms.forEach(form => {
-    const msgsEl = form.closest('main, .card')?.querySelector('#ai-msgs');
-    const inpEl  = form.querySelector('#ai-inp');
-    if (!msgsEl || !inpEl) return;
-
-    // Initial greeting
-    const page = document.title;
-    const greet = page.includes('Suporte')
-      ? ' Olá, Rafael! Sou o agente de suporte do Studium. Como posso ajudar você hoje?'
-      : ' Olá, Rafael! Sou sua IA Tutora. Posso explicar conteúdos, criar resumos, gerar flashcards ou analisar seu desempenho. Como posso ajudar?';
-
-    addMsg(msgsEl, greet, 'ai');
-
-    form.addEventListener('submit', async function (e) {
-      e.preventDefault();
-      const msg = inpEl.value.trim();
-      if (!msg) return;
-      inpEl.value = '';
-      addMsg(msgsEl, msg, 'user');
-
-      const typing = addMsg(msgsEl, '...', 'ai');
-
-      try {
-        const res = await fetch('https://api.anthropic.com/v1/messages', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            model: 'claude-sonnet-4-20250514',
-            max_tokens: 1000,
-            system: page.includes('Suporte')
-              ? 'Você é um agente de suporte da plataforma educacional Studium, que ajuda estudantes brasileiros a se preparar para concursos públicos, ENEM e vestibulares. Responda de forma simpática, objetiva e em português brasileiro. Máximo de 3 parágrafos curtos.'
-              : 'Você é a IA Tutora da plataforma educacional Studium. Ajuda estudantes brasileiros a se preparar para concursos públicos, ENEM e vestibulares. Explique conteúdos de forma clara e didática em português brasileiro. Use exemplos práticos. Máximo de 4 parágrafos.',
-            messages: [{ role: 'user', content: msg }]
-          })
-        });
-        const data = await res.json();
-        const text = data.content?.[0]?.text || 'Desculpe, não consegui processar sua mensagem.';
-        typing.innerHTML = formatAIText(text);
-      } catch (err) {
-        typing.textContent = 'Desculpe, houve um erro de conexão. Tente novamente.';
-      }
-      msgsEl.scrollTop = msgsEl.scrollHeight;
-    });
-  });
-
-  function addMsg(container, text, who) {
-    const el = document.createElement('div');
-    el.className = who === 'user' ? 'msg-user' : 'msg-ai';
-    el.innerHTML = who === 'ai' ? formatAIText(text) : escapeHtml(text);
-    container.appendChild(el);
-    container.scrollTop = container.scrollHeight;
-    return el;
-  }
-
-  function formatAIText(text) {
-    return text
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*(.*?)\*/g, '<em>$1</em>')
-      .replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>')
-      .replace(/^/, '<p>').replace(/$/, '</p>');
-  }
-
-  function escapeHtml(t) {
-    return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  }
-})();
-
-/* ── Support floating widget ────────────────────────────── */
-(function () {
-  const panel  = document.getElementById('sup-panel');
-  const toggle = document.getElementById('sup-toggle');
-  const form   = document.getElementById('sup-form');
-  const msgs   = document.getElementById('sup-msgs');
-  const inp    = document.getElementById('sup-inp');
-  if (!panel || !toggle) return;
-
-  toggle.addEventListener('click', () => panel.classList.toggle('open'));
-
-  // Greeting
-  addSupMsg(' Olá! Sou o suporte Studium. Como posso ajudar?', 'ai');
-
-  form?.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const msg = inp.value.trim();
-    if (!msg) return;
-    inp.value = '';
-    addSupMsg(msg, 'user');
-
-    const typing = addSupMsg('...', 'ai');
-
-    try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
-          max_tokens: 500,
-          system: 'Você é um agente de suporte da plataforma Studium (preparação para concursos). Seja breve, simpático e útil. Responda em português. Máximo 2 parágrafos curtos.',
-          messages: [{ role: 'user', content: msg }]
-        })
-      });
-      const data = await res.json();
-      typing.textContent = data.content?.[0]?.text || 'Como posso ajudar mais?';
-    } catch {
-      typing.textContent = 'Houve um erro. Tente novamente em instantes.';
-    }
-    msgs.scrollTop = msgs.scrollHeight;
-  });
-
-  function addSupMsg(text, who) {
-    const el = document.createElement('div');
-    el.className = who === 'user' ? 'msg-user' : 'msg-ai';
-    el.style.fontSize = '12px';
-    el.textContent = text;
-    msgs.appendChild(el);
-    msgs.scrollTop = msgs.scrollHeight;
-    return el;
-  }
-})();
-
-</script>
-<script src="js/app.js"></script>
 <script src="js/site-bg.js"></script>
+<script src="js/app.js"></script>
+<script src="js/landing.js"></script>
 </body>
 </html>

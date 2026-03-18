@@ -34,7 +34,7 @@ function renderSidebar(activePage) {
   let html = `
     <div class="sb-hdr">
       <a href="index.html" class="sb-logo" aria-label="Studium - Página inicial">
-        <div class="logo-icon" aria-hidden="true">S</div>Studium
+        <img src="images/logo-mark.svg" class="logo-icon" alt="" aria-hidden="true">Studium
       </a>
     </div>`;
 

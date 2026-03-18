@@ -22,6 +22,48 @@
   --rxl: 24px;
 }
 
+/* ── Space Video Background ────────────────────────── */
+.space-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.space-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  opacity: .35;
+}
+.space-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(6,13,9,.6) 0%, rgba(6,13,9,.3) 30%, rgba(6,13,9,.3) 70%, rgba(6,13,9,.7) 100%),
+    radial-gradient(ellipse 80% 50% at 50% 50%, transparent 20%, rgba(6,13,9,.5) 100%);
+  pointer-events: none;
+}
+/* Ensure all content sits above the video */
+.nav, .hero, .logos-bar, .stats, .features, .how, .showcase, .ai-demo, .pricing, .reviews, .cta-end, .foot {
+  position: relative;
+  z-index: 1;
+}
+/* Semi-transparent backgrounds so stars peek through */
+.stats { background: rgba(6,13,9,.4); }
+.features { background: rgba(6,13,9,.55); backdrop-filter: blur(4px); }
+.how { background: rgba(6,13,9,.4); }
+.showcase { background: rgba(6,13,9,.5); backdrop-filter: blur(4px); }
+.ai-demo { background: rgba(6,13,9,.45); }
+.pricing { background: rgba(6,13,9,.55); backdrop-filter: blur(4px); }
+.reviews { background: rgba(6,13,9,.4); }
+.foot { background: rgba(6,13,9,.7); backdrop-filter: blur(8px); }
+
 /* ── Reset ─────────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:15px;scroll-behavior:smooth}
@@ -71,7 +113,7 @@ h1,h2,h3,h4{font-family:'Plus Jakarta Sans','Inter',sans-serif;color:#fff;letter
 /* ── Hero ──────────────────────────────────────────── */
 .hero{position:relative;padding:140px 0 100px;min-height:100vh;display:flex;align-items:center;overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-gradient{position:absolute;inset:0;background:linear-gradient(160deg,rgba(9,25,18,.95),rgba(12,36,25,.88) 40%,rgba(15,51,34,.8) 70%,rgba(6,13,9,.95))}
+.hero-gradient{position:absolute;inset:0;background:linear-gradient(160deg,rgba(9,25,18,.7),rgba(12,36,25,.55) 40%,rgba(15,51,34,.45) 70%,rgba(6,13,9,.7))}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,#000 10%,transparent 70%)}
 .hero-glow-1{position:absolute;width:700px;height:500px;top:-15%;left:-10%;background:radial-gradient(ellipse,rgba(5,150,105,.15),transparent 70%);filter:blur(80px);animation:glow1 16s ease-in-out infinite}
 .hero-glow-2{position:absolute;width:500px;height:400px;bottom:-10%;right:-10%;background:radial-gradient(ellipse,rgba(52,211,153,.1),transparent 70%);filter:blur(80px);animation:glow2 20s ease-in-out infinite}
@@ -106,7 +148,7 @@ h1,h2,h3,h4{font-family:'Plus Jakarta Sans','Inter',sans-serif;color:#fff;letter
 .hero-float span{font-size:11px;color:var(--text3)}
 
 /* ── Logos Bar ─────────────────────────────────────── */
-.logos-bar{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 0;position:relative;z-index:1}
+.logos-bar{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 0;position:relative;z-index:1;background:rgba(6,13,9,.5);backdrop-filter:blur(8px)}
 .logos-label{text-align:center;font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--text3);font-weight:600;margin-bottom:16px}
 .logos-row{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
 .logo-item{font-size:14px;font-weight:700;color:rgba(255,255,255,.15);letter-spacing:-.01em;transition:color .3s}

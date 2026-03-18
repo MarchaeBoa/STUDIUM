@@ -39,14 +39,15 @@
   width: auto;
   height: auto;
   object-fit: cover;
-  opacity: .35;
+  opacity: .7;
+  image-rendering: high-quality;
 }
 .space-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(6,13,9,.6) 0%, rgba(6,13,9,.3) 30%, rgba(6,13,9,.3) 70%, rgba(6,13,9,.7) 100%),
-    radial-gradient(ellipse 80% 50% at 50% 50%, transparent 20%, rgba(6,13,9,.5) 100%);
+    linear-gradient(180deg, rgba(6,13,9,.4) 0%, rgba(6,13,9,.15) 30%, rgba(6,13,9,.15) 70%, rgba(6,13,9,.5) 100%),
+    radial-gradient(ellipse 90% 60% at 50% 50%, transparent 30%, rgba(6,13,9,.35) 100%);
   pointer-events: none;
 }
 /* Ensure all content sits above the video */
@@ -55,14 +56,14 @@
   z-index: 1;
 }
 /* Semi-transparent backgrounds so stars peek through */
-.stats { background: rgba(6,13,9,.4); }
-.features { background: rgba(6,13,9,.55); backdrop-filter: blur(4px); }
-.how { background: rgba(6,13,9,.4); }
-.showcase { background: rgba(6,13,9,.5); backdrop-filter: blur(4px); }
-.ai-demo { background: rgba(6,13,9,.45); }
-.pricing { background: rgba(6,13,9,.55); backdrop-filter: blur(4px); }
-.reviews { background: rgba(6,13,9,.4); }
-.foot { background: rgba(6,13,9,.7); backdrop-filter: blur(8px); }
+.stats { background: rgba(6,13,9,.3); }
+.features { background: rgba(6,13,9,.4); backdrop-filter: blur(2px); }
+.how { background: rgba(6,13,9,.3); }
+.showcase { background: rgba(6,13,9,.35); backdrop-filter: blur(2px); }
+.ai-demo { background: rgba(6,13,9,.35); }
+.pricing { background: rgba(6,13,9,.4); backdrop-filter: blur(2px); }
+.reviews { background: rgba(6,13,9,.3); }
+.foot { background: rgba(6,13,9,.6); backdrop-filter: blur(6px); }
 
 /* ── Reset ─────────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}

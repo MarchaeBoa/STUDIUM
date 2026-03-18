@@ -18,6 +18,7 @@ function renderSidebar(activePage) {
       { href: 'simulados.html', icon: '', label: 'Simulados' },
     ]},
     { section: 'Módulos', items: [
+      { href: 'biblioteca.html', icon: '', label: 'Biblioteca' },
       { href: 'concursos.html', icon: '', label: 'Concursos' },
       { href: 'ia-tutora.html', icon: '', label: 'IA Tutora' },
       { href: 'ingles.html', icon: '', label: 'Inglês' },

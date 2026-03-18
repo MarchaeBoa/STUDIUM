@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Biblioteca de Estudos - Videoaulas, conteúdos e simulados organizados por matéria. Studium."><title>Biblioteca de Estudos — Studium</title><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<canvas class="site-particles" aria-hidden="true"></canvas>
+<a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+<div class="app-shell">
+<aside class="sidebar" aria-label="Navegação principal"></aside>
+<header class="topbar" role="banner"></header>
+<main class="main" id="main-content" role="main">
+
+  <!-- Hero -->
+  <div class="bib-hero">
+    <div class="bib-hero-glow"></div>
+    <div class="bib-hero-content">
+      <span class="badge b-green mb12" style="font-size:12px">Biblioteca de Estudos</span>
+      <h1 class="bib-hero-title">Aprenda com videoaulas e pratique com simulados</h1>
+      <p class="bib-hero-sub">Todo o conteúdo que você precisa para dominar seu concurso — organizado, objetivo e direto ao ponto.</p>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="bib-search-wrap mb24">
+    <div class="bib-search">
+      <span class="bib-search-icon" aria-hidden="true">🔍</span>
+      <label for="bib-search-input" class="hidden">Buscar na biblioteca</label>
+      <input type="search" id="bib-search-input" class="bib-search-input" placeholder="Buscar videoaulas, matérias, temas..." oninput="filterLibrary(this.value)">
+    </div>
+  </div>
+
+  <!-- Category Filters -->
+  <div class="bib-filters mb24">
+    <button class="bib-filter active" onclick="setFilter(this,'all')">Todos</button>
+    <button class="bib-filter" onclick="setFilter(this,'portugues')">Português</button>
+    <button class="bib-filter" onclick="setFilter(this,'matematica')">Matemática</button>
+    <button class="bib-filter" onclick="setFilter(this,'dir-constitucional')">Dir. Constitucional</button>
+    <button class="bib-filter" onclick="setFilter(this,'dir-administrativo')">Dir. Administrativo</button>
+    <button class="bib-filter" onclick="setFilter(this,'raciocinio-logico')">Raciocínio Lógico</button>
+    <button class="bib-filter" onclick="setFilter(this,'informatica')">Informática</button>
+    <button class="bib-filter" onclick="setFilter(this,'atualidades')">Atualidades</button>
+  </div>
+
+  <!-- Stats Row -->
+  <div class="grid-4 mb24">
+    <div class="card card-sm tc">
+      <div style="font-size:24px;font-weight:800;color:#34D399">248</div>
+      <div class="tsm tmuted">Videoaulas</div>
+    </div>
+    <div class="card card-sm tc">
+      <div style="font-size:24px;font-weight:800;color:#6EE7B7">12</div>
+      <div class="tsm tmuted">Matérias</div>
+    </div>
+    <div class="card card-sm tc">
+      <div style="font-size:24px;font-weight:800;color:#34D399">1.540</div>
+      <div class="tsm tmuted">Questões vinculadas</div>
+    </div>
+    <div class="card card-sm tc">
+      <div style="font-size:24px;font-weight:800;color:#6EE7B7">36h</div>
+      <div class="tsm tmuted">De conteúdo</div>
+    </div>
+  </div>
+
+  <!-- Section: Português -->
+  <div class="bib-section" data-category="portugues">
+    <div class="flex jb ai mb16">
+      <div>
+        <h2 class="bib-section-title">Português</h2>
+        <p class="tsm tmuted">Gramática, interpretação e redação para concursos</p>
+      </div>
+      <span class="badge b-blue">42 aulas</span>
+    </div>
+    <div class="grid-3 mb16">
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">18:32</span>
+        </div>
+        <h3 class="bib-video-title">Concordância Verbal — Regras Essenciais</h3>
+        <p class="txs tmuted mb8">Prof. Ana Cláudia · 2.4k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Gramática</span>
+          <span class="badge b-gray" style="font-size:10px">Intermediário</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">24:15</span>
+        </div>
+        <h3 class="bib-video-title">Interpretação de Texto — Método Prático</h3>
+        <p class="txs tmuted mb8">Prof. Ana Cláudia · 3.1k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Interpretação</span>
+          <span class="badge b-green" style="font-size:10px">Essencial</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">15:48</span>
+        </div>
+        <h3 class="bib-video-title">Regência Verbal e Nominal — Pegadinhas</h3>
+        <p class="txs tmuted mb8">Prof. Ana Cláudia · 1.8k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Gramática</span>
+          <span class="badge b-amber" style="font-size:10px">Avançado</span>
+        </div>
+      </div>
+    </div>
+    <div class="card card-sm bib-exam-link">
+      <div class="flex jb ai">
+        <div class="flex ai g12">
+          <span style="font-size:20px">📝</span>
+          <div>
+            <strong>Simulado de Português</strong>
+            <p class="txs tmuted">35 questões · CESPE & FCC · 45 min</p>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="location.href='simulados.html'">Praticar →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Matemática -->
+  <div class="bib-section" data-category="matematica">
+    <div class="flex jb ai mb16">
+      <div>
+        <h2 class="bib-section-title">Matemática</h2>
+        <p class="tsm tmuted">Raciocínio quantitativo e resolução de problemas</p>
+      </div>
+      <span class="badge b-blue">38 aulas</span>
+    </div>
+    <div class="grid-3 mb16">
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">22:10</span>
+        </div>
+        <h3 class="bib-video-title">Juros Simples e Compostos — Do Zero</h3>
+        <p class="txs tmuted mb8">Prof. Ricardo Lima · 4.2k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Financeira</span>
+          <span class="badge b-green" style="font-size:10px">Essencial</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">19:45</span>
+        </div>
+        <h3 class="bib-video-title">Porcentagem — Atalhos para Provas</h3>
+        <p class="txs tmuted mb8">Prof. Ricardo Lima · 3.7k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Aritmética</span>
+          <span class="badge b-gray" style="font-size:10px">Intermediário</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">27:30</span>
+        </div>
+        <h3 class="bib-video-title">Probabilidade e Estatística Básica</h3>
+        <p class="txs tmuted mb8">Prof. Ricardo Lima · 2.1k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Estatística</span>
+          <span class="badge b-amber" style="font-size:10px">Avançado</span>
+        </div>
+      </div>
+    </div>
+    <div class="card card-sm bib-exam-link">
+      <div class="flex jb ai">
+        <div class="flex ai g12">
+          <span style="font-size:20px">📝</span>
+          <div>
+            <strong>Simulado de Matemática</strong>
+            <p class="txs tmuted">40 questões · FCC & CESPE · 60 min</p>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="location.href='simulados.html'">Praticar →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Dir. Constitucional -->
+  <div class="bib-section" data-category="dir-constitucional">
+    <div class="flex jb ai mb16">
+      <div>
+        <h2 class="bib-section-title">Direito Constitucional</h2>
+        <p class="tsm tmuted">Princípios fundamentais, direitos e garantias</p>
+      </div>
+      <span class="badge b-blue">35 aulas</span>
+    </div>
+    <div class="grid-3 mb16">
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">30:12</span>
+        </div>
+        <h3 class="bib-video-title">Art. 5º CF — Direitos Fundamentais</h3>
+        <p class="txs tmuted mb8">Prof. Marcos Souza · 5.6k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Direitos Fundamentais</span>
+          <span class="badge b-green" style="font-size:10px">Essencial</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">25:40</span>
+        </div>
+        <h3 class="bib-video-title">Organização do Estado — Entes Federativos</h3>
+        <p class="txs tmuted mb8">Prof. Marcos Souza · 2.9k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Organização</span>
+          <span class="badge b-gray" style="font-size:10px">Intermediário</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">20:55</span>
+        </div>
+        <h3 class="bib-video-title">Controle de Constitucionalidade</h3>
+        <p class="txs tmuted mb8">Prof. Marcos Souza · 3.3k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Controle</span>
+          <span class="badge b-amber" style="font-size:10px">Avançado</span>
+        </div>
+      </div>
+    </div>
+    <div class="card card-sm bib-exam-link">
+      <div class="flex jb ai">
+        <div class="flex ai g12">
+          <span style="font-size:20px">📝</span>
+          <div>
+            <strong>Simulado de Dir. Constitucional</strong>
+            <p class="txs tmuted">30 questões · CESPE · 40 min</p>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="location.href='simulados.html'">Praticar →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Dir. Administrativo -->
+  <div class="bib-section" data-category="dir-administrativo">
+    <div class="flex jb ai mb16">
+      <div>
+        <h2 class="bib-section-title">Direito Administrativo</h2>
+        <p class="tsm tmuted">Atos, licitações, servidores e responsabilidade</p>
+      </div>
+      <span class="badge b-blue">31 aulas</span>
+    </div>
+    <div class="grid-3 mb16">
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">26:18</span>
+        </div>
+        <h3 class="bib-video-title">Princípios da Administração Pública</h3>
+        <p class="txs tmuted mb8">Prof. Carla Mendes · 3.8k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Princípios</span>
+          <span class="badge b-green" style="font-size:10px">Essencial</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">23:05</span>
+        </div>
+        <h3 class="bib-video-title">Atos Administrativos — Classificação</h3>
+        <p class="txs tmuted mb8">Prof. Carla Mendes · 2.5k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Atos</span>
+          <span class="badge b-gray" style="font-size:10px">Intermediário</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">28:42</span>
+        </div>
+        <h3 class="bib-video-title">Licitações e Contratos — Nova Lei</h3>
+        <p class="txs tmuted mb8">Prof. Carla Mendes · 4.1k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Licitações</span>
+          <span class="badge b-amber" style="font-size:10px">Avançado</span>
+        </div>
+      </div>
+    </div>
+    <div class="card card-sm bib-exam-link">
+      <div class="flex jb ai">
+        <div class="flex ai g12">
+          <span style="font-size:20px">📝</span>
+          <div>
+            <strong>Simulado de Dir. Administrativo</strong>
+            <p class="txs tmuted">30 questões · CESPE & FCC · 40 min</p>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="location.href='simulados.html'">Praticar →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Raciocínio Lógico -->
+  <div class="bib-section" data-category="raciocinio-logico">
+    <div class="flex jb ai mb16">
+      <div>
+        <h2 class="bib-section-title">Raciocínio Lógico</h2>
+        <p class="tsm tmuted">Proposições, lógica formal e resolução de problemas</p>
+      </div>
+      <span class="badge b-blue">28 aulas</span>
+    </div>
+    <div class="grid-3 mb16">
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">21:30</span>
+        </div>
+        <h3 class="bib-video-title">Proposições Lógicas — Fundamentos</h3>
+        <p class="txs tmuted mb8">Prof. Bruno Teixeira · 2.8k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Lógica</span>
+          <span class="badge b-green" style="font-size:10px">Essencial</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">18:20</span>
+        </div>
+        <h3 class="bib-video-title">Tabela-Verdade — Método Rápido</h3>
+        <p class="txs tmuted mb8">Prof. Bruno Teixeira · 3.4k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Lógica</span>
+          <span class="badge b-gray" style="font-size:10px">Intermediário</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">25:15</span>
+        </div>
+        <h3 class="bib-video-title">Equivalências e Negações Lógicas</h3>
+        <p class="txs tmuted mb8">Prof. Bruno Teixeira · 2.0k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Lógica</span>
+          <span class="badge b-amber" style="font-size:10px">Avançado</span>
+        </div>
+      </div>
+    </div>
+    <div class="card card-sm bib-exam-link">
+      <div class="flex jb ai">
+        <div class="flex ai g12">
+          <span style="font-size:20px">📝</span>
+          <div>
+            <strong>Simulado de Raciocínio Lógico</strong>
+            <p class="txs tmuted">25 questões · CESPE · 35 min</p>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="location.href='simulados.html'">Praticar →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Informática -->
+  <div class="bib-section" data-category="informatica">
+    <div class="flex jb ai mb16">
+      <div>
+        <h2 class="bib-section-title">Informática</h2>
+        <p class="tsm tmuted">Sistemas, redes, segurança e ferramentas</p>
+      </div>
+      <span class="badge b-blue">32 aulas</span>
+    </div>
+    <div class="grid-3 mb16">
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">16:45</span>
+        </div>
+        <h3 class="bib-video-title">Segurança da Informação — Conceitos</h3>
+        <p class="txs tmuted mb8">Prof. Daniela Costa · 2.6k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Segurança</span>
+          <span class="badge b-green" style="font-size:10px">Essencial</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">20:10</span>
+        </div>
+        <h3 class="bib-video-title">Redes de Computadores — Protocolos</h3>
+        <p class="txs tmuted mb8">Prof. Daniela Costa · 1.9k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Redes</span>
+          <span class="badge b-gray" style="font-size:10px">Intermediário</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">14:30</span>
+        </div>
+        <h3 class="bib-video-title">LibreOffice vs MS Office — Diferenças</h3>
+        <p class="txs tmuted mb8">Prof. Daniela Costa · 3.2k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Ferramentas</span>
+          <span class="badge b-gray" style="font-size:10px">Intermediário</span>
+        </div>
+      </div>
+    </div>
+    <div class="card card-sm bib-exam-link">
+      <div class="flex jb ai">
+        <div class="flex ai g12">
+          <span style="font-size:20px">📝</span>
+          <div>
+            <strong>Simulado de Informática</strong>
+            <p class="txs tmuted">30 questões · CESPE & FCC · 40 min</p>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="location.href='simulados.html'">Praticar →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Atualidades -->
+  <div class="bib-section" data-category="atualidades">
+    <div class="flex jb ai mb16">
+      <div>
+        <h2 class="bib-section-title">Atualidades</h2>
+        <p class="tsm tmuted">Eventos recentes, geopolítica e temas sociais</p>
+      </div>
+      <span class="badge b-blue">22 aulas</span>
+    </div>
+    <div class="grid-3 mb16">
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">17:55</span>
+        </div>
+        <h3 class="bib-video-title">Cenário Político Brasileiro — Resumão</h3>
+        <p class="txs tmuted mb8">Prof. Fernanda Rocha · 4.8k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Política</span>
+          <span class="badge b-green" style="font-size:10px">Essencial</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">21:30</span>
+        </div>
+        <h3 class="bib-video-title">Meio Ambiente e Mudanças Climáticas</h3>
+        <p class="txs tmuted mb8">Prof. Fernanda Rocha · 2.3k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Meio Ambiente</span>
+          <span class="badge b-gray" style="font-size:10px">Intermediário</span>
+        </div>
+      </div>
+      <div class="card card-h bib-video-card">
+        <div class="bib-thumb">
+          <div class="bib-play">▶</div>
+          <span class="bib-duration">19:10</span>
+        </div>
+        <h3 class="bib-video-title">Conflitos Internacionais — Panorama</h3>
+        <p class="txs tmuted mb8">Prof. Fernanda Rocha · 3.5k visualizações</p>
+        <div class="flex g8">
+          <span class="badge b-blue" style="font-size:10px">Geopolítica</span>
+          <span class="badge b-amber" style="font-size:10px">Avançado</span>
+        </div>
+      </div>
+    </div>
+    <div class="card card-sm bib-exam-link">
+      <div class="flex jb ai">
+        <div class="flex ai g12">
+          <span style="font-size:20px">📝</span>
+          <div>
+            <strong>Simulado de Atualidades</strong>
+            <p class="txs tmuted">20 questões · Multibanca · 30 min</p>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="location.href='simulados.html'">Praticar →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Empty state for filtered results -->
+  <div id="bib-empty" class="hidden tc" style="padding:60px 20px">
+    <div style="font-size:48px;margin-bottom:16px;opacity:.4">🔍</div>
+    <h3 style="margin-bottom:8px">Nenhum resultado encontrado</h3>
+    <p class="tsm tmuted">Tente buscar por outro termo ou selecione uma categoria diferente.</p>
+  </div>
+
+</main>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/components.js"></script>
+<script>renderSidebar('biblioteca.html'); renderTopbar('Biblioteca de Estudos');</script>
+<script src="js/site-bg.js"></script>
+<script>
+/* ── Biblioteca: Filter & Search ─────────────────────── */
+let activeCategory = 'all';
+
+function setFilter(btn, category) {
+  activeCategory = category;
+  document.querySelectorAll('.bib-filter').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function filterLibrary(query) {
+  applyFilters(query.toLowerCase().trim());
+}
+
+function applyFilters(search) {
+  search = search || document.getElementById('bib-search-input').value.toLowerCase().trim();
+  const sections = document.querySelectorAll('.bib-section');
+  let visible = 0;
+
+  sections.forEach(sec => {
+    const cat = sec.dataset.category;
+    const text = sec.textContent.toLowerCase();
+    const matchCat = activeCategory === 'all' || cat === activeCategory;
+    const matchSearch = !search || text.includes(search);
+    const show = matchCat && matchSearch;
+    sec.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+
+  document.getElementById('bib-empty').classList.toggle('hidden', visible > 0);
+}
+
+/* ── Video card click → toast ────────────────────────── */
+document.addEventListener('click', function(e) {
+  const card = e.target.closest('.bib-video-card');
+  if (!card) return;
+  const title = card.querySelector('.bib-video-title')?.textContent;
+  toast('Reproduzindo: ' + (title || 'videoaula'), 'success');
+});
+</script>
+</body></html>

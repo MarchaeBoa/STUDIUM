@@ -2,448 +2,391 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Studium - Estude com inteligência. Conquiste seu futuro. Plataforma completa com IA para concursos, ENEM e idiomas.">
+<meta name="description" content="Studium - A plataforma de estudos com IA mais avançada do Brasil. ENEM, concursos, vestibulares e idiomas.">
 <title>Studium — Estude com inteligência. Conquiste seu futuro.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
-<canvas class="site-particles" aria-hidden="true"></canvas>
 
-<!-- ══════════════════ NAV ══════════════════ -->
-<header class="pub-nav">
-  <div class="container pub-nav-in">
-    <a href="index.html" class="pub-logo"><img src="images/logo-mark.svg" class="logo-icon" alt="">Studium</a>
-    <nav class="pub-links">
+<!-- ══════════════ NAVBAR ══════════════ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo-mark.svg" class="logo-icon" alt="">Studium</a>
+    <nav class="nav-links">
       <a href="#features">Recursos</a>
-      <a href="#como-funciona">Como funciona</a>
-      <a href="#planos">Planos</a>
+      <a href="#how">Como funciona</a>
+      <a href="#pricing">Planos</a>
       <a href="suporte.html">Ajuda</a>
     </nav>
-    <div class="pub-actions">
-      <a href="login.html" class="btn btn-ghost">Entrar</a>
-      <a href="cadastro.html" class="btn btn-primary">Começar grátis <span class="btn-arrow">→</span></a>
+    <div class="nav-actions">
+      <a href="login.html" class="nav-login">Entrar</a>
+      <a href="cadastro.html" class="btn-cta">Começar grátis</a>
     </div>
-    <button class="mobile-menu-btn" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-mobile" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<!-- ══════════════════ HERO ══════════════════ -->
+<!-- ══════════════ HERO ══════════════ -->
 <section class="hero">
-  <div class="hero-glow"></div>
-  <div class="hero-grid-bg"></div>
-  <div class="hero-orb hero-orb-1"></div>
-  <div class="hero-orb hero-orb-2"></div>
-  <div class="hero-orb hero-orb-3"></div>
-  <canvas class="hero-particles" aria-hidden="true"></canvas>
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-badge animate-on-scroll" data-delay="0">
-        <span class="hero-badge-dot"></span>
-        <span>IA Tutora disponível 24h</span>
-        <span class="hero-badge-new">NOVO</span>
+  <div class="hero-bg">
+    <div class="hero-gradient"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+  </div>
+  <div class="wrap">
+    <div class="hero-layout">
+      <div class="hero-text">
+        <div class="hero-pill anim" data-d="0">
+          <span class="pill-dot"></span>
+          <span>IA Tutora disponível 24h</span>
+          <span class="pill-badge">NOVO</span>
+        </div>
+        <h1 class="anim" data-d="80">
+          Estude com <span class="h-em">inteligência</span>.<br>
+          Conquiste seu <span class="h-em">futuro</span>.
+        </h1>
+        <p class="hero-desc anim" data-d="160">A plataforma com IA que transforma sua preparação para ENEM, vestibulares, concursos públicos e idiomas em resultados reais.</p>
+        <div class="hero-actions anim" data-d="240">
+          <a href="cadastro.html" class="btn-cta btn-cta-lg">Criar conta grátis <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#how" class="btn-outline"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21" fill="currentColor"/></svg> Veja como funciona</a>
+        </div>
+        <div class="hero-proof anim" data-d="320">
+          <div class="proof-avatars">
+            <span style="background:linear-gradient(135deg,#059669,#34D399)">CM</span>
+            <span style="background:linear-gradient(135deg,#7C3AED,#A78BFA)">LR</span>
+            <span style="background:linear-gradient(135deg,#D97706,#FCD34D)">AF</span>
+            <span style="background:linear-gradient(135deg,#0EA5E9,#7DD3FC)">JP</span>
+          </div>
+          <div class="proof-text">
+            <div class="proof-stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <span>Amado por <strong>12.000+</strong> estudantes</span>
+          </div>
+        </div>
       </div>
-      <h1 class="animate-on-scroll" data-delay="100">
-        Estude com inteligência.<br>
-        <span class="gradient-text">Conquiste seu futuro.</span>
-      </h1>
-      <p class="hero-sub animate-on-scroll" data-delay="200">
-        ENEM, vestibulares, concursos públicos e idiomas — tudo em um só lugar com IA, simulados adaptativos e plano de estudos personalizado.
-      </p>
-      <div class="hero-ctas animate-on-scroll" data-delay="300">
-        <a href="cadastro.html" class="btn btn-primary btn-lg btn-glow">
-          <span>Criar conta grátis</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#como-funciona" class="btn btn-secondary btn-lg btn-glass">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" fill="currentColor" opacity="0.8"/></svg>
-          <span>Veja como funciona</span>
-        </a>
-      </div>
-      <div class="hero-trust animate-on-scroll" data-delay="400">
-        <div class="trust-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#059669" opacity=".25"/><path d="M5 8l2.5 2.5L11 6" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>14 dias grátis</span></div>
-        <div class="trust-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#059669" opacity=".25"/><path d="M5 8l2.5 2.5L11 6" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Sem cartão de crédito</span></div>
-        <div class="trust-item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#059669" opacity=".25"/><path d="M5 8l2.5 2.5L11 6" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cancele quando quiser</span></div>
+      <div class="hero-visual anim" data-d="200">
+        <div class="hero-img-wrapper">
+          <img src="images/study-desk.png" alt="Estudante usando a plataforma Studium" class="hero-img">
+          <div class="hero-float hero-float-1">
+            <div class="float-ico" style="background:rgba(52,211,153,.15);color:#34D399"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><strong>+42%</strong><span>rendimento</span></div>
+          </div>
+          <div class="hero-float hero-float-2">
+            <div class="float-ico" style="background:rgba(124,58,237,.15);color:#A78BFA"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l.146.146A3 3 0 0118 18.75V21a.75.75 0 01-.75.75h-10.5A.75.75 0 016 21v-2.25a3 3 0 01.879-2.121l.146-.146z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><strong>IA ativa</strong><span>analisando</span></div>
+          </div>
+          <div class="hero-float hero-float-3">
+            <div class="float-ico" style="background:rgba(14,165,233,.15);color:#38BDF8"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><strong>920 pts</strong><span>ENEM</span></div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- Demo interativo da IA -->
-    <div class="hero-demo animate-on-scroll" data-delay="500">
-      <div class="hero-demo-card">
-        <div class="demo-header">
+<!-- ══════════════ LOGOS BAR ══════════════ -->
+<section class="logos-bar">
+  <div class="wrap">
+    <p class="logos-label">Aprovados em</p>
+    <div class="logos-row">
+      <span class="logo-item">TJ-SP</span>
+      <span class="logo-item">ENEM 900+</span>
+      <span class="logo-item">Polícia Federal</span>
+      <span class="logo-item">USP</span>
+      <span class="logo-item">UNICAMP</span>
+      <span class="logo-item">Receita Federal</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ STATS ══════════════ -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-item anim" data-d="0"><div class="stat-num">500 mil<span>+</span></div><div class="stat-label">questões no banco</div></div>
+      <div class="stat-item anim" data-d="80"><div class="stat-num">2.500<span>+</span></div><div class="stat-label">concursos cobertos</div></div>
+      <div class="stat-item anim" data-d="160"><div class="stat-num">A1 <small>ao</small> C2</div><div class="stat-label">inglês e espanhol</div></div>
+      <div class="stat-item anim" data-d="240"><div class="stat-num">24/7</div><div class="stat-label">IA Tutora disponível</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FEATURES ══════════════ -->
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="sec-header anim">
+      <span class="tag">Recursos</span>
+      <h2>Tudo que você precisa<br>em <span class="h-em">um só lugar</span></h2>
+      <p>Módulos integrados e adaptados ao seu objetivo específico.</p>
+    </div>
+    <div class="feat-bento">
+      <a href="concursos.html" class="bento-card bento-lg anim" data-d="0">
+        <div class="bento-img"><img src="images/classroom.jpg" alt="Sala de aula para concursos"><div class="bento-img-overlay"></div></div>
+        <div class="bento-body">
+          <div class="bento-icon bento-icon-amber"><svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Concursos Públicos</h3>
+          <p>Trilha por edital, alertas de prazo e simulados por banca. Estude exatamente o que cai na sua prova.</p>
+          <span class="bento-link">Explorar <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+      <a href="questoes.html" class="bento-card anim" data-d="80">
+        <div class="bento-body">
+          <div class="bento-icon bento-icon-emerald"><svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>ENEM e Vestibulares</h3>
+          <p>Simulado completo e correção de redação por IA.</p>
+          <span class="bento-link">Explorar <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+      <a href="ia-tutora.html" class="bento-card bento-highlight anim" data-d="160">
+        <span class="bento-badge">Mais popular</span>
+        <div class="bento-body">
+          <div class="bento-icon bento-icon-purple"><svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l.146.146A3.004 3.004 0 0118 18.75V21a.75.75 0 01-.75.75h-10.5A.75.75 0 016 21v-2.25a3 3 0 01.879-2.121l.146-.146z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>IA Tutora</h3>
+          <p>Explica, cria resumos, gera flashcards e analisa seus pontos fracos.</p>
+          <span class="bento-link">Explorar <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+      <a href="ingles.html" class="bento-card anim" data-d="240">
+        <div class="bento-body">
+          <div class="bento-icon bento-icon-sky"><svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-2.247m0 0A8.966 8.966 0 013 12c0-1.97.633-3.792 1.708-5.27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Idiomas</h3>
+          <p>Inglês e espanhol do A1 ao C2 com revisão espaçada.</p>
+          <span class="bento-link">Explorar <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+      <div class="bento-card bento-wide bento-photo anim" data-d="100">
+        <img src="images/students-studying.jpg" alt="Estudantes focados em seus estudos">
+        <div class="bento-photo-overlay">
+          <span class="bento-photo-text">Mais de 12.000 estudantes ativos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ HOW IT WORKS ══════════════ -->
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="sec-header anim">
+      <span class="tag">Como funciona</span>
+      <h2>Do primeiro acesso<br>à <span class="h-em">aprovação</span></h2>
+      <p>Resultado real em três passos simples.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card anim" data-d="0">
+        <div class="how-num">01</div>
+        <h3>Resolva questões e aprenda na hora</h3>
+        <p>Digite uma questão e receba a resposta comentada instantaneamente pela IA.</p>
+      </div>
+      <div class="how-card anim" data-d="100">
+        <div class="how-num">02</div>
+        <h3>Defina seu concurso e receba um plano</h3>
+        <p>A plataforma monta um direcionamento personalizado com as matérias que mais importam.</p>
+      </div>
+      <div class="how-card anim" data-d="200">
+        <div class="how-num">03</div>
+        <h3>Acompanhe prazos e conquiste sua vaga</h3>
+        <p>Alertas sobre editais, inscrições e datas importantes organizados para você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SHOWCASE ══════════════ -->
+<section class="showcase">
+  <div class="wrap">
+    <div class="showcase-row anim">
+      <div class="showcase-media">
+        <img src="images/graduation.jpg" alt="Estudantes comemorando aprovação com beca e diploma" class="showcase-img">
+        <div class="showcase-badge">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>+8.000 aprovações em 2025</span>
+        </div>
+      </div>
+      <div class="showcase-text">
+        <span class="tag">Resultados reais</span>
+        <h2>Seu sucesso é a nossa <span class="h-em">melhor prova</span></h2>
+        <p>Milhares de estudantes já transformaram dedicação em aprovação com o Studium. Nossa IA se adapta ao seu nível e cria um plano de estudos que realmente funciona.</p>
+        <ul class="showcase-list">
+          <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Plano de estudos personalizado por IA</li>
+          <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Progresso em tempo real com analytics</li>
+          <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Disponível 24h em qualquer dispositivo</li>
+        </ul>
+        <a href="cadastro.html" class="btn-cta">Experimentar grátis <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ AI DEMO ══════════════ -->
+<section class="ai-demo">
+  <div class="wrap">
+    <div class="sec-header anim">
+      <span class="tag">IA Tutora</span>
+      <h2>Conheça sua tutora <span class="h-em">particular</span></h2>
+      <p>Tire dúvidas, peça resumos e receba explicações em segundos.</p>
+    </div>
+    <div class="demo-wrap anim" data-d="100">
+      <div class="demo-card">
+        <div class="demo-hdr">
           <div class="demo-dots"><span></span><span></span><span></span></div>
           <span class="demo-title">IA Tutora Studium</span>
-          <span class="demo-badge-live"><span class="demo-live-dot"></span> Online</span>
+          <span class="demo-live"><span class="demo-live-dot"></span> Online</span>
         </div>
         <div class="demo-body" id="demo-body">
           <div class="demo-msg demo-msg-ai">
-            <div class="demo-avatar">S</div>
+            <div class="demo-av">S</div>
             <div class="demo-bubble">Oi! Sou sua IA Tutora. Pergunte qualquer coisa sobre seus estudos.</div>
           </div>
         </div>
         <div class="demo-prompts" id="demo-prompts">
-          <button class="demo-prompt" data-q="Explique a Lei de Ohm de forma simples" data-a="A Lei de Ohm diz que a <strong>corrente elétrica (I)</strong> que passa por um condutor é diretamente proporcional à <strong>tensão (V)</strong> e inversamente proporcional à <strong>resistência (R)</strong>.<br><br>A fórmula é: <strong>V = I × R</strong><br><br>Pense assim: a tensão é como a pressão da água, a corrente é o fluxo, e a resistência é o diâmetro do cano.">Explique a Lei de Ohm</button>
-          <button class="demo-prompt" data-q="Qual a diferença entre juros simples e compostos?" data-a="Nos <strong>juros simples</strong>, o rendimento é calculado sempre sobre o valor inicial. Exemplo: R$ 1.000 a 10% ao mês rende R$ 100/mês.<br><br>Nos <strong>juros compostos</strong>, o rendimento é calculado sobre o valor acumulado (juros sobre juros). O mesmo R$ 1.000 renderia R$ 100 no 1º mês, R$ 110 no 2º, R$ 121 no 3º...<br><br>Por isso os juros compostos crescem mais rápido com o tempo.">Juros simples vs compostos</button>
-          <button class="demo-prompt" data-q="Resuma o art. 5 da Constituição Federal" data-a="O <strong>Art. 5º da CF/88</strong> garante os direitos fundamentais de todos no Brasil:<br><br>• <strong>Igualdade</strong> perante a lei<br>• <strong>Liberdade</strong> de expressão, crença e reunião<br>• <strong>Inviolabilidade</strong> do domicílio e da correspondência<br>• Direito à <strong>propriedade</strong> (com função social)<br>• <strong>Habeas corpus</strong> e outros remédios constitucionais<br><br>São 78 incisos que formam a base dos direitos individuais e coletivos.">Art. 5 da Constituição</button>
+          <button class="demo-chip" data-q="Explique a Lei de Ohm de forma simples" data-a="A Lei de Ohm diz que a <strong>corrente elétrica (I)</strong> é proporcional à <strong>tensão (V)</strong> e inversamente proporcional à <strong>resistência (R)</strong>.<br><br>Fórmula: <strong>V = I × R</strong><br><br>Pense assim: tensão = pressão da água, corrente = fluxo, resistência = diâmetro do cano.">Explique a Lei de Ohm</button>
+          <button class="demo-chip" data-q="Qual a diferença entre juros simples e compostos?" data-a="<strong>Juros simples</strong>: rendimento sobre o valor inicial. Ex: R$ 1.000 a 10%/mês = R$ 100/mês sempre.<br><br><strong>Juros compostos</strong>: rendimento sobre o valor acumulado (juros sobre juros). Mesmo R$ 1.000 renderia R$ 100, depois R$ 110, depois R$ 121...<br><br>Por isso os compostos crescem mais rápido com o tempo.">Juros simples vs compostos</button>
+          <button class="demo-chip" data-q="Resuma o art. 5 da Constituição" data-a="O <strong>Art. 5º da CF/88</strong> garante os direitos fundamentais:<br><br>• <strong>Igualdade</strong> perante a lei<br>• <strong>Liberdade</strong> de expressão e crença<br>• <strong>Inviolabilidade</strong> do domicílio<br>• Direito à <strong>propriedade</strong><br>• <strong>Habeas corpus</strong> e remédios constitucionais<br><br>São 78 incisos — a base dos direitos individuais.">Art. 5 da Constituição</button>
         </div>
         <div class="demo-input-row">
-          <input type="text" class="demo-input" id="demo-input" placeholder="Faça uma pergunta..." readonly>
-          <button class="demo-send" aria-label="Enviar">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 2L7 9M14 2l-4.5 12L7 9M14 2L2 6.5 7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
+          <input type="text" class="demo-inp" placeholder="Faça uma pergunta..." readonly>
+          <button class="demo-send" aria-label="Enviar"><svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M14 2L7 9M14 2l-4.5 12L7 9M14 2L2 6.5 7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ LOGOS / STATS ══════════════════ -->
-<section class="stats-strip">
-  <div class="stats-strip-glow"></div>
-  <div class="container">
-    <dl>
-      <div class="animate-on-scroll" data-delay="0">
-        <dd class="counter" data-target="500000" data-suffix=" mil" data-display="500 mil">500 mil<span class="stats-plus">+</span></dd>
-        <dt>questões no banco</dt>
-      </div>
-      <div class="animate-on-scroll" data-delay="100">
-        <dd>2.500<span class="stats-plus">+</span></dd>
-        <dt>concursos cobertos</dt>
-      </div>
-      <div class="animate-on-scroll" data-delay="200">
-        <dd>A1 <span class="stats-accent">ao</span> C2</dd>
-        <dt>inglês e espanhol</dt>
-      </div>
-      <div class="animate-on-scroll" data-delay="300">
-        <dd>24/7</dd>
-        <dt>IA Tutora disponível</dt>
-      </div>
-    </dl>
-  </div>
-</section>
-
-<!-- ══════════════════ FEATURES ══════════════════ -->
-<section class="features" id="features">
-  <div class="container">
-    <div class="section-header animate-on-scroll">
-      <span class="section-tag">Recursos</span>
-      <h2>Tudo que você precisa em um só lugar</h2>
-      <p>Módulos integrados e adaptados ao seu objetivo específico.</p>
+<!-- ══════════════ PRICING ══════════════ -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-header anim">
+      <span class="tag">Planos</span>
+      <h2>Invista no seu <span class="h-em">futuro</span></h2>
+      <p>14 dias grátis. Sem cartão. Cancele quando quiser.</p>
     </div>
-    <div class="features-grid">
-      <a href="concursos.html" class="feature-card animate-on-scroll" data-delay="0">
-        <div class="feature-icon feature-icon-amber">
-          <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Concursos Públicos</h3>
-        <p>Trilha por edital, alertas de prazo e simulados por banca.</p>
-        <span class="feature-link">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      </a>
-      <a href="questoes.html" class="feature-card animate-on-scroll" data-delay="100">
-        <div class="feature-icon feature-icon-emerald">
-          <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>ENEM e Vestibulares</h3>
-        <p>Simulado completo e correção de redação por IA.</p>
-        <span class="feature-link">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      </a>
-      <a href="ia-tutora.html" class="feature-card feature-card-highlight animate-on-scroll" data-delay="200">
-        <div class="feature-card-glow"></div>
-        <div class="feature-badge">Mais popular</div>
-        <div class="feature-icon feature-icon-purple">
-          <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l.146.146A3.004 3.004 0 0118 18.75V21a.75.75 0 01-.75.75h-10.5A.75.75 0 016 21v-2.25a3 3 0 01.879-2.121l.146-.146z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>IA Tutora</h3>
-        <p>Explica, cria resumos, gera flashcards e analisa pontos fracos.</p>
-        <span class="feature-link">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      </a>
-      <a href="ingles.html" class="feature-card animate-on-scroll" data-delay="300">
-        <div class="feature-icon feature-icon-teal">
-          <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-2.247m0 0A8.966 8.966 0 013 12c0-1.97.633-3.792 1.708-5.27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Idiomas</h3>
-        <p>Inglês e espanhol do A1 ao C2 com revisão espaçada.</p>
-        <span class="feature-link">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      </a>
+    <div class="price-toggle anim">
+      <span class="toggle-lbl active" id="tgl-m">Mensal</span>
+      <button class="toggle-switch" id="tgl-btn"><span class="toggle-knob"></span></button>
+      <span class="toggle-lbl" id="tgl-a">Anual <span class="toggle-save">-40%</span></span>
     </div>
-  </div>
-</section>
-
-<!-- ══════════════════ COMO FUNCIONA ══════════════════ -->
-<section class="how-section" id="como-funciona">
-  <div class="container">
-    <div class="section-header animate-on-scroll">
-      <span class="section-tag">Como funciona</span>
-      <h2>Resultado real em três passos</h2>
-      <p>Do primeiro acesso à aprovação, a gente guia você.</p>
-    </div>
-    <div class="steps-timeline">
-      <div class="timeline-line"></div>
-      <div class="step-item animate-on-scroll" data-delay="0">
-        <div class="step-number-circle"><span>01</span></div>
-        <div class="step-content">
-          <h3>Resolva questões e aprenda na hora</h3>
-          <p>Digite uma questão de concurso e receba a resposta comentada instantaneamente — com explicação clara e objetiva.</p>
-        </div>
-      </div>
-      <div class="step-item animate-on-scroll" data-delay="150">
-        <div class="step-number-circle"><span>02</span></div>
-        <div class="step-content">
-          <h3>Informe seu concurso e saiba o que estudar</h3>
-          <p>Diga qual é o seu objetivo e a plataforma monta um direcionamento personalizado com as matérias que mais importam.</p>
-        </div>
-      </div>
-      <div class="step-item animate-on-scroll" data-delay="300">
-        <div class="step-number-circle"><span>03</span></div>
-        <div class="step-content">
-          <h3>Acompanhe prazos e conquiste sua vaga</h3>
-          <p>Receba alertas sobre editais, inscrições e datas importantes — tudo organizado para você agir no momento certo.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════ SHOWCASE ══════════════════ -->
-<section class="showcase-section">
-  <div class="container">
-    <div class="showcase-row animate-on-scroll">
-      <div class="showcase-visual">
-        <div class="showcase-browser">
-          <div class="browser-dots"><span></span><span></span><span></span></div>
-          <div class="browser-url">studium.app/dashboard</div>
-        </div>
-        <img src="images/study-desk-dark.svg" alt="Dashboard Studium com plano de estudos personalizado">
-        <div class="showcase-float-card float-card-1">
-          <div class="float-card-icon" style="background:rgba(52,211,153,.15);color:#34D399">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="float-card-text">
-            <strong>+42%</strong>
-            <span>rendimento</span>
-          </div>
-        </div>
-        <div class="showcase-float-card float-card-2">
-          <div class="float-card-icon" style="background:rgba(124,58,237,.15);color:#A78BFA">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l.146.146A3 3 0 0118 18.75V21a.75.75 0 01-.75.75h-10.5A.75.75 0 016 21v-2.25a3 3 0 01.879-2.121l.146-.146z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="float-card-text">
-            <strong>IA ativa</strong>
-            <span>analisando</span>
-          </div>
-        </div>
-      </div>
-      <div class="showcase-info">
-        <span class="section-tag">Plataforma inteligente</span>
-        <h2>Seu ambiente de estudos, potencializado pela tecnologia</h2>
-        <p>A plataforma Studium se adapta ao seu ritmo. Estude de madrugada ou ao meio-dia, no computador ou no celular. A IA Tutora acompanha cada sessão e ajusta o conteúdo ao seu nível.</p>
-        <div class="showcase-features">
-          <div class="showcase-feat-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>IA Tutora 24h disponível</span>
-          </div>
-          <div class="showcase-feat-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Progresso em tempo real</span>
-          </div>
-          <div class="showcase-feat-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Multiplataforma</span>
-          </div>
-        </div>
-        <a href="cadastro.html" class="btn btn-primary btn-lg">Experimentar grátis →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════ PLANOS ══════════════════ -->
-<section class="pricing-section" id="planos">
-  <div class="container">
-    <div class="section-header animate-on-scroll">
-      <span class="section-tag">Planos</span>
-      <h2>Invista no seu futuro</h2>
-      <p>Escolha o plano ideal e comece a estudar hoje mesmo.</p>
-    </div>
-    <div class="pricing-toggle animate-on-scroll">
-      <span class="toggle-label active" id="toggle-monthly">Mensal</span>
-      <button class="pricing-switch" id="pricing-switch" aria-label="Alternar plano">
-        <span class="pricing-switch-knob"></span>
-      </button>
-      <span class="toggle-label" id="toggle-annual">Anual <span class="toggle-save">-40%</span></span>
-    </div>
-    <div class="pricing-grid">
-      <div class="pricing-card animate-on-scroll" data-delay="0">
-        <div class="pricing-name">Gratuito</div>
-        <div class="pricing-price"><span class="price-value">R$ 0</span><span class="price-period">/mês</span></div>
-        <p class="pricing-desc">Para quem quer experimentar</p>
-        <ul class="pricing-features">
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>10 questões por dia</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>IA Tutora limitada</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>1 simulado por semana</li>
-          <li class="disabled"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Plano de estudos</li>
-          <li class="disabled"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Correção de redação</li>
+    <div class="price-grid">
+      <div class="price-card anim" data-d="0">
+        <div class="price-name">Gratuito</div>
+        <div class="price-amount"><span class="price-val">R$ 0</span><span class="price-mo">/mês</span></div>
+        <p class="price-desc">Para experimentar</p>
+        <ul class="price-feats">
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>10 questões por dia</li>
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>IA Tutora limitada</li>
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>1 simulado por semana</li>
+          <li class="no"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Plano de estudos</li>
+          <li class="no"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Correção de redação</li>
         </ul>
-        <a href="cadastro.html" class="btn btn-secondary btn-full">Começar grátis</a>
+        <a href="cadastro.html" class="btn-outline btn-full">Começar grátis</a>
       </div>
-      <div class="pricing-card pricing-card-popular animate-on-scroll" data-delay="100">
-        <div class="pricing-popular-badge">Mais escolhido</div>
-        <div class="pricing-name">Pro</div>
-        <div class="pricing-price">
-          <span class="price-value" data-monthly="49,90" data-annual="29,90">R$ 49,90</span>
-          <span class="price-period">/mês</span>
-        </div>
-        <p class="pricing-desc">Para quem quer ser aprovado</p>
-        <ul class="pricing-features">
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Questões ilimitadas</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>IA Tutora ilimitada</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Simulados ilimitados</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Plano de estudos personalizado</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>3 correções de redação/mês</li>
+      <div class="price-card price-card-pop anim" data-d="80">
+        <div class="price-pop-badge">Mais escolhido</div>
+        <div class="price-name">Pro</div>
+        <div class="price-amount"><span class="price-val" data-m="49,90" data-a="29,90">R$ 49,90</span><span class="price-mo">/mês</span></div>
+        <p class="price-desc">Para ser aprovado</p>
+        <ul class="price-feats">
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Questões ilimitadas</li>
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>IA Tutora ilimitada</li>
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Simulados ilimitados</li>
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Plano de estudos personalizado</li>
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>3 redações corrigidas/mês</li>
         </ul>
-        <a href="cadastro.html" class="btn btn-primary btn-full btn-glow">Assinar Pro →</a>
+        <a href="cadastro.html" class="btn-cta btn-full">Assinar Pro</a>
       </div>
-      <div class="pricing-card animate-on-scroll" data-delay="200">
-        <div class="pricing-name">Completo</div>
-        <div class="pricing-price">
-          <span class="price-value" data-monthly="89,90" data-annual="53,90">R$ 89,90</span>
-          <span class="price-period">/mês</span>
-        </div>
-        <p class="pricing-desc">Aprovação garantida ou reembolso</p>
-        <ul class="pricing-features">
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Tudo do Pro</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Redações ilimitadas</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Idiomas (Inglês + Espanhol)</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Mentoria com IA avançada</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Garantia de reembolso</li>
+      <div class="price-card anim" data-d="160">
+        <div class="price-name">Completo</div>
+        <div class="price-amount"><span class="price-val" data-m="89,90" data-a="53,90">R$ 89,90</span><span class="price-mo">/mês</span></div>
+        <p class="price-desc">Aprovação garantida</p>
+        <ul class="price-feats">
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Tudo do Pro</li>
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Redações ilimitadas</li>
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Idiomas (Inglês + Espanhol)</li>
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Mentoria com IA avançada</li>
+          <li class="yes"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Garantia de reembolso</li>
         </ul>
-        <a href="cadastro.html" class="btn btn-secondary btn-full">Assinar Completo</a>
+        <a href="cadastro.html" class="btn-outline btn-full">Assinar Completo</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ TESTIMONIALS ══════════════════ -->
-<section class="testimonials-section">
-  <div class="container">
-    <div class="section-header animate-on-scroll">
-      <span class="section-tag">Depoimentos</span>
-      <h2>Quem usa, aprova <span class="gradient-text">(e é aprovado)</span></h2>
-      <p>Milhares de estudantes já conquistaram seus objetivos com o Studium.</p>
+<!-- ══════════════ TESTIMONIALS ══════════════ -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-header anim">
+      <span class="tag">Depoimentos</span>
+      <h2>Quem usa, aprova<br><span class="h-em">(e é aprovado)</span></h2>
     </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card animate-on-scroll" data-delay="0">
-        <div class="testimonial-rating">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="testimonial-text">"A IA Tutora mudou completamente minha forma de estudar. Ela identificou meus pontos fracos em Direito e criou um plano personalizado. Fui aprovada no TJ-SP em 6 meses!"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-av" style="background:linear-gradient(135deg,#059669,#34D399)">CM</div>
-          <div><div class="testimonial-name">Carolina Mendes</div><div class="testimonial-role">Aprovada TJ-SP 2025</div></div>
-        </div>
+    <div class="reviews-grid">
+      <div class="review-card anim" data-d="0">
+        <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p>"A IA Tutora mudou completamente minha forma de estudar. Identificou meus pontos fracos em Direito e criou um plano personalizado. Fui aprovada no TJ-SP em 6 meses!"</p>
+        <div class="review-author"><div class="review-av" style="background:linear-gradient(135deg,#059669,#34D399)">CM</div><div><strong>Carolina Mendes</strong><span>Aprovada TJ-SP 2025</span></div></div>
       </div>
-      <div class="testimonial-card animate-on-scroll" data-delay="150">
-        <div class="testimonial-rating">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="testimonial-text">"Os simulados por banca são idênticos às provas reais. A correção de redação por IA me ajudou a sair de 640 para 920 no ENEM. Melhor investimento que já fiz nos estudos."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-av" style="background:linear-gradient(135deg,#7C3AED,#A78BFA)">LR</div>
-          <div><div class="testimonial-name">Lucas Ribeiro</div><div class="testimonial-role">ENEM 920 pontos</div></div>
-        </div>
+      <div class="review-card anim" data-d="100">
+        <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p>"Os simulados por banca são idênticos às provas reais. A correção de redação por IA me ajudou a sair de 640 para 920 no ENEM. Melhor investimento dos estudos."</p>
+        <div class="review-author"><div class="review-av" style="background:linear-gradient(135deg,#7C3AED,#A78BFA)">LR</div><div><strong>Lucas Ribeiro</strong><span>ENEM 920 pontos</span></div></div>
       </div>
-      <div class="testimonial-card animate-on-scroll" data-delay="300">
-        <div class="testimonial-rating">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="testimonial-text">"Estudar idiomas pelo Studium é viciante. O sistema de revisão espaçada fez eu sair do A1 para o B2 em inglês em apenas 8 meses, estudando 30 minutos por dia."</p>
-        <div class="testimonial-author">
-          <div class="testimonial-av" style="background:linear-gradient(135deg,#D97706,#FCD34D)">AF</div>
-          <div><div class="testimonial-name">Ana Ferreira</div><div class="testimonial-role">Inglês B2 em 8 meses</div></div>
-        </div>
+      <div class="review-card anim" data-d="200">
+        <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#FCD34D"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <p>"Estudar idiomas pelo Studium é viciante. O sistema de revisão espaçada me levou do A1 ao B2 em inglês em 8 meses, estudando 30 minutos por dia."</p>
+        <div class="review-author"><div class="review-av" style="background:linear-gradient(135deg,#D97706,#FCD34D)">AF</div><div><strong>Ana Ferreira</strong><span>Inglês B2 em 8 meses</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ CTA FINAL ══════════════════ -->
-<section class="cta-final">
-  <div class="cta-final-glow"></div>
-  <div class="container">
-    <div class="cta-final-content animate-on-scroll">
-      <h2>Pronto para estudar com mais <span class="gradient-text">inteligência</span>?</h2>
+<!-- ══════════════ CTA FINAL ══════════════ -->
+<section class="cta-end">
+  <div class="cta-end-bg">
+    <img src="images/student-cafe.avif" alt="" class="cta-end-img">
+    <div class="cta-end-overlay"></div>
+  </div>
+  <div class="wrap">
+    <div class="cta-end-content anim">
+      <h2>Pronto para estudar com mais <span class="h-em">inteligência</span>?</h2>
       <p>Junte-se a milhares de alunos que já estão conquistando seus objetivos.</p>
-      <div class="cta-final-actions">
-        <a href="cadastro.html" class="btn btn-primary btn-lg btn-glow">
-          <span>Começar agora — é grátis</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-      <p class="cta-final-note">Sem cartão de crédito. Cancele quando quiser.</p>
+      <a href="cadastro.html" class="btn-cta btn-cta-lg btn-white">Começar agora — é grátis <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <span class="cta-end-note">Sem cartão de crédito. Cancele quando quiser.</span>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ FOOTER ══════════════════ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="pub-logo"><img src="images/logo-mark.svg" class="logo-icon" alt="">Studium</a>
-        <p>A plataforma de estudos com IA mais completa do Brasil. Estude com inteligência, conquiste seu futuro.</p>
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="nav-logo"><img src="images/logo-mark.svg" class="logo-icon" alt="">Studium</a>
+        <p>A plataforma de estudos com IA mais completa do Brasil.</p>
+        <div class="foot-social">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29.94 29.94 0 001 12a29.94 29.94 0 00.46 5.58 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29.94 29.94 0 0023 12a29.94 29.94 0 00-.46-5.58z" stroke="currentColor" stroke-width="1.5"/><polygon points="9.75 15.02 15.5 12 9.75 8.98" fill="currentColor"/></svg></a>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Produto</h4>
-        <a href="concursos.html">Concursos</a>
-        <a href="questoes.html">ENEM e Vestibulares</a>
-        <a href="ia-tutora.html">IA Tutora</a>
-        <a href="ingles.html">Idiomas</a>
-      </div>
-      <div class="footer-col">
-        <h4>Empresa</h4>
-        <a href="#">Sobre</a>
-        <a href="planos.html">Planos</a>
-        <a href="suporte.html">Ajuda</a>
-        <a href="#">Blog</a>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="#">Privacidade</a>
-        <a href="#">Termos de Uso</a>
-        <a href="#">Cookies</a>
-      </div>
+      <div class="foot-col"><h4>Produto</h4><a href="concursos.html">Concursos</a><a href="questoes.html">ENEM</a><a href="ia-tutora.html">IA Tutora</a><a href="ingles.html">Idiomas</a></div>
+      <div class="foot-col"><h4>Empresa</h4><a href="#">Sobre</a><a href="planos.html">Planos</a><a href="suporte.html">Ajuda</a><a href="#">Blog</a></div>
+      <div class="foot-col"><h4>Legal</h4><a href="#">Privacidade</a><a href="#">Termos</a><a href="#">Cookies</a></div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 Studium. Todos os direitos reservados.</p>
-      <div class="footer-social">
-        <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg></a>
-        <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29.94 29.94 0 001 12a29.94 29.94 0 00.46 5.58 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29.94 29.94 0 0023 12a29.94 29.94 0 00-.46-5.58z" stroke="currentColor" stroke-width="1.5"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor"/></svg></a>
-      </div>
-    </div>
+    <div class="foot-bottom"><p>© 2025 Studium. Todos os direitos reservados.</p></div>
   </div>
 </footer>
 
-<script src="js/site-bg.js"></script>
-<script src="js/app.js"></script>
+<!-- site-bg.js removed — new design uses CSS-only backgrounds -->
 <script src="js/landing.js"></script>
 </body>
 </html>

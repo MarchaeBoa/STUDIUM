@@ -1305,6 +1305,434 @@ button:focus-visible, .btn:focus-visible, a:focus-visible {
 @keyframes spin { to { transform: rotate(360deg); } }
 .btn.loading { pointer-events: none; opacity: .7; }
 
+/* ============================================================
+   COSMIC BACKGROUND & DARK THEME
+   Full-site deep-space aesthetic with nebula glow and star field
+   ============================================================ */
+
+/* ── Base dark overrides ───────────────────────────────── */
+body {
+  background: #060d12;
+  color: rgba(255,255,255,.85);
+}
+a { color: #10B981; }
+a:hover { color: #34D399; }
+.tmuted { color: rgba(255,255,255,.4); }
+.tgreen { color: #34D399; }
+
+/* ── Nebula glow layer ─────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 900px 700px at 15% 18%, rgba(5,150,105,.06), transparent 70%),
+    radial-gradient(ellipse 700px 550px at 82% 52%, rgba(56,120,220,.045), transparent 70%),
+    radial-gradient(ellipse 600px 500px at 42% 88%, rgba(52,211,153,.035), transparent 70%),
+    radial-gradient(ellipse 400px 350px at 65% 15%, rgba(30,80,180,.03), transparent 70%);
+  animation: nebula-float 40s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* ── Star field layer ──────────────────────────────────── */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 1px; height: 1px;
+  z-index: -1;
+  pointer-events: none;
+  background: transparent;
+  box-shadow:
+    /* ── Small dim stars ── */
+    457px 52px 0 0px rgba(255,255,255,0.3),
+    1004px 458px 0 0px rgba(255,255,255,0.18),
+    420px 1386px 0 0px rgba(255,255,255,0.3),
+    2234px 179px 0 0px rgba(255,255,255,0.27),
+    131px 62px 0 0px rgba(255,255,255,0.17),
+    953px 1035px 0 0px rgba(255,255,255,0.27),
+    2299px 408px 0 0px rgba(255,255,255,0.29),
+    2233px 860px 0 0px rgba(255,255,255,0.19),
+    1140px 14px 0 0px rgba(255,255,255,0.3),
+    654px 866px 0 0px rgba(255,255,255,0.22),
+    637px 441px 0 0px rgba(255,255,255,0.34),
+    1379px 210px 0 0px rgba(255,255,255,0.17),
+    397px 736px 0 0px rgba(255,255,255,0.32),
+    1084px 89px 0 0px rgba(255,255,255,0.3),
+    2197px 256px 0 0px rgba(255,255,255,0.34),
+    1551px 162px 0 0px rgba(255,255,255,0.26),
+    1482px 1183px 0 0px rgba(255,255,255,0.19),
+    285px 94px 0 0px rgba(255,255,255,0.28),
+    1186px 164px 0 0px rgba(255,255,255,0.32),
+    414px 779px 0 0px rgba(255,255,255,0.21),
+    1495px 334px 0 0px rgba(255,255,255,0.22),
+    859px 1373px 0 0px rgba(255,255,255,0.2),
+    293px 1248px 0 0px rgba(255,255,255,0.28),
+    2188px 502px 0 0px rgba(255,255,255,0.18),
+    1555px 553px 0 0px rgba(255,255,255,0.35),
+    2282px 450px 0 0px rgba(255,255,255,0.29),
+    230px 470px 0 0px rgba(255,255,255,0.31),
+    1293px 822px 0 0px rgba(255,255,255,0.2),
+    865px 1162px 0 0px rgba(255,255,255,0.33),
+    1289px 436px 0 0px rgba(255,255,255,0.28),
+    1621px 1317px 0 0px rgba(255,255,255,0.24),
+    1085px 286px 0 0px rgba(255,255,255,0.2),
+    2300px 1104px 0 0px rgba(255,255,255,0.2),
+    2395px 878px 0 0px rgba(255,255,255,0.33),
+    1636px 742px 0 0px rgba(255,255,255,0.19),
+    567px 1044px 0 0px rgba(255,255,255,0.25),
+    193px 225px 0 0px rgba(255,255,255,0.18),
+    656px 1394px 0 0px rgba(255,255,255,0.23),
+    261px 789px 0 0px rgba(255,255,255,0.23),
+    1918px 1084px 0 0px rgba(255,255,255,0.2),
+    2267px 24px 0 0px rgba(255,255,255,0.29),
+    470px 1397px 0 0px rgba(255,255,255,0.33),
+    1093px 1313px 0 0px rgba(255,255,255,0.22),
+    1203px 891px 0 0px rgba(255,255,255,0.18),
+    14px 540px 0 0px rgba(255,255,255,0.34),
+    732px 1040px 0 0px rgba(255,255,255,0.33),
+    1223px 1309px 0 0px rgba(255,255,255,0.25),
+    815px 314px 0 0px rgba(255,255,255,0.22),
+    662px 1105px 0 0px rgba(255,255,255,0.34),
+    2173px 2px 0 0px rgba(255,255,255,0.27),
+    2002px 40px 0 0px rgba(255,255,255,0.17),
+    1487px 630px 0 0px rgba(255,255,255,0.2),
+    987px 1162px 0 0px rgba(255,255,255,0.34),
+    351px 996px 0 0px rgba(255,255,255,0.31),
+    2182px 258px 0 0px rgba(255,255,255,0.18),
+    1947px 1126px 0 0px rgba(255,255,255,0.18),
+    2162px 1243px 0 0px rgba(255,255,255,0.23),
+    868px 1105px 0 0px rgba(255,255,255,0.3),
+    824px 639px 0 0px rgba(255,255,255,0.23),
+    1530px 898px 0 0px rgba(255,255,255,0.33),
+    1850px 248px 0 0px rgba(255,255,255,0.2),
+    263px 693px 0 0px rgba(255,255,255,0.15),
+    2269px 472px 0 0px rgba(255,255,255,0.27),
+    30px 146px 0 0px rgba(255,255,255,0.29),
+    242px 469px 0 0px rgba(255,255,255,0.16),
+    129px 677px 0 0px rgba(255,255,255,0.16),
+    975px 571px 0 0px rgba(255,255,255,0.28),
+    878px 1105px 0 0px rgba(255,255,255,0.18),
+    2339px 1181px 0 0px rgba(255,255,255,0.24),
+    1938px 834px 0 0px rgba(255,255,255,0.19),
+    /* ── Medium stars ── */
+    398px 1350px 0 0.5px rgba(255,255,255,0.38),
+    1735px 842px 0 0.5px rgba(255,255,255,0.39),
+    222px 1380px 0 0.5px rgba(255,255,255,0.45),
+    404px 125px 0 0.5px rgba(255,255,255,0.37),
+    1390px 224px 0 0.5px rgba(255,255,255,0.32),
+    780px 1099px 0 0.5px rgba(255,255,255,0.38),
+    1729px 376px 0 0.5px rgba(255,255,255,0.33),
+    1024px 155px 0 0.5px rgba(255,255,255,0.38),
+    2255px 201px 0 0.5px rgba(255,255,255,0.27),
+    2215px 31px 0 0.5px rgba(255,255,255,0.54),
+    969px 341px 0 0.5px rgba(255,255,255,0.37),
+    1972px 438px 0 0.5px rgba(255,255,255,0.51),
+    241px 338px 0 0.5px rgba(255,255,255,0.36),
+    1600px 544px 0 0.5px rgba(255,255,255,0.53),
+    1864px 585px 0 0.5px rgba(255,255,255,0.38),
+    2277px 1356px 0 0.5px rgba(255,255,255,0.47),
+    635px 389px 0 0.5px rgba(255,255,255,0.34),
+    240px 1187px 0 0.5px rgba(255,255,255,0.47),
+    250px 643px 0 0.5px rgba(255,255,255,0.27),
+    2393px 977px 0 0.5px rgba(255,255,255,0.4),
+    2176px 323px 0 0.5px rgba(255,255,255,0.27),
+    2081px 165px 0 0.5px rgba(255,255,255,0.51),
+    281px 1219px 0 0.5px rgba(255,255,255,0.27),
+    964px 827px 0 0.5px rgba(255,255,255,0.29),
+    2334px 505px 0 0.5px rgba(255,255,255,0.42),
+    163px 1269px 0 0.5px rgba(255,255,255,0.27),
+    2391px 1158px 0 0.5px rgba(255,255,255,0.41),
+    1069px 419px 0 0.5px rgba(255,255,255,0.45),
+    1287px 489px 0 0.5px rgba(255,255,255,0.33),
+    537px 1376px 0 0.5px rgba(255,255,255,0.44),
+    1873px 648px 0 0.5px rgba(255,255,255,0.53),
+    298px 20px 0 0.5px rgba(255,255,255,0.39),
+    2307px 205px 0 0.5px rgba(255,255,255,0.27),
+    874px 1037px 0 0.5px rgba(255,255,255,0.33),
+    1430px 141px 0 0.5px rgba(255,255,255,0.51),
+    /* ── Bright accent stars ── */
+    1514px 584px 1px 0.5px rgba(200,240,255,0.46),
+    2226px 620px 1px 0.5px rgba(200,240,255,0.61),
+    2167px 17px 1px 0.5px rgba(200,240,255,0.63),
+    2272px 614px 1px 0.5px rgba(200,240,255,0.73),
+    425px 276px 1px 0.5px rgba(200,240,255,0.49),
+    439px 1134px 1px 0.5px rgba(200,240,255,0.45),
+    1155px 1239px 1px 0.5px rgba(200,240,255,0.47),
+    1405px 417px 1px 0.5px rgba(200,240,255,0.64),
+    1082px 1036px 1px 0.5px rgba(200,240,255,0.57),
+    209px 190px 1px 0.5px rgba(200,240,255,0.62),
+    1134px 91px 1px 0.5px rgba(200,240,255,0.4),
+    536px 1305px 1px 0.5px rgba(200,240,255,0.74);
+  animation: star-drift 120s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* ── Cosmic animations ─────────────────────────────────── */
+@keyframes nebula-float {
+  0%   { transform: scale(1) translate(0, 0); }
+  33%  { transform: scale(1.03) translate(20px, -15px); }
+  66%  { transform: scale(0.98) translate(-10px, 12px); }
+  100% { transform: scale(1.02) translate(15px, -8px); }
+}
+@keyframes star-drift {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-15px, -10px); }
+  50%  { transform: translate(-8px, 12px); }
+  75%  { transform: translate(10px, -6px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* ── Public nav (dark glass) ───────────────────────────── */
+.pub-nav {
+  background: rgba(6,13,18,.7);
+  border-bottom-color: rgba(255,255,255,.06);
+}
+.pub-nav.scrolled { background: rgba(6,13,18,.9); box-shadow: 0 1px 12px rgba(0,0,0,.3); }
+.pub-logo { color: rgba(255,255,255,.95); }
+.pub-links a { color: rgba(255,255,255,.45); }
+.pub-links a:hover { color: #fff; }
+.btn-ghost { color: rgba(255,255,255,.6); }
+.btn-ghost:hover { background: rgba(255,255,255,.06); color: #fff; }
+.btn-secondary {
+  background: rgba(255,255,255,.05);
+  color: rgba(255,255,255,.8);
+  border-color: rgba(255,255,255,.1);
+}
+.btn-secondary:hover {
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.15);
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+
+/* ── Stats strip ───────────────────────────────────────── */
+.stats-strip {
+  background: rgba(255,255,255,.02);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.stats-strip dd { color: #fff; }
+.stats-strip dt { color: rgba(255,255,255,.4); }
+.stats-strip dl > div:not(:last-child)::after { background: rgba(255,255,255,.06); }
+
+/* ── Features section ──────────────────────────────────── */
+.feat-hdr h2 { color: #fff; }
+.feat-hdr p  { color: rgba(255,255,255,.4); }
+.feat-card {
+  background: rgba(255,255,255,.03);
+  border-color: rgba(255,255,255,.06);
+}
+.feat-card h3 { color: rgba(255,255,255,.9); }
+.feat-card p  { color: rgba(255,255,255,.4); }
+.feat-card:hover {
+  background: rgba(255,255,255,.05);
+  border-color: rgba(255,255,255,.1);
+  box-shadow: 0 12px 32px rgba(0,0,0,.4);
+}
+.features .card-h { border-color: rgba(255,255,255,.06); }
+.features .card-h:hover { box-shadow: 0 12px 32px rgba(0,0,0,.4); }
+.feat-icon-amber  { background: rgba(217,119,6,.12); }
+.feat-icon-blue   { background: rgba(5,150,105,.12); }
+.feat-icon-purple { background: rgba(124,58,237,.12); }
+.feat-icon-green  { background: rgba(22,163,74,.12); }
+
+/* ── How it works ──────────────────────────────────────── */
+.how-it-works { background: rgba(255,255,255,.015); }
+.step-card {
+  background: rgba(255,255,255,.03);
+  border-color: rgba(255,255,255,.05);
+}
+.step-card:hover { box-shadow: 0 12px 32px rgba(0,0,0,.4); }
+.step-card h3 { color: rgba(255,255,255,.9); }
+.step-card p  { color: rgba(255,255,255,.4); }
+
+/* ── Photo showcase ────────────────────────────────────── */
+.photo-showcase { background: transparent; }
+.showcase-text h3 { color: #fff; }
+.showcase-text p  { color: rgba(255,255,255,.4); }
+.showcase-tag {
+  background: rgba(5,150,105,.1);
+  color: #34D399;
+  border-color: rgba(52,211,153,.12);
+}
+.showcase-img { box-shadow: 0 8px 32px rgba(0,0,0,.4); }
+.showcase-img::after { border-color: rgba(255,255,255,.05); }
+
+/* ── Testimonials ──────────────────────────────────────── */
+.testimonials { background: rgba(255,255,255,.015); }
+.testimonial-card {
+  background: rgba(255,255,255,.03);
+  border-color: rgba(255,255,255,.05);
+}
+.testimonial-card:hover { box-shadow: 0 12px 32px rgba(0,0,0,.4); }
+.testimonial-text { color: rgba(255,255,255,.55); }
+.testimonial-author { border-top-color: rgba(255,255,255,.06); }
+.testimonial-name { color: rgba(255,255,255,.9); }
+.testimonial-role { color: rgba(255,255,255,.35); }
+
+/* ── Auth pages (dark glass) ───────────────────────────── */
+.auth-form {
+  background: rgba(10,18,24,.9);
+  border-right: 1px solid rgba(255,255,255,.06);
+}
+.auth-logo { color: rgba(255,255,255,.9); }
+.auth-title { color: #fff; }
+.auth-sub { color: rgba(255,255,255,.45); }
+.social-btn {
+  background: rgba(255,255,255,.04);
+  border-color: rgba(255,255,255,.1);
+  color: rgba(255,255,255,.8);
+}
+.social-btn:hover { background: rgba(255,255,255,.07); }
+.div-txt { color: rgba(255,255,255,.3); }
+.div-txt::before, .div-txt::after { background: rgba(255,255,255,.08); }
+.otp-inp {
+  border-color: rgba(255,255,255,.12);
+  background: rgba(255,255,255,.03);
+  color: #fff;
+}
+.otp-inp:focus { border-color: #059669; box-shadow: 0 0 0 3px rgba(5,150,105,.2); }
+.otp-inp.filled { border-color: #059669; background: rgba(5,150,105,.08); }
+
+/* ── Forms (dark) ──────────────────────────────────────── */
+.lbl { color: rgba(255,255,255,.55); }
+.inp {
+  background: rgba(255,255,255,.04);
+  border-color: rgba(255,255,255,.1);
+  color: rgba(255,255,255,.85);
+}
+.inp:focus { border-color: #059669; box-shadow: 0 0 0 3px rgba(5,150,105,.15); }
+.fhint { color: rgba(255,255,255,.35); }
+.pw-bar { background: rgba(255,255,255,.08); }
+.pw-rule { color: rgba(255,255,255,.4); }
+.hr { border-top-color: rgba(255,255,255,.06); }
+.eye-btn { color: rgba(255,255,255,.3); }
+.eye-btn:hover { color: rgba(255,255,255,.6); }
+
+/* ── App shell (sidebar, topbar, main) ─────────────────── */
+.sidebar {
+  background: rgba(8,14,20,.95);
+  border-right-color: rgba(255,255,255,.06);
+}
+.sb-hdr { border-bottom-color: rgba(255,255,255,.06); }
+.sb-logo { color: rgba(255,255,255,.9); }
+.sb-lbl  { color: rgba(255,255,255,.25); }
+.sb-item { color: rgba(255,255,255,.5); }
+.sb-item:hover { background: rgba(255,255,255,.05); color: rgba(255,255,255,.85); }
+.sb-item.active { background: rgba(5,150,105,.1); color: #10B981; }
+.sb-bottom { border-top-color: rgba(255,255,255,.06); }
+.sb-user:hover { background: rgba(255,255,255,.04); }
+.sb-uname { color: rgba(255,255,255,.8); }
+.sb-uplan { color: rgba(255,255,255,.4); }
+.topbar {
+  background: rgba(8,14,20,.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom-color: rgba(255,255,255,.06);
+}
+.tb-title { color: rgba(255,255,255,.9); }
+.search-bar {
+  background: rgba(255,255,255,.04);
+  border-color: rgba(255,255,255,.08);
+}
+.search-bar input { color: rgba(255,255,255,.6); }
+
+/* ── Cards & surfaces (dark) ───────────────────────────── */
+.card {
+  background: rgba(255,255,255,.03);
+  border-color: rgba(255,255,255,.06);
+  box-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+.card-h:hover { box-shadow: 0 4px 16px rgba(0,0,0,.3); border-color: rgba(255,255,255,.1); }
+.pg-title { color: #fff; }
+.pg-sub { color: rgba(255,255,255,.4); }
+
+/* ── Plan cards ────────────────────────────────────────── */
+.plan-card {
+  background: rgba(255,255,255,.03);
+  border-color: rgba(255,255,255,.08);
+}
+.plan-card.popular { border-color: #059669; box-shadow: 0 4px 24px rgba(5,150,105,.15); }
+.plan-price-val { color: #fff; }
+.plan-price span { color: rgba(255,255,255,.4); }
+.plan-feats { color: rgba(255,255,255,.55); }
+
+/* ── Questions & lessons ───────────────────────────────── */
+.q-card { background: rgba(255,255,255,.03); border-color: rgba(255,255,255,.06); }
+.q-text { color: rgba(255,255,255,.8); }
+.q-option { border-color: rgba(255,255,255,.08); color: rgba(255,255,255,.8); }
+.q-option:hover { border-color: #059669; background: rgba(5,150,105,.06); }
+.q-opt-letter { background: rgba(255,255,255,.06); }
+.q-explanation { background: rgba(5,150,105,.06); border-color: rgba(5,150,105,.12); }
+.lang-choice { background: rgba(255,255,255,.03); border-color: rgba(255,255,255,.08); color: rgba(255,255,255,.8); }
+.lang-choice:hover { border-color: #059669; background: rgba(5,150,105,.06); }
+
+/* ── Chat ──────────────────────────────────────────────── */
+.chat-bar { background: rgba(8,14,20,.9); border-top-color: rgba(255,255,255,.06); }
+.chat-inp { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.08); color: #fff; }
+.chat-inp:focus { border-color: #059669; }
+.msg-ai { background: rgba(255,255,255,.05); color: rgba(255,255,255,.8); }
+
+/* ── Modals & overlays ─────────────────────────────────── */
+.modal-bg { background: rgba(0,0,0,.6); }
+.modal-box {
+  background: #0c151c;
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 16px 48px rgba(0,0,0,.5);
+}
+.modal-title { color: #fff; }
+.modal-sub { color: rgba(255,255,255,.45); }
+
+/* ── Support widget ────────────────────────────────────── */
+.sup-panel { background: #0c151c; border-color: rgba(255,255,255,.08); }
+.sup-msgs { background: rgba(255,255,255,.02); }
+.sup-inp-row { border-top-color: rgba(255,255,255,.06); }
+.sup-inp-row input { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.08); color: #fff; }
+.sup-inp-row input:focus { border-color: #059669; }
+
+/* ── Help categories ───────────────────────────────────── */
+.help-cat { background: rgba(255,255,255,.03); border-color: rgba(255,255,255,.06); color: rgba(255,255,255,.8); }
+.help-cat:hover { box-shadow: 0 4px 16px rgba(0,0,0,.3); border-color: rgba(110,231,183,.15); }
+
+/* ── Sessions ──────────────────────────────────────────── */
+.sess-row { border-bottom-color: rgba(255,255,255,.06); }
+
+/* ── Heatmap & charts ──────────────────────────────────── */
+.hm-cell { background: rgba(255,255,255,.06); }
+.wc-lbl { color: rgba(255,255,255,.35); }
+.wc-val { color: rgba(255,255,255,.5); }
+
+/* ── Badges (dark-safe) ────────────────────────────────── */
+.b-green  { background: rgba(22,163,74,.15); }
+.b-blue   { background: rgba(5,150,105,.15); }
+.b-amber  { background: rgba(217,119,6,.15); }
+.b-red    { background: rgba(220,38,38,.15); }
+.b-purple { background: rgba(124,58,237,.15); }
+.b-gray   { background: rgba(255,255,255,.06); color: rgba(255,255,255,.5); }
+
+/* ── Alerts (dark-safe) ────────────────────────────────── */
+.al-green { background: rgba(22,163,74,.1); }
+.al-red   { background: rgba(220,38,38,.1); }
+.al-blue  { background: rgba(5,150,105,.1); }
+
+/* ── Spinner (dark) ────────────────────────────────────── */
+.spinner { border-color: rgba(255,255,255,.1); }
+
+/* ── Week schedule blocks stay vivid ───────────────────── */
+.day-hdr { color: rgba(255,255,255,.4); }
+.day-hdr.today { color: #10B981; }
+
+/* ── Cronograma blocks (dark-safe, semi-transparent) ──── */
+.sb-math { background: rgba(5,150,105,.12); color: #34D399; }
+.sb-port { background: rgba(124,58,237,.12); color: #A78BFA; }
+.sb-dir  { background: rgba(217,119,6,.12); color: #FBBF24; }
+.sb-eng  { background: rgba(22,163,74,.12); color: #4ADE80; }
+.sb-sim  { background: rgba(220,38,38,.12); color: #FCA5A5; }
+
+/* ── Footer (already dark, minor tweaks) ───────────────── */
+.pub-footer { background: rgba(4,8,12,.8); }
+
 /* ── Smooth scroll & reduced motion ────────────────────── */
 html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {

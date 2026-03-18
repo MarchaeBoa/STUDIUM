@@ -323,6 +323,11 @@ h1,h2,h3,h4{font-family:'Plus Jakarta Sans','Inter',sans-serif;color:#fff;letter
 @keyframes heroIn{0%{opacity:0;transform:translateY(24px)}100%{opacity:1;transform:translateY(0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 
+/* ── Demo Side Image ──────────────────────────────── */
+.demo-layout { text-align: center; margin-bottom: 32px; }
+.demo-side-img { display: inline-block; max-width: 480px; border-radius: var(--rxl); overflow: hidden; border: 1px solid var(--border); box-shadow: 0 16px 48px rgba(0,0,0,.4); }
+.demo-side-img img { width: 100%; display: block; }
+
 /* ── Showcase Reversed ─────────────────────────────── */
 .showcase-rev { background: rgba(6,13,9,.6); backdrop-filter: blur(4px); }
 .showcase-row-rev { direction: rtl; }

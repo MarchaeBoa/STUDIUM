@@ -6,15 +6,15 @@
 :root {
   --blue:     #059669;
   --blue-m:   #6EE7B7;
-  --blue-l:   #ECFDF5;
+  --blue-l:   rgba(5,150,105,.1);
   --green:    #16A34A;
-  --green-l:  #F0FDF4;
+  --green-l:  rgba(22,163,74,.1);
   --amber:    #D97706;
-  --amber-l:  #FFFBEB;
+  --amber-l:  rgba(217,119,6,.1);
   --red:      #DC2626;
-  --red-l:    #FEF2F2;
+  --red-l:    rgba(220,38,38,.1);
   --purple:   #7C3AED;
-  --purple-l: #F5F3FF;
+  --purple-l: rgba(124,58,237,.1);
   --n50:      #FAFBFC;
   --n100:     #F3F4F6;
   --n200:     #E8EAED;

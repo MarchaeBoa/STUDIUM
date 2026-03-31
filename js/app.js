@@ -2,6 +2,10 @@
    STUDIUM — Shared Application Logic
    ============================================================ */
 
+/* ── API Key config ───────────────────────────────────────── */
+/* Set your Anthropic API key here for AI features to work */
+window.STUDIUM_API_KEY = window.STUDIUM_API_KEY || 'YOUR_API_KEY_HERE';
+
 /* ── Toast notification system ─────────────────────────── */
 (function() {
   let container = document.querySelector('.toast-container');

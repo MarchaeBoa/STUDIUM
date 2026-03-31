@@ -55,9 +55,9 @@
     <div class="card">
       <div class="flex jb ai mb16"><h3>Plano de hoje</h3><a href="plano-estudos.html" class="tsm tblue">Ver completo →</a></div>
       <div style="display:flex;flex-direction:column;gap:9px">
-        <div style="display:flex;align-items:center;gap:12px;padding:10px;background:var(--green-l);border-radius:8px;border-left:3px solid var(--green)"><span style="font-size:18px"></span><div><div style="font-size:13px;font-weight:600">Inglês A2 — Unidade 3</div><div class="tsm tmuted">Concluído · 30 min</div></div></div>
-        <div style="display:flex;align-items:center;gap:12px;padding:10px;background:var(--blue-l);border-radius:8px;border-left:3px solid var(--blue)"><span style="font-size:18px"></span><div><div style="font-size:13px;font-weight:600">Matemática — Porcentagem</div><div class="tsm tmuted">Em andamento · 45 min</div></div></div>
-        <div style="display:flex;align-items:center;gap:12px;padding:10px;border-radius:8px;border:1px solid var(--n200)"><span style="font-size:18px"></span><div><div style="font-size:13px;font-weight:600">Simulado CESPE — Direito</div><div class="tsm tmuted">Pendente · 60 min</div></div></div>
+        <div style="display:flex;align-items:center;gap:12px;padding:10px;background:rgba(22,163,74,.1);border-radius:8px;border-left:3px solid var(--green)"><span style="font-size:18px"></span><div><div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.9)">Inglês A2 — Unidade 3</div><div class="tsm tmuted">Concluído · 30 min</div></div></div>
+        <div style="display:flex;align-items:center;gap:12px;padding:10px;background:rgba(5,150,105,.1);border-radius:8px;border-left:3px solid var(--blue)"><span style="font-size:18px"></span><div><div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.9)">Matemática — Porcentagem</div><div class="tsm tmuted">Em andamento · 45 min</div></div></div>
+        <div style="display:flex;align-items:center;gap:12px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,.08)"><span style="font-size:18px"></span><div><div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.9)">Simulado CESPE — Direito</div><div class="tsm tmuted">Pendente · 60 min</div></div></div>
       </div>
     </div>
   </div>
@@ -97,8 +97,8 @@
     <div class="card">
       <h3 class="mb16">Recomendações da IA</h3>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="padding:12px;background:var(--purple-l);border-radius:8px"><div style="font-size:12px;font-weight:600;color:var(--purple)">Ponto fraco detectado</div><div class="tsm mt4">Sua taxa em <strong>Direito Constitucional</strong> caiu 8% esta semana.</div><a href="questoes.html" class="btn btn-sm mt8" style="background:var(--purple);color:#fff">Praticar agora</a></div>
-        <div style="padding:12px;background:var(--blue-l);border-radius:8px"><div style="font-size:12px;font-weight:600;color:var(--blue)">Foco de hoje</div><div class="tsm mt4">Você está a <strong>3 dias do streak de 2 semanas</strong>. Mantenha o ritmo!</div></div>
+        <div style="padding:12px;background:rgba(124,58,237,.12);border-radius:8px;border:1px solid rgba(124,58,237,.2)"><div style="font-size:12px;font-weight:600;color:#C4B5FD">Ponto fraco detectado</div><div class="tsm mt4" style="color:rgba(255,255,255,.75)">Sua taxa em <strong style="color:#fff">Direito Constitucional</strong> caiu 8% esta semana.</div><a href="questoes.html" class="btn btn-sm mt8" style="background:var(--purple);color:#fff">Praticar agora</a></div>
+        <div style="padding:12px;background:rgba(5,150,105,.1);border-radius:8px;border:1px solid rgba(5,150,105,.18)"><div style="font-size:12px;font-weight:600;color:#6EE7B7">Foco de hoje</div><div class="tsm mt4" style="color:rgba(255,255,255,.75)">Você está a <strong style="color:#fff">3 dias do streak de 2 semanas</strong>. Mantenha o ritmo!</div></div>
       </div>
       <a href="ia-tutora.html" class="btn btn-secondary btn-full mt16">Falar com a IA Tutora</a>
     </div>
@@ -649,7 +649,7 @@ window.addEventListener('DOMContentLoaded', function () {
       try {
         const res = await fetch('https://api.anthropic.com/v1/messages', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json', 'x-api-key': window.STUDIUM_API_KEY || '', 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
           body: JSON.stringify({
             model: 'claude-sonnet-4-20250514',
             max_tokens: 1000,

@@ -20,61 +20,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container pub-nav-in">
     <a href="index.html" class="pub-logo"><img src="images/logo-mark.svg" class="logo-icon" alt="">Studium</a>
     <nav class="pub-links"><a href="concursos.html">Concursos</a><a href="planos.html">Planos</a><a href="suporte.html">Ajuda</a></nav>
-    <div class="pub-actions"><a href="login.html" class="btn btn-ghost">Entrar</a><a href="cadastro.html" class="btn btn-primary">Começar grátis</a></div>
+    <div class="pub-actions"><a href="login.html" class="btn btn-ghost">Entrar</a><a href="cadastro.html" class="btn btn-primary">Assinar agora</a></div>
   </div>
 </header>
 <main>
   <div style="padding:56px 0 36px;text-align:center">
     <h1 style="font-size:2.2rem;margin-bottom:10px">Planos simples e transparentes</h1>
-    <p style="font-size:16px;color:var(--n500)">Comece grátis. Upgrade quando quiser. Cancele a qualquer momento.</p>
+    <p style="font-size:16px;color:var(--n500)">Escolha o plano ideal para você. Cancele a qualquer momento.</p>
     <div style="display:inline-flex;align-items:center;gap:8px;background:var(--n100);border-radius:var(--rl);padding:4px;margin-top:18px">
       <button id="t-mensal" class="btn btn-primary btn-sm">Mensal</button>
       <button id="t-anual" class="btn btn-ghost btn-sm">Anual <span class="badge b-green" style="margin-left:4px">-33%</span></button>
     </div>
   </div>
   <div class="container" style="padding-bottom:72px">
-    <div class="grid-5">
-      <!-- Gratuito -->
-      <div class="plan-card">
-        <h3 class="mb8">Gratuito</h3>
-        <div class="plan-price mb16"><span class="plan-price-val">R$ 0</span> <span>/mês</span></div>
-        <ul class="plan-feats">
-          <li><span class="ck">✓</span>50 questões/dia</li>
-          <li><span class="ck">✓</span>2 simulados/mês</li>
-          <li><span class="ck">✓</span>Inglês A1</li>
-          <li><span class="ck">✓</span>20 mensagens IA/dia</li>
-          <li><span class="xk">✗</span>Concursos ilimitados</li>
-          <li><span class="xk">✗</span>Plano IA personalizado</li>
-        </ul>
-        <a href="cadastro.html" class="btn btn-secondary btn-full">Criar conta grátis</a>
-      </div>
+    <div class="grid-4">
       <!-- Idiomas -->
       <div class="plan-card">
         <h3 class="mb8">Idiomas</h3>
         <div class="plan-price mb16"><span class="plan-price-val">R$ 19,90</span> <span>/mês</span></div>
         <ul class="plan-feats">
-          <li><span class="ck">✓</span>Tudo do Gratuito</li>
           <li><span class="ck">✓</span>Inglês A1 ao C2</li>
           <li><span class="ck">✓</span>Espanhol A1 ao C2</li>
           <li><span class="ck">✓</span>100 mensagens IA/dia</li>
+          <li><span class="ck">✓</span>Aulas com tutor virtual</li>
           <li><span class="xk">✗</span>Concursos e trilhas</li>
           <li><span class="xk">✗</span>Simulados ilimitados</li>
         </ul>
-        <button class="btn btn-secondary btn-full" onclick="toast('Iniciando trial do Plano Idiomas!','success');setTimeout(()=>location.href='cadastro.html',1200)">Iniciar trial grátis</button>
+        <button class="btn btn-secondary btn-full" onclick="toast('Pagamento do Plano Idiomas confirmado! Liberando acesso...','success');setTimeout(()=>location.href='dashboard.html',1200)">Assinar Idiomas</button>
       </div>
       <!-- Concurso+ -->
       <div class="plan-card">
         <h3 class="mb8">Concurso+</h3>
         <div class="plan-price mb16"><span class="plan-price-val">R$ 29,90</span> <span>/mês</span></div>
         <ul class="plan-feats">
-          <li><span class="ck">✓</span>Tudo do Gratuito</li>
+          <li><span class="ck">✓</span>Questões ilimitadas</li>
           <li><span class="ck">✓</span>Concursos ilimitados</li>
           <li><span class="ck">✓</span>Simulados por banca</li>
           <li><span class="ck">✓</span>Trilha de estudos IA</li>
           <li><span class="ck">✓</span>Alertas de edital</li>
           <li><span class="xk">✗</span>Idiomas completos</li>
         </ul>
-        <button class="btn btn-secondary btn-full" onclick="toast('Iniciando trial do Plano Concurso+!','success');setTimeout(()=>location.href='cadastro.html',1200)">Iniciar trial grátis</button>
+        <button class="btn btn-secondary btn-full" onclick="toast('Pagamento do Plano Concurso+ confirmado! Liberando acesso...','success');setTimeout(()=>location.href='dashboard.html',1200)">Assinar Concurso+</button>
       </div>
       <!-- Premium (popular) -->
       <div class="plan-card popular">
@@ -89,7 +75,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><span class="ck">✓</span>Suporte SLA 2h</li>
           <li><span class="ck">✓</span>Análise de redação</li>
         </ul>
-        <button class="btn btn-primary btn-full" onclick="toast('Iniciando trial do Plano Premium!','success');setTimeout(()=>location.href='cadastro.html',1200)">Iniciar trial grátis →</button>
+        <button class="btn btn-primary btn-full" onclick="toast('Pagamento do Plano Premium confirmado! Liberando acesso...','success');setTimeout(()=>location.href='dashboard.html',1200)">Assinar Premium →</button>
       </div>
       <!-- Completo -->
       <div class="plan-card">
@@ -103,10 +89,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><span class="ck">✓</span>Recomendações IA pro</li>
           <li><span class="ck">✓</span>Histórico ilimitado</li>
         </ul>
-        <button class="btn btn-secondary btn-full" onclick="toast('Iniciando trial do Plano Completo!','success');setTimeout(()=>location.href='cadastro.html',1200)">Iniciar trial grátis</button>
+        <button class="btn btn-secondary btn-full" onclick="toast('Pagamento do Plano Completo confirmado! Liberando acesso...','success');setTimeout(()=>location.href='dashboard.html',1200)">Assinar Completo</button>
       </div>
     </div>
-    <p class="tc tsm tmuted mt24">Todos os planos incluem 14 dias de trial grátis · Sem cartão de crédito · Cancele quando quiser</p>
+    <p class="tc tsm tmuted mt24">Pagamento mensal ou anual · Acesso imediato após a confirmação · Cancele quando quiser</p>
   </div>
 </main>
 <footer class="pub-footer"><div class="container pub-footer-in"><div class="pub-logo"><img src="images/logo-mark.svg" class="logo-icon" alt="">Studium</div><nav class="footer-links"><a href="#">Privacidade</a><a href="#">Termos</a><a href="suporte.html">Ajuda</a></nav><p class="tsm tmuted">© 2025 Studium</p></div></footer>
@@ -600,8 +586,8 @@ window.addEventListener('DOMContentLoaded', function () {
   if (!mensal || !anual) return;
 
   const prices = {
-    mensal: ['R$ 0', 'R$ 19,90', 'R$ 29,90', 'R$ 39,90', 'R$ 59,90'],
-    anual:  ['R$ 0', 'R$ 13,27', 'R$ 19,93', 'R$ 26,60', 'R$ 39,93']
+    mensal: ['R$ 19,90', 'R$ 29,90', 'R$ 39,90', 'R$ 59,90'],
+    anual:  ['R$ 13,27', 'R$ 19,93', 'R$ 26,60', 'R$ 39,93']
   };
 
   function setMode(mode) {

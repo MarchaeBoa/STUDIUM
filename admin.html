@@ -65,7 +65,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="grid-4 mb20">
       <div class="card card-sm tc"><div style="font-size:20px;font-weight:800;color:var(--blue)">12.440</div><div class="tsm tmuted">DAU hoje</div></div>
-      <div class="card card-sm tc"><div style="font-size:20px;font-weight:800">14,8%</div><div class="tsm tmuted">Conv. trial → pago</div></div>
+      <div class="card card-sm tc"><div style="font-size:20px;font-weight:800">14,8%</div><div class="tsm tmuted">Conv. visitante → pago</div></div>
       <div class="card card-sm tc"><div style="font-size:20px;font-weight:800;color:var(--green)">R$ 41,20</div><div class="tsm tmuted">ARPU mensal</div></div>
       <div class="card card-sm tc"><div style="font-size:20px;font-weight:800;color:var(--purple)">R$ 987</div><div class="tsm tmuted">LTV médio</div></div>
     </div>
@@ -84,12 +84,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- Plan distribution -->
       <div class="card">
         <h3 class="mb16"> Distribuição de planos</h3>
-        <div class="mbar-row"><span class="mbar-lbl">Gratuito</span><div class="mbar-track"><div class="mbar-fill" style="width:62%;background:var(--n300)"></div></div><span class="mbar-pct">62%</span></div>
-        <div class="mbar-row"><span class="mbar-lbl">Idiomas</span><div class="mbar-track"><div class="mbar-fill" style="width:8%;background:var(--green)"></div></div><span class="mbar-pct">8%</span></div>
-        <div class="mbar-row"><span class="mbar-lbl">Concurso+</span><div class="mbar-track"><div class="mbar-fill" style="width:12%;background:var(--amber)"></div></div><span class="mbar-pct">12%</span></div>
-        <div class="mbar-row"><span class="mbar-lbl">Premium</span><div class="mbar-track"><div class="mbar-fill" style="width:14%;background:var(--blue)"></div></div><span class="mbar-pct">14%</span></div>
-        <div class="mbar-row"><span class="mbar-lbl">Completo</span><div class="mbar-track"><div class="mbar-fill" style="width:4%;background:var(--purple)"></div></div><span class="mbar-pct">4%</span></div>
-        <div class="alert al-blue mt16">Usuários no plano Gratuito com &gt;30 dias: candidatos a campanha de upgrade.</div>
+        <div class="mbar-row"><span class="mbar-lbl">Idiomas</span><div class="mbar-track"><div class="mbar-fill" style="width:21%;background:var(--green)"></div></div><span class="mbar-pct">21%</span></div>
+        <div class="mbar-row"><span class="mbar-lbl">Concurso+</span><div class="mbar-track"><div class="mbar-fill" style="width:32%;background:var(--amber)"></div></div><span class="mbar-pct">32%</span></div>
+        <div class="mbar-row"><span class="mbar-lbl">Premium</span><div class="mbar-track"><div class="mbar-fill" style="width:37%;background:var(--blue)"></div></div><span class="mbar-pct">37%</span></div>
+        <div class="mbar-row"><span class="mbar-lbl">Completo</span><div class="mbar-track"><div class="mbar-fill" style="width:10%;background:var(--purple)"></div></div><span class="mbar-pct">10%</span></div>
+        <div class="alert al-blue mt16">Campanha de upgrade: usuários do plano Idiomas com mais de 30 dias são candidatos ideais para migrar ao Premium.</div>
       </div>
     </div>
 
@@ -101,7 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <thead><tr><th>ID</th><th>Assunto</th><th>Plano</th><th>Tempo</th><th>Prioridade</th></tr></thead>
           <tbody>
             <tr><td style="font-family:monospace;font-size:11px">#4821</td><td>Pagamento não ativou o plano</td><td><span class="badge b-blue">Premium</span></td><td style="color:var(--red)">2h</td><td><span class="badge b-red">Alta</span></td></tr>
-            <tr><td style="font-family:monospace;font-size:11px">#4819</td><td>E-mail de verificação não chegou</td><td><span class="badge b-gray">Gratuito</span></td><td>5h</td><td><span class="badge b-amber">Média</span></td></tr>
+            <tr><td style="font-family:monospace;font-size:11px">#4819</td><td>E-mail de verificação não chegou</td><td><span class="badge b-green">Idiomas</span></td><td>5h</td><td><span class="badge b-amber">Média</span></td></tr>
             <tr><td style="font-family:monospace;font-size:11px">#4818</td><td>Simulado travou no meio</td><td><span class="badge b-blue">Concurso+</span></td><td>6h</td><td><span class="badge b-amber">Média</span></td></tr>
           </tbody>
         </table></div>
@@ -129,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="card mb20">
       <div class="flex g12" style="flex-wrap:wrap">
         <input class="inp" type="search" placeholder=" Buscar por nome ou e-mail..." style="width:280px">
-        <select class="inp" style="width:140px"><option>Todos os planos</option><option>Gratuito</option><option>Premium</option><option>Completo</option></select>
+        <select class="inp" style="width:140px"><option>Todos os planos</option><option>Idiomas</option><option>Concurso+</option><option>Premium</option><option>Completo</option></select>
         <select class="inp" style="width:160px"><option>Todos os status</option><option selected>Email verificado</option><option>Não verificado</option></select>
       </div>
     </div>
@@ -158,7 +157,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <tr>
             <td><div class="flex ai g8"><div class="av av-sm" style="background:var(--amber)">JS</div><span class="fw6">João Silva</span></div></td>
             <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f09a9f919fb08991989f9fde939f9d">[email&#160;protected]</a></td>
-            <td><span class="badge b-gray">Gratuito</span></td>
+            <td><span class="badge b-green">Idiomas</span></td>
             <td><span class="badge b-amber">⚠ Não verificado</span></td>
             <td>10/07/2025</td>
             <td>Nunca</td>
@@ -209,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <thead><tr><th>ID</th><th>Usuário</th><th>Plano</th><th>Assunto</th><th>Categoria</th><th>Tempo aberto</th><th>SLA</th><th>Ação</th></tr></thead>
         <tbody>
           <tr><td style="font-family:monospace;font-size:11px">#4821</td><td>Rafael Oliveira</td><td><span class="badge b-blue">Premium</span></td><td>Pagamento não ativou plano</td><td><span class="badge b-amber">Billing</span></td><td style="color:var(--red);font-weight:600">2h (SLA: 2h)</td><td><span class="badge b-red">CRÍTICO</span></td><td><button class="btn btn-primary btn-sm" onclick="toast('Ticket atribuído a você!','success')">Atribuir</button></td></tr>
-          <tr><td style="font-family:monospace;font-size:11px">#4819</td><td>João Silva</td><td><span class="badge b-gray">Gratuito</span></td><td>E-mail de verificação</td><td><span class="badge b-blue">Conta</span></td><td>5h</td><td><span class="badge b-amber">Normal</span></td><td><button class="btn btn-secondary btn-sm" onclick="toast('Ticket atribuído!','success')">Atribuir</button></td></tr>
+          <tr><td style="font-family:monospace;font-size:11px">#4819</td><td>João Silva</td><td><span class="badge b-green">Idiomas</span></td><td>E-mail de verificação</td><td><span class="badge b-blue">Conta</span></td><td>5h</td><td><span class="badge b-amber">Normal</span></td><td><button class="btn btn-secondary btn-sm" onclick="toast('Ticket atribuído!','success')">Atribuir</button></td></tr>
           <tr><td style="font-family:monospace;font-size:11px">#4818</td><td>Maria Costa</td><td><span class="badge b-amber">Concurso+</span></td><td>Simulado travou no meio</td><td><span class="badge b-gray">Técnico</span></td><td>6h</td><td><span class="badge b-amber">Normal</span></td><td><button class="btn btn-secondary btn-sm" onclick="toast('Ticket atribuído!','success')">Atribuir</button></td></tr>
         </tbody>
       </table></div>

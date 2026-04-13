@@ -215,8 +215,8 @@ document.addEventListener('click', function (e) {
     const code = Array.from(otpInputs).map(x => x.value).join('');
     if (code.length === 6) {
       if (code === '123456') {
-        toast('E-mail verificado! Redirecionando...', 'success');
-        setTimeout(() => location.href = 'dashboard.html', 1200);
+        toast('E-mail verificado! Escolha seu plano para continuar.', 'success');
+        setTimeout(() => location.href = 'planos.html', 1200);
       } else {
         toast('Código incorreto. Tente novamente.', 'error');
         otpInputs.forEach(x => { x.value = ''; x.classList.remove('filled'); });
